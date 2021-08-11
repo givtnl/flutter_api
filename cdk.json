@@ -1,0 +1,6 @@
+{
+  "app": "dotnet run -p src/GivingAssistant.Infrastructure.AWS/GivingAssistant.Infrastructure.AWS.csproj",
+  "context": {
+    "@aws-cdk/core:newStyleStackSynthesis": true
+  }
+}

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.0.50" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GivingAssistant.Domain\GivingAssistant.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

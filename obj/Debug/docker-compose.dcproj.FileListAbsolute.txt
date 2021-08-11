@@ -1,0 +1,11 @@
+C:\GIT\Givt\flutter_api\bin\Debug\GivingAssistant.Api.deps.json
+C:\GIT\Givt\flutter_api\bin\Debug\GivingAssistant.Api.runtimeconfig.json
+C:\GIT\Givt\flutter_api\bin\Debug\GivingAssistant.Api.runtimeconfig.dev.json
+C:\GIT\Givt\flutter_api\bin\Debug\appsettings.Development.json
+C:\GIT\Givt\flutter_api\bin\Debug\appsettings.json
+C:\GIT\Givt\flutter_api\bin\Debug\GivingAssistant.Api.exe
+C:\GIT\Givt\flutter_api\bin\Debug\GivingAssistant.Api.dll
+C:\GIT\Givt\flutter_api\bin\Debug\GivingAssistant.Api.pdb
+C:\GIT\Givt\flutter_api\obj\Debug\docker-compose.dcprojAssemblyReference.cache
+C:\GIT\Givt\flutter_api\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\GIT\Givt\flutter_api\obj\Debug\docker-compose.dcproj.CopyComplete

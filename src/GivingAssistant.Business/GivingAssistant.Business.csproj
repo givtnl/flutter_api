@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.0.50" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Answers\Mappers\" />
+    <Folder Include="Questions\Mappers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GivingAssistant.Domain\GivingAssistant.Domain.csproj" />
+    <ProjectReference Include="..\GivingAssistant.Persistence\GivingAssistant.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

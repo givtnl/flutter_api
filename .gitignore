@@ -1,0 +1,10 @@
+bin/
+cdk.out/
+.vs/
+release/
+src/GivingAssistant.Api/obj/
+src/GivingAssistant.Business/obj/
+src/GivingAssistant.Domain/obj/
+src/GivingAssistant.Infrastructure.AWS/obj/
+src/GivingAssistant.Persistence/obj/
+src/GivingAssistant.UnitTests/obj/
