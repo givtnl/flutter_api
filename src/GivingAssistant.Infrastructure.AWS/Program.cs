@@ -39,6 +39,7 @@ namespace GivingAssistant.Infrastructure.AWS
                 Code = Code.FromEcrImage(dockerRepository),
                 MemorySize = 4096,
                 Runtime = Runtime.FROM_IMAGE,
+                LogRetention = RetentionDays.ONE_DAY,
                 FunctionName = "giving-assistant-api",
                 ReservedConcurrentExecutions = 10
             });
@@ -59,6 +60,8 @@ namespace GivingAssistant.Infrastructure.AWS
                 Proxy = true,
                 Handler = lambdaFunction
             });
+
+            dynamoDbTable.GrantReadWriteData(lambdaFunction);
           
 
             app.Synth();
