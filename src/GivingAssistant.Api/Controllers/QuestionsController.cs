@@ -22,8 +22,8 @@ namespace GivingAssistant.Api.Controllers
         [HttpPost]
         [OpenApiOperation("CreateQuestion", "Creates a question", "Creates a question for the user to answer")]
         [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(CreateQuestionResponse))]
-        public Task<CreateQuestionResponse> Post([FromBody] CreateQuestionRequest request, CancellationToken cancellationToken)
-        => Execute<CreateQuestionRequest, CreateQuestionResponse, CreateQuestionCommand>(request, cancellationToken);
+        public async Task<ActionResult<CreateQuestionResponse>> Post([FromBody] CreateQuestionRequest request, CancellationToken cancellationToken)
+        => StatusCode(201, await Execute<CreateQuestionRequest, CreateQuestionResponse, CreateQuestionCommand>(request, cancellationToken));
 
     }
 }

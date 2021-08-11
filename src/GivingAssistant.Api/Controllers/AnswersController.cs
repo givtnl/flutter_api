@@ -15,10 +15,10 @@ namespace GivingAssistant.Api.Controllers
         [HttpPost]
         [OpenApiOperation("CreateAnswer", "Answers a question", "Registers an answer for a given question for a particular user")]
         [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(CreateQuestionResponse))]
-        public Task<CreateAnswerResponse> Post(string questionId,[FromBody] CreateAnswerRequest request, CancellationToken cancellationToken)
+        public async Task<IActionResult> Post(string questionId,[FromBody] CreateAnswerRequest request, CancellationToken cancellationToken)
         {
             request.QuestionId = questionId;
-            return Execute<CreateAnswerRequest, CreateAnswerResponse, CreateAnswerCommand>(request, cancellationToken);
+            return StatusCode(201, await Execute<CreateAnswerRequest, CreateAnswerResponse, CreateAnswerCommand>(request, cancellationToken));
         }
     }
 }

@@ -1,16 +1,10 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Amazon.DynamoDBv2;
-using GivingAssistant.Api.Services;
 using GivingAssistant.Business.Questions.Commands.Create;
 using GivingAssistant.Business.Questions.Mappers;
 using MediatR;
@@ -33,10 +27,8 @@ namespace GivingAssistant.Api
         {
             services.AddDefaultAWSOptions(Configuration.GetAWSOptions());
             services.AddAWSService<IAmazonDynamoDB>(Configuration.GetAWSOptions("DynamoDb"));
-            if (Environment.IsDevelopment())
-                services.AddHostedService<DatabaseSeedService>();
-
-            services.AddAutoMapper(x => x.AddMaps(typeof(QuestionMapper)));
+        
+            services.AddAutoMapper(x => x.AddMaps(typeof(QuestionMapper), typeof(Mappers.QuestionMapper)));
             services.AddMediatR(typeof(CreateQuestionCommand));
             services.AddControllers();
             services.AddOpenApiDocument(options =>
