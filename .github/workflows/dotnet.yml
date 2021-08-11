@@ -19,10 +19,7 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
-    - name: Restore dependencies
-      run: dotnet restore $PROJECT
-    - name: Build
-      run: dotnet publish --no-restore -c Release -r linux-x64 --no-self-contained -o $(pwd)/publish $PROJECT
+      run: dotnet publish -c Release -r linux-x64 --no-self-contained -o $(pwd)/publish $PROJECT
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
