@@ -62,12 +62,13 @@ namespace GivingAssistant.Api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseOpenApi();
-                app.UseSwaggerUi3(x =>
-                {
-                    x.AdditionalSettings["displayOperationId"] = true;
-                });
             }
+
+            app.UseOpenApi();
+            app.UseSwaggerUi3(x =>
+            {
+                x.AdditionalSettings["displayOperationId"] = true;
+            });
 
             app.UseRouting();
 
