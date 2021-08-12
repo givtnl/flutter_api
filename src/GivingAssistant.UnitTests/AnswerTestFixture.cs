@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Amazon.DynamoDBv2;
@@ -8,10 +7,7 @@ using Amazon.DynamoDBv2.Model;
 using AutoMapper;
 using GivingAssistant.Business.Answers.Commands.Create;
 using GivingAssistant.Business.Infrastructure;
-using GivingAssistant.Business.Questions.Commands.Create;
 using GivingAssistant.Business.Questions.Mappers;
-using GivingAssistant.Business.Questions.Queries.GetList;
-using GivingAssistant.Domain;
 using GivingAssistant.Persistence;
 using NUnit.Framework;
 

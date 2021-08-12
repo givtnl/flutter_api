@@ -10,6 +10,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Answers\Mappers\" />
+    <Folder Include="Matches\Models\" />
+    <Folder Include="Matches\Mappers\" />
+    <Folder Include="Organisations\Mappers\" />
     <Folder Include="Questions\Mappers\" />
   </ItemGroup>
   <ItemGroup>
