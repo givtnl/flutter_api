@@ -22,6 +22,7 @@ namespace GivingAssistant.Api.Requests.Organisations
 
     public class CreateOrganisationResponse
     {
+        [NotNull]
         public string Id { get; set; }
     }
 }
