@@ -71,6 +71,6 @@ jobs:
         ECR_REPOSITORY:  ${{ secrets.AWS_ECR_REPOSITORY_USER_CALCULATOR }}
         IMAGE_TAG: latest
       run: |
-        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG . -f DockerfileUserCalculator
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         aws lambda update-function-code --function-name ${{ secrets.LAMBDA_FUNCTION_NAME_USER_CALCULATOR }} --image-uri $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG || exit 1
