@@ -11,7 +11,7 @@ using GivingAssistant.Business.Matches.Commands.Create;
 using GivingAssistant.Business.Organisations.Queries.GetByTags;
 using GivingAssistant.Business.Questions.Mappers;
 using GivingAssistant.Business.Questions.Queries.GetTags;
-
+[assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
 namespace GivingAssistant.UserMatchCalculator
 {
     public class FunctionHandler
