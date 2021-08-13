@@ -1,15 +1,10 @@
-﻿using System.Collections.Generic;
-using Amazon.CDK;
+﻿using Amazon.CDK;
 using Amazon.CDK.AWS.APIGateway;
-using Amazon.CDK.AWS.Chatbot;
 using Amazon.CDK.AWS.DynamoDB;
 using Amazon.CDK.AWS.ECR;
-using Amazon.CDK.AWS.Events.Targets;
 using Amazon.CDK.AWS.Lambda;
 using Amazon.CDK.AWS.Lambda.EventSources;
 using Amazon.CDK.AWS.Logs;
-using Amazon.CDK.AWS.SNS;
-using Amazon.CDK.AWS.SSM;
 
 namespace GivingAssistant.Infrastructure.AWS
 {
@@ -105,14 +100,14 @@ namespace GivingAssistant.Infrastructure.AWS
                 FunctionName = "giving-assistant-user-match-calculator",
                 ReservedConcurrentExecutions = 1
             });
-            //lambdaFunction.AddEventSource(new DynamoEventSource(DynamoDbApplicationTable, new DynamoEventSourceProps
-            //{
-            //    BatchSize = 10,
-            //    StartingPosition = StartingPosition.TRIM_HORIZON
-            //}));
-       
-            //DynamoDbApplicationTable.GrantReadWriteData(lambdaFunction);
-            //DynamoDbApplicationTable.GrantStreamRead(lambdaFunction);
+            lambdaFunction.AddEventSource(new DynamoEventSource(DynamoDbApplicationTable, new DynamoEventSourceProps
+            {
+                BatchSize = 10,
+                StartingPosition = StartingPosition.TRIM_HORIZON
+            }));
+
+            DynamoDbApplicationTable.GrantReadWriteData(lambdaFunction);
+            DynamoDbApplicationTable.GrantStreamRead(lambdaFunction);
         }
     }
 }
