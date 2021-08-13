@@ -21,5 +21,9 @@
         internal static string MatchPlaceholder = "MATCH";
 
         internal static string OrganisationPlaceholder = "ORGANISATION";
+
+        internal static string PrimaryKeyPlaceHolder = "PK";
+
+        internal static string SortKeyPlaceHolder = "SK";
     }
 }
