@@ -22,6 +22,10 @@ namespace GivingAssistant.Business.Organisations.Mappers
                 .ForMember(x => x.MetaTags, c => c.MapFrom(d => new Dictionary<string,string>(d.MetaTags.Select(x => x.ToKeyValuePair()))))
                 .ForMember(x => x.Id, c => c.MapFrom(d => d.PrimaryKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(1)));
 
+            CreateMap<OrganisationDetailModel, OrganisationProfile>();
+
+
+
             CreateMap<CreateOrganisationCommand, OrganisationTagScore>()
                 .ForMember(x => x.PrimaryKey, c => c.MapFrom((src,dest) => $"{Constants.OrganisationPlaceholder}#{dest.OrganisationId}"))
                 .ForMember(x => x.SortKey, c => c.MapFrom((src, dest) => $"{Constants.MetaDataPlaceholder}#{Constants.ScorePlaceholder}"))
@@ -29,10 +33,11 @@ namespace GivingAssistant.Business.Organisations.Mappers
 
             CreateMap<KeyValuePair<string,int>, OrganisationTagMatch>()
                 .ForMember(x => x.Score, c => c.MapFrom(d => d.Value))
-                .ForMember(x => x.Tag, c=> c.MapFrom(d => d.Value))
+                .ForMember(x => x.Tag, c=> c.MapFrom(d => d.Key))
                 .ForMember(x => x.PrimaryKey, c => c.MapFrom(d => Constants.OrganisationPlaceholder))
                 .ForMember(x => x.SortKey, c => c.MapFrom((d,s) => $"{Constants.MatchPlaceholder}#{Constants.TagPlaceholder}#{d.Key}#{s.OrganisationId}"));
 
-            }
+            CreateMap<OrganisationTagMatch, OrganisationTagMatchListModel>();
+        }
     }
 }
