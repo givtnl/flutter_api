@@ -5,7 +5,6 @@ namespace GivingAssistant.Persistence
 {
     public class OrganisationProfile : BaseItem
     {
-        [DynamoDBIgnore]
         public string Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }

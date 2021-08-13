@@ -13,9 +13,4 @@ namespace GivingAssistant.Api.Requests.Questions
         [NotNull]
         public string Answer { get; set; }
     }
-
-    public class CreateAnswerResponse
-    {
-
-    }
 }

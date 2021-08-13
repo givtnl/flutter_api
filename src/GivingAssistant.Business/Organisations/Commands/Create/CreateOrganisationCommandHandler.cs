@@ -51,7 +51,8 @@ namespace GivingAssistant.Business.Organisations.Commands.Create
                 writeMatchesRequest.AddPutItem(_mapper.Map(requestTagScore, new OrganisationTagMatch(response.Id, convertedModel)));
             }
 
-            await writeRequest.Combine(writeScoresRequest, writeMatchesRequest).ExecuteAsync(cancellationToken);
+            await writeRequest.Combine(writeScoresRequest, writeMatchesRequest)
+                .ExecuteAsync(cancellationToken);
 
             return response;
         }

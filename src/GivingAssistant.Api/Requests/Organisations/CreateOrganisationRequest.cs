@@ -19,10 +19,4 @@ namespace GivingAssistant.Api.Requests.Organisations
         [NotNull]
         public Dictionary<string, int> TagScores { get; set; }
     }
-
-    public class CreateOrganisationResponse
-    {
-        [NotNull]
-        public string Id { get; set; }
-    }
 }
