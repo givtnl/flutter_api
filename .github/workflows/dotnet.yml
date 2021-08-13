@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
   
 jobs:
-  build:
+  build-api:
     runs-on: ubuntu-latest
     env:
       PROJECT: ./src/GivingAssistant.Api/GivingAssistant.Api.csproj
