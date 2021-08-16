@@ -1,6 +1,5 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 using AutoMapper;
 using GivingAssistant.Business.Infrastructure;
@@ -12,10 +11,10 @@ namespace GivingAssistant.Business.Questions.Commands.Create
 {
     public class CreateQuestionCommandHandler : IRequestHandler<CreateQuestionCommand, QuestionDetailModel>
     {
-        private readonly IAmazonDynamoDB _dynamoDb;
+        private readonly IDynamoDBContext _dynamoDb;
         private readonly IMapper _mapper;
 
-        public CreateQuestionCommandHandler(IAmazonDynamoDB dynamoDb, IMapper mapper)
+        public CreateQuestionCommandHandler(IDynamoDBContext dynamoDb, IMapper mapper)
         {
             _dynamoDb = dynamoDb;
             _mapper = mapper;
@@ -26,14 +25,14 @@ namespace GivingAssistant.Business.Questions.Commands.Create
 
             var response = _mapper.Map(convertedModel, new QuestionDetailModel());
 
-            var writeRequest = new DynamoDBContext(_dynamoDb).CreateBatchWrite<Question>(new DynamoDBOperationConfig
+            var writeRequest = _dynamoDb.CreateBatchWrite<Question>(new DynamoDBOperationConfig
             {
                 OverrideTableName = Constants.TableName
             });
 
             writeRequest.AddPutItem(convertedModel);
 
-            var tagWriteRequest = new DynamoDBContext(_dynamoDb).CreateBatchWrite<QuestionTag>(new DynamoDBOperationConfig
+            var tagWriteRequest = _dynamoDb.CreateBatchWrite<QuestionTag>(new DynamoDBOperationConfig
             {
                 OverrideTableName = Constants.TableName
             });

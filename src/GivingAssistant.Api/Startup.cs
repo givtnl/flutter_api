@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Collections.Generic;
 using Amazon.DynamoDBv2;
+using Amazon.DynamoDBv2.DataModel;
 using GivingAssistant.Business.Questions.Commands.Create;
 using GivingAssistant.Business.Questions.Mappers;
 using MediatR;
@@ -27,7 +28,8 @@ namespace GivingAssistant.Api
         {
             services.AddDefaultAWSOptions(Configuration.GetAWSOptions());
             services.AddAWSService<IAmazonDynamoDB>(Configuration.GetAWSOptions("DynamoDb"));
-        
+            services.AddTransient<IDynamoDBContext, DynamoDBContext>();
+
             services.AddAutoMapper(x => x.AddMaps(typeof(QuestionMapper), typeof(Mappers.QuestionMapper)));
             services.AddMediatR(typeof(CreateQuestionCommand));
             services.AddControllers();

@@ -2,7 +2,6 @@
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 using Amazon.DynamoDBv2.DocumentModel;
 using AutoMapper;
@@ -15,10 +14,10 @@ namespace GivingAssistant.Business.Questions.Queries.GetTags
 {
     public class GetQuestionTagsListQueryHandler : IRequestHandler<GetQuestionTagsListQuery, IEnumerable<QuestionTagListModel>>
     {
-        private readonly IAmazonDynamoDB _dynamoDb;
+        private readonly IDynamoDBContext _dynamoDb;
         private readonly IMapper _mapper;
 
-        public GetQuestionTagsListQueryHandler(IAmazonDynamoDB dynamoDb, IMapper mapper)
+        public GetQuestionTagsListQueryHandler(IDynamoDBContext dynamoDb, IMapper mapper)
         {
             _dynamoDb = dynamoDb;
             _mapper = mapper;
@@ -28,8 +27,8 @@ namespace GivingAssistant.Business.Questions.Queries.GetTags
             var filter = new QueryFilter("PK", QueryOperator.Equal, nameof(Question).ToUpper());
             filter.AddCondition("SK", ScanOperator.BeginsWith,$"{request.QuestionId}#{Constants.TagPlaceholder}");
             
-            var response = await new DynamoDBContext(_dynamoDb)
-                .FromQueryAsync<QuestionTagListModel>(new QueryOperationConfig
+            var response = await _dynamoDb
+                .FromQueryAsync<QuestionTag>(new QueryOperationConfig
                 {
                     Filter = filter
                 }, new DynamoDBOperationConfig { OverrideTableName = Constants.TableName }).GetRemainingAsync(cancellationToken);

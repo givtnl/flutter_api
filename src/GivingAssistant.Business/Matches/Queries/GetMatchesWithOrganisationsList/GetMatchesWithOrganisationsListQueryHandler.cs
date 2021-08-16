@@ -2,7 +2,6 @@
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 using Amazon.DynamoDBv2.DocumentModel;
 using AutoMapper;
@@ -15,10 +14,10 @@ namespace GivingAssistant.Business.Matches.Queries.GetMatchesWithOrganisationsLi
 {
     public class GetMatchesWithOrganisationsListQueryHandler : IRequestHandler<GetMatchesWithOrganisationsListQuery, IEnumerable<UserOrganisationMatchListModel>>
     {
-        private readonly IAmazonDynamoDB _dynamoDb;
+        private readonly IDynamoDBContext _dynamoDb;
         private readonly IMapper _mapper;
 
-        public GetMatchesWithOrganisationsListQueryHandler(IAmazonDynamoDB dynamoDb, IMapper mapper)
+        public GetMatchesWithOrganisationsListQueryHandler(IDynamoDBContext dynamoDb, IMapper mapper)
         {
             _dynamoDb = dynamoDb;
             _mapper = mapper;
@@ -28,7 +27,7 @@ namespace GivingAssistant.Business.Matches.Queries.GetMatchesWithOrganisationsLi
             var filter = new QueryFilter("PK", QueryOperator.Equal, $"{Constants.UserPlaceholder}#{request.UserId}");
             filter.AddCondition("SK", ScanOperator.BeginsWith, $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}");
 
-            var response = await new DynamoDBContext(_dynamoDb)
+            var response = await _dynamoDb
                 .FromQueryAsync<UserMatch>(new QueryOperationConfig
                 {
                     Filter = filter
