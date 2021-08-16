@@ -37,7 +37,10 @@ namespace GivingAssistant.Business.Organisations.Mappers
                 .ForMember(x => x.PrimaryKey, c => c.MapFrom(d => Constants.OrganisationPlaceholder))
                 .ForMember(x => x.SortKey, c => c.MapFrom((d,s) => $"{Constants.MatchPlaceholder}#{Constants.TagPlaceholder}#{d.Key}#{s.OrganisationId}"));
 
-            CreateMap<OrganisationTagMatch, OrganisationTagMatchListModel>();
+            CreateMap<OrganisationTagMatch, OrganisationTagMatchListModel>()
+                .ForMember(x => x.Tag, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(2)))
+                .ForMember(x => x.Score, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(4)))
+                .ForMember(x => x.OrganisationId, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(5)));
         }
     }
 }

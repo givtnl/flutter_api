@@ -18,29 +18,33 @@ namespace GivingAssistant.UnitTests
     [TestFixture]
     public class OrganisationTestFixture
     {
-        private IAmazonDynamoDB _dynamoDb;
+        private IDynamoDBContext _dynamoDb;
         private IMapper _mapper;
 
         [SetUp]
         public void Setup()
         {
-            _dynamoDb = new AmazonDynamoDBClient(new AmazonDynamoDBConfig
+            _dynamoDb = new DynamoDBContext(new AmazonDynamoDBClient(new AmazonDynamoDBConfig
             {
                 ServiceURL = "http://localhost:8000"
-            });
+            }));
             _mapper = new MapperConfiguration(x => x.AddMaps(typeof(QuestionMapper).Assembly)).CreateMapper();
 
         }
         [TearDown]
         public async Task ClearDatabase()
         {
-            var toDeleteItems = await _dynamoDb.ScanAsync(new ScanRequest(Constants.TableName));
-            foreach (var deleteItem in toDeleteItems.Items)
-            {
-                await _dynamoDb.DeleteItemAsync(Constants.TableName, new Dictionary<string, AttributeValue>
+            var toDeleteItems = await _dynamoDb.ScanAsync<BaseItem>(Enumerable.Empty<ScanCondition>(),
+                new DynamoDBOperationConfig
                 {
-                    {"SK", new AttributeValue(deleteItem["SK"].S)},
-                    {"PK", new AttributeValue(deleteItem["PK"].S)}
+                    OverrideTableName = Constants.TableName
+                }).GetRemainingAsync();
+
+            foreach (var deleteItem in toDeleteItems)
+            {
+                await _dynamoDb.DeleteAsync(deleteItem, new DynamoDBOperationConfig
+                {
+                    OverrideTableName = Constants.TableName
                 });
             }
         }
@@ -71,7 +75,7 @@ namespace GivingAssistant.UnitTests
             };
 
             var response = await new CreateOrganisationCommandHandler(_dynamoDb, _mapper).Handle(createOrganisationCommand, CancellationToken.None);
-            await new DynamoDBContext(_dynamoDb).LoadAsync<OrganisationProfile>($"{Constants.OrganisationPlaceholder}#{response.Id}",
+            await _dynamoDb.LoadAsync<OrganisationProfile>($"{Constants.OrganisationPlaceholder}#{response.Id}",
                 $"{Constants.MetaDataPlaceholder}#{Constants.ProfilePlaceholder}", new DynamoDBOperationConfig
                 {
                     OverrideTableName = Constants.TableName

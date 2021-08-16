@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Amazon.DynamoDBv2;
@@ -16,29 +17,33 @@ namespace GivingAssistant.UnitTests
     [TestFixture]
     public class AnswerTestFixture
     {
-        private IAmazonDynamoDB _dynamoDb;
+        private IDynamoDBContext _dynamoDb;
         private IMapper _mapper;
 
         [SetUp]
         public void Setup()
         {
-            _dynamoDb = new AmazonDynamoDBClient(new AmazonDynamoDBConfig
+            _dynamoDb = new DynamoDBContext(new AmazonDynamoDBClient(new AmazonDynamoDBConfig
             {
                 ServiceURL = "http://localhost:8000"
-            });
+            }));
             _mapper = new MapperConfiguration(x => x.AddMaps(typeof(QuestionMapper).Assembly)).CreateMapper();
 
         }
         [TearDown]
         public async Task ClearDatabase()
         {
-            var toDeleteItems = await _dynamoDb.ScanAsync(new ScanRequest(Constants.TableName));
-            foreach (var deleteItem in toDeleteItems.Items)
-            {
-                await _dynamoDb.DeleteItemAsync(Constants.TableName, new Dictionary<string, AttributeValue>
+            var toDeleteItems = await _dynamoDb.ScanAsync<BaseItem>(Enumerable.Empty<ScanCondition>(),
+                new DynamoDBOperationConfig
                 {
-                    {"SK", new AttributeValue(deleteItem["SK"].S)},
-                    {"PK", new AttributeValue(deleteItem["PK"].S)}
+                    OverrideTableName = Constants.TableName
+                }).GetRemainingAsync();
+
+            foreach (var deleteItem in toDeleteItems)
+            {
+                await _dynamoDb.DeleteAsync(deleteItem, new DynamoDBOperationConfig
+                {
+                    OverrideTableName = Constants.TableName
                 });
             }
         }
@@ -54,7 +59,7 @@ namespace GivingAssistant.UnitTests
                 UserId = userId
             }, CancellationToken.None);
 
-            var dynamoDbResponse = await new DynamoDBContext(_dynamoDb).LoadAsync<BaseItem>($"{Constants.UserPlaceholder}#{userId}",
+            var dynamoDbResponse = await _dynamoDb.LoadAsync<BaseItem>($"{Constants.UserPlaceholder}#{userId}",
                 $"{Constants.AnswerPlaceholder}#{Constants.QuestionPlaceholder}#{questionId}", new DynamoDBOperationConfig
                 {
                     OverrideTableName = Constants.TableName

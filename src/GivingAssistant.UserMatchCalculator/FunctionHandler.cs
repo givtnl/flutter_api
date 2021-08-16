@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Amazon.DynamoDBv2;
+using Amazon.DynamoDBv2.DataModel;
 using Amazon.DynamoDBv2.DocumentModel;
 using Amazon.Lambda.Core;
 using Amazon.Lambda.DynamoDBEvents;
@@ -17,11 +18,11 @@ namespace GivingAssistant.UserMatchCalculator
     public class FunctionHandler
     {
         public IMapper Mapper { get; set; }
-        public IAmazonDynamoDB DynamoDbClient { get; set; }
+        public IDynamoDBContext DynamoDbContext { get; set; }
         public FunctionHandler()
         {
             Mapper ??= new MapperConfiguration(x => x.AddMaps(typeof(QuestionMapper).Assembly)).CreateMapper();
-            DynamoDbClient ??= new AmazonDynamoDBClient();
+            DynamoDbContext ??= new DynamoDBContext(new AmazonDynamoDBClient());
         }
 
         public async Task HandleAsync(DynamoDBEvent @event, ILambdaContext lambdaContext)
@@ -51,19 +52,28 @@ namespace GivingAssistant.UserMatchCalculator
 
                 // get the tags that belong to this question
                 var tagForQuestion = await
-                    new GetQuestionTagsListQueryHandler(DynamoDbClient, Mapper)
+                    new GetQuestionTagsListQueryHandler(DynamoDbContext, Mapper)
                     .Handle(new GetQuestionTagsListQuery(questionIdentifier), CancellationToken.None);
 
+                if (!tagForQuestion.Any())
+                    continue;
+
+
                 // get the organisations that belong to these tags
-                var matchingOrganisations = await new GetOrganisationsByTagsListQueryHandler(DynamoDbClient, Mapper).Handle(
+                var matchingOrganisations = await new GetOrganisationsByTagsListQueryHandler(DynamoDbContext, Mapper).Handle(
                     new GetOrganisationsByTagsListQuery
                     {
                         Tags = tagForQuestion.Select(x => x.Tag)
                     }, CancellationToken.None);
 
+
+                //TODO delete organisations that no longer match for this tag or update the scores
+
+                if (!matchingOrganisations.Any())
+                    continue;
                 // TODO WORK IN PROGRESS
                 // save the user matches
-                await new CreateMatchCommandHandler(DynamoDbClient, Mapper).Handle(new CreateMatchCommand
+                await new CreateMatchCommandHandler(DynamoDbContext, Mapper).Handle(new CreateMatchCommand
                 {
                     User = user,
                     MatchingOrganisations = matchingOrganisations

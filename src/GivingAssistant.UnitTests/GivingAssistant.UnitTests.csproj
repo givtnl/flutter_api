@@ -6,7 +6,9 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
+
   <ItemGroup>
+    <PackageReference Include="Amazon.Lambda.TestUtilities" Version="2.0.0" />
     <PackageReference Include="NUnit" Version="3.12.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
@@ -14,6 +16,21 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GivingAssistant.Business\GivingAssistant.Business.csproj" />
+    <ProjectReference Include="..\GivingAssistant.UserMatchCalculator\GivingAssistant.UserMatchCalculator.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="CalculatorTestsFixture\TestCaseOne.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="CalculatorTestsFixture\TestCaseOne.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+
 
 </Project>

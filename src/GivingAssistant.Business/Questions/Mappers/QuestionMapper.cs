@@ -24,6 +24,13 @@ namespace GivingAssistant.Business.Questions.Mappers
             CreateMap<Question, QuestionListModel>()
                 .ForMember(x => x.Id, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.None).ElementAtOrDefault(1)));
 
+            //AnimalsQuestion#TAG#animals#SCORE#80
+            CreateMap<QuestionTag, QuestionTagListModel>()
+                .ForMember(x => x.QuestionId, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(0)))
+                .ForMember(x => x.Tag, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(2)))
+                .ForMember(x => x.Score, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(4)));
+
+
             CreateMap<KeyValuePair<string, int>, QuestionTag>()
                 .ForMember(x => x.Score, c => c.MapFrom(d => d.Value))
                 .ForMember(x => x.Tag, c => c.MapFrom(d => d.Key))
