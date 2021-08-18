@@ -1,25 +1,83 @@
-﻿using Amazon.CDK;
+﻿using System.Collections.Generic;
+using Amazon.CDK;
 using Amazon.CDK.AWS.APIGateway;
 using Amazon.CDK.AWS.DynamoDB;
 using Amazon.CDK.AWS.ECR;
+using Amazon.CDK.AWS.Events.Targets;
 using Amazon.CDK.AWS.Lambda;
 using Amazon.CDK.AWS.Lambda.EventSources;
 using Amazon.CDK.AWS.Logs;
+using Amazon.CDK.AWS.SSM;
 
 namespace GivingAssistant.Infrastructure.AWS
 {
     sealed class Program
     {
         private static Table DynamoDbApplicationTable { get; set; }
+        private static LambdaRestApi ApiGateway { get; set; }
         public static void Main(string[] args)
         {
             var app = new App();
-            CreateApi(app);
+            var applicationStack = CreateApi(app);
             CreateCalculateUserMatchesStreamListener(app);
+            SetupMixPanelProxy(applicationStack);
             app.Synth();
         }
 
-        private static void CreateApi(App app)
+        private static void SetupMixPanelProxy(Stack parentStack)
+        {
+            var proxyResource = ApiGateway.Root.AddResource("tracking");
+
+            proxyResource.AddMethod("POST", new HttpIntegration("https://api.mixpanel.com/import", new HttpIntegrationProps
+            {
+                HttpMethod = "POST",
+                Proxy = false,
+                Options = new IntegrationOptions
+                {
+                    RequestParameters = new Dictionary<string, string>
+                 {
+                     {"integration.request.header.Content-Type", "'application/json'"},
+                     {"integration.request.header.Authorization", $"'{StringParameter.ValueForStringParameter(parentStack, "MixPanelAuthHeader")}'"},
+                     {"integration.request.querystring.strict","'1'"},
+                     {"integration.request.querystring.project_id",$"'{StringParameter.ValueForStringParameter(parentStack, "MixPanelProjectId")}'"}
+                 },
+
+                    IntegrationResponses = new[]
+                        {
+                        new IntegrationResponse
+                    {
+                        SelectionPattern = "2\\d{2}",
+                        StatusCode = "200",
+
+                        ResponseParameters = new Dictionary<string, string>
+                        {
+                            {"method.response.header.Access-Control-Allow-Headers" , "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'"},
+                            {"method.response.header.Access-Control-Allow-Origin" , "'*'"},
+                            {"method.response.header.Access-Control-Allow-Methods" , "'POST,GET,OPTIONS'"}
+                        }
+                    }}
+                }
+            }), new MethodOptions
+            {
+                MethodResponses = new[]{new MethodResponse
+                {
+                    StatusCode = "200",
+                    ResponseModels = new Dictionary<string, IModel>
+                    {
+                        {"application/json", Model.EMPTY_MODEL}
+                    },
+                    ResponseParameters = new Dictionary<string, bool>
+                    {
+                        {  "method.response.header.Access-Control-Allow-Headers", true},
+                      {   "method.response.header.Access-Control-Allow-Methods", true},
+                       {  "method.response.header.Access-Control-Allow-Origin",true}
+                    }
+}}
+            });
+        }
+
+
+        private static Stack CreateApi(App app)
         {
             var applicationName = "giving-assistant".ToLower();
             var infrastructureStack = new Stack(app, $"{applicationName}-infrastructure");
@@ -60,7 +118,7 @@ namespace GivingAssistant.Infrastructure.AWS
                 RemovalPolicy = RemovalPolicy.DESTROY
             });
 
-            var apiGateway = new LambdaRestApi(applicationStack, "Api", new LambdaRestApiProps
+            ApiGateway = new LambdaRestApi(applicationStack, "Api", new LambdaRestApiProps
             {
                 EndpointTypes = new EndpointType[] { EndpointType.REGIONAL },
                 Proxy = true,
@@ -68,6 +126,8 @@ namespace GivingAssistant.Infrastructure.AWS
             });
 
             DynamoDbApplicationTable.GrantReadWriteData(lambdaFunction);
+
+            return applicationStack;
         }
 
         private static void CreateCalculateUserMatchesStreamListener(App app)
