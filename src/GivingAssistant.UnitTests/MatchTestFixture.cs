@@ -8,7 +8,7 @@ using Amazon.DynamoDBv2.Model;
 using AutoMapper;
 using GivingAssistant.Business.Answers.Commands.Create;
 using GivingAssistant.Business.Infrastructure;
-using GivingAssistant.Business.Matches.Commands.Create;
+using GivingAssistant.Business.Matches.Commands.CreateUserOrganisationMatch;
 using GivingAssistant.Business.Matches.Queries.GetMatchesWithOrganisationsList;
 using GivingAssistant.Business.Organisations.Models;
 using GivingAssistant.Business.Questions.Mappers;
@@ -54,8 +54,8 @@ namespace GivingAssistant.UnitTests
         [TestCase("Anthony")]
         public async Task EnsureMatchesArePersisted(string userId)
         {
-            var commandHandler = new CreateMatchCommandHandler(_dynamoDb, _mapper);
-            await commandHandler.Handle(new CreateMatchCommand
+            var commandHandler = new CreateUserOrganisationMatchCommandHandler(_dynamoDb, _mapper);
+            await commandHandler.Handle(new CreateUserOrganisationMatchCommand
             {
                 User = userId,
                 MatchingOrganisations = new[]{

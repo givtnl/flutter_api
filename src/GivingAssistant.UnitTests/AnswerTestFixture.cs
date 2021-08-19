@@ -10,48 +10,20 @@ using GivingAssistant.Business.Answers.Commands.Create;
 using GivingAssistant.Business.Infrastructure;
 using GivingAssistant.Business.Questions.Mappers;
 using GivingAssistant.Persistence;
+using GivingAssistant.UnitTests.Infrastructure;
 using NUnit.Framework;
 
 namespace GivingAssistant.UnitTests
 {
     [TestFixture]
-    public class AnswerTestFixture
+    public class AnswerTestFixture : BaseTestFixture
     {
-        private IDynamoDBContext _dynamoDb;
-        private IMapper _mapper;
 
-        [SetUp]
-        public void Setup()
-        {
-            _dynamoDb = new DynamoDBContext(new AmazonDynamoDBClient(new AmazonDynamoDBConfig
-            {
-                ServiceURL = "http://localhost:8000"
-            }));
-            _mapper = new MapperConfiguration(x => x.AddMaps(typeof(QuestionMapper).Assembly)).CreateMapper();
-
-        }
-        [TearDown]
-        public async Task ClearDatabase()
-        {
-            var toDeleteItems = await _dynamoDb.ScanAsync<BaseItem>(Enumerable.Empty<ScanCondition>(),
-                new DynamoDBOperationConfig
-                {
-                    OverrideTableName = Constants.TableName
-                }).GetRemainingAsync();
-
-            foreach (var deleteItem in toDeleteItems)
-            {
-                await _dynamoDb.DeleteAsync(deleteItem, new DynamoDBOperationConfig
-                {
-                    OverrideTableName = Constants.TableName
-                });
-            }
-        }
         [Test]
         [TestCase("My-Question-Id", "My-User-Id", "My-Answer")]
         public async Task EnsureAnswerIsInserted(string questionId, string userId, string answerId)
         {
-            var commandHandler = new CreateAnswerCommandHandler(_dynamoDb, _mapper);
+            var commandHandler = new CreateAnswerCommandHandler(DynamoDb, Mapper);
             await commandHandler.Handle(new CreateAnswerCommand
             {
                 Answer = answerId,
@@ -59,7 +31,7 @@ namespace GivingAssistant.UnitTests
                 UserId = userId
             }, CancellationToken.None);
 
-            var dynamoDbResponse = await _dynamoDb.LoadAsync<BaseItem>($"{Constants.UserPlaceholder}#{userId}",
+            var dynamoDbResponse = await DynamoDb.LoadAsync<BaseItem>($"{Constants.UserPlaceholder}#{userId}",
                 $"{Constants.AnswerPlaceholder}#{Constants.QuestionPlaceholder}#{questionId}", new DynamoDBOperationConfig
                 {
                     OverrideTableName = Constants.TableName

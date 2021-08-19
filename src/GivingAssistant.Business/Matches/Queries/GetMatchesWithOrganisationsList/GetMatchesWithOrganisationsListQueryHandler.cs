@@ -28,7 +28,7 @@ namespace GivingAssistant.Business.Matches.Queries.GetMatchesWithOrganisationsLi
             filter.AddCondition("SK", ScanOperator.BeginsWith, $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}");
 
             var response = await _dynamoDb
-                .FromQueryAsync<UserMatch>(new QueryOperationConfig
+                .FromQueryAsync<UserOrganisationMatch>(new QueryOperationConfig
                 {
                     Filter = filter
                 }, new DynamoDBOperationConfig { OverrideTableName = Constants.TableName }).GetRemainingAsync(cancellationToken);

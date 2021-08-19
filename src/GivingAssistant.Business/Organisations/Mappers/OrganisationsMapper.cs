@@ -15,7 +15,7 @@ namespace GivingAssistant.Business.Organisations.Mappers
         {
             CreateMap<CreateOrganisationCommand, OrganisationProfile>()
                 .ForMember(x => x.MetaTags, x => x.MapFrom(d => d.MetaTags.Select(OrganisationMetaTag.FromKeyValuePair)))
-                .ForMember(x => x.PrimaryKey, x => x.MapFrom(d => $"{Constants.OrganisationPlaceholder}#{Guid.NewGuid()}"))
+                .ForMember(x => x.PrimaryKey, x => x.MapFrom((dest,src) => $"{Constants.OrganisationPlaceholder}#{src.Id}"))
                 .ForMember(x => x.SortKey, x => x.MapFrom(d => $"{Constants.MetaDataPlaceholder}#{Constants.ProfilePlaceholder}"));
 
             CreateMap<OrganisationProfile, OrganisationDetailModel>()
@@ -39,8 +39,7 @@ namespace GivingAssistant.Business.Organisations.Mappers
 
             CreateMap<OrganisationTagMatch, OrganisationTagMatchListModel>()
                 .ForMember(x => x.Tag, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(2)))
-                .ForMember(x => x.Score, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(4)))
-                .ForMember(x => x.OrganisationId, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(5)));
+                .ForMember(x => x.OrganisationId, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(3)));
         }
     }
 }

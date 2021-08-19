@@ -8,10 +8,13 @@ using Amazon.DynamoDBv2.DocumentModel;
 using Amazon.Lambda.Core;
 using Amazon.Lambda.DynamoDBEvents;
 using AutoMapper;
-using GivingAssistant.Business.Matches.Commands.Create;
+using GivingAssistant.Business.Matches.Commands.CreateUserOrganisationMatch;
+using GivingAssistant.Business.Matches.Commands.CreateUserTagMatch;
 using GivingAssistant.Business.Organisations.Queries.GetByTags;
 using GivingAssistant.Business.Questions.Mappers;
 using GivingAssistant.Business.Questions.Queries.GetTags;
+using Microsoft.VisualBasic;
+
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
 namespace GivingAssistant.UserMatchCalculator
 {
@@ -59,6 +62,19 @@ namespace GivingAssistant.UserMatchCalculator
                     continue;
 
 
+                // calculate the user his or her score for the tags
+                var createUserTagMatchCommandHandler = new CreateUserTagMatchCommandHandler(DynamoDbContext, Mapper);
+                foreach (var questionTagListModel in tagForQuestion)
+                {
+                    await createUserTagMatchCommandHandler.Handle(new CreateUserTagMatchCommand
+                        {
+                            User = user,
+                            Answer = document["SCORE"].AsInt(),
+                            Question = questionTagListModel
+                        }, CancellationToken.None)
+                        ;
+                }
+
                 // get the organisations that belong to these tags
                 var matchingOrganisations = await new GetOrganisationsByTagsListQueryHandler(DynamoDbContext, Mapper).Handle(
                     new GetOrganisationsByTagsListQuery
@@ -67,13 +83,13 @@ namespace GivingAssistant.UserMatchCalculator
                     }, CancellationToken.None);
 
 
-                //TODO delete organisations that no longer match for this tag or update the scores
+                ////TODO delete organisations that no longer match for this tag or update the scores
 
                 if (!matchingOrganisations.Any())
                     continue;
                 // TODO WORK IN PROGRESS
                 // save the user matches
-                await new CreateMatchCommandHandler(DynamoDbContext, Mapper).Handle(new CreateMatchCommand
+                await new CreateUserOrganisationMatchCommandHandler(DynamoDbContext, Mapper).Handle(new CreateUserOrganisationMatchCommand
                 {
                     User = user,
                     MatchingOrganisations = matchingOrganisations
