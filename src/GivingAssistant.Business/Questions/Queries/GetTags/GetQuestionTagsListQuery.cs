@@ -15,5 +15,6 @@ namespace GivingAssistant.Business.Questions.Queries.GetTags
             
         }
         public string QuestionId { get; set; }
+        public string Tag { get; set; }
     }
 }

@@ -47,10 +47,12 @@ namespace GivingAssistant.UserMatchCalculator
 
                 // example  USER#AnthonyBoetong
                 var user = primaryKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(1);
-                // example ANSWER#QUESTION#WhatIsTheMeaningLife
+                // example ANSWER#QUESTION#WhatIsTheMeaningLife#MyTag
                 var questionIdentifier = sortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(2);
 
-                if (string.IsNullOrWhiteSpace(user) || string.IsNullOrWhiteSpace(questionIdentifier))
+                var tagIdentifier = sortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(3);
+
+                if (string.IsNullOrWhiteSpace(user) || string.IsNullOrWhiteSpace(questionIdentifier) || string.IsNullOrWhiteSpace(tagIdentifier))
                     continue;
 
                 // get the tags that belong to this question

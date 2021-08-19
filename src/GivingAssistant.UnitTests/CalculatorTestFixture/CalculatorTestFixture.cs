@@ -41,7 +41,7 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
                             NewImage = new Dictionary<string, AttributeValue>
                             {
                                 {Constants.PrimaryKeyPlaceHolder, new AttributeValue($"USER#{user}")},
-                                {Constants.SortKeyPlaceHolder, new AttributeValue($"ANSWER#QUESTION#{questionId}")},
+                                {Constants.SortKeyPlaceHolder, new AttributeValue($"ANSWER#QUESTION#{questionId}#{matchingTag}")},
                                 {Constants.ScorePlaceholder, new AttributeValue{N = "10"}}
                             }
                         }
@@ -81,7 +81,7 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
                             NewImage = new Dictionary<string, AttributeValue>
                             {
                                 {Constants.PrimaryKeyPlaceHolder, new AttributeValue($"USER#{user}")},
-                                {Constants.SortKeyPlaceHolder, new AttributeValue($"ANSWER#QUESTION#{questionId}")},
+                                {Constants.SortKeyPlaceHolder, new AttributeValue($"ANSWER#QUESTION#{questionId}#{matchingTag}")},
                                 {Constants.ScorePlaceholder, new AttributeValue{N = currentScore.ToString()}}
                             }
                         }
@@ -125,7 +125,7 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
                             NewImage = new Dictionary<string, AttributeValue>
                             {
                                 {Constants.PrimaryKeyPlaceHolder, new AttributeValue($"USER#{user}")},
-                                {Constants.SortKeyPlaceHolder, new AttributeValue($"ANSWER#QUESTION#AnimalsQuestion")},
+                                {Constants.SortKeyPlaceHolder, new AttributeValue($"ANSWER#QUESTION#AnimalsQuestion#{matchingTag}")},
                                 {Constants.ScorePlaceholder, new AttributeValue{N = "80"}}
                             }
                         }
