@@ -1,4 +1,5 @@
-﻿using NJsonSchema.Annotations;
+﻿using System.Collections.Generic;
+using NJsonSchema.Annotations;
 using NSwag.Annotations;
 
 namespace GivingAssistant.Api.Requests.Questions
@@ -10,7 +11,15 @@ namespace GivingAssistant.Api.Requests.Questions
         [NotNull]
         [OpenApiIgnore]
         public string QuestionId { get; set; }
+        [NotNull] 
+        public List<CreateAnswerDetailRequest> Answers { get; set; } = new();
+    }
+
+    public class CreateAnswerDetailRequest
+    {
         [NotNull]
-        public string Answer { get; set; }
+        public string Tag { get; set; }
+        [NotNull]
+        public decimal Score { get; set; }
     }
 }

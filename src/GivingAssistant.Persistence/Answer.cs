@@ -2,6 +2,6 @@
 {
     public class Answer : BaseItem
     {
-        public int Score { get; set; }
+        public decimal Score { get; set; }
     }
 }

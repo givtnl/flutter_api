@@ -1,4 +1,6 @@
-﻿using AutoMapper;
+﻿using System.Collections.Generic;
+using System.Linq;
+using AutoMapper;
 using GivingAssistant.Business.Answers.Commands.Create;
 using GivingAssistant.Business.Infrastructure;
 using GivingAssistant.Persistence;
@@ -9,9 +11,16 @@ namespace GivingAssistant.Business.Answers.Mappers
     {
         public AnswerMapper()
         {
-            CreateMap<CreateAnswerCommand, Answer>()
-                .ForMember(x => x.PrimaryKey, c => c.MapFrom(d => $"{Constants.UserPlaceholder}#{d.UserId}"))
-                .ForMember(x => x.SortKey, c => c.MapFrom(d => $"{Constants.AnswerPlaceholder}#{Constants.QuestionPlaceholder}#{d.QuestionId}"));
+            CreateMap<CreateAnswerCommand, List<Answer>>()
+                .ConvertUsing((cmd, dst) =>
+                {
+                    return cmd.Answers.Select(x => new Answer
+                    {
+                        PrimaryKey = $"{Constants.UserPlaceholder}#{cmd.UserId}",
+                        SortKey = $"{Constants.AnswerPlaceholder}#{Constants.QuestionPlaceholder}#{cmd.QuestionId}#{x.Tag}",
+                        Score = x.Score
+                    }).ToList();
+                });
         }        
     }
 }

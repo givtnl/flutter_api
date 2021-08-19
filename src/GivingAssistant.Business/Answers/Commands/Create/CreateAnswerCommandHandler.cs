@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using Amazon.DynamoDBv2.DataModel;
 using AutoMapper;
@@ -20,12 +21,16 @@ namespace GivingAssistant.Business.Answers.Commands.Create
         }
         public async Task<Unit> Handle(CreateAnswerCommand request, CancellationToken cancellationToken)
         {
-            var convertedModel = _mapper.Map(request, new Answer());
+            var convertedModel = _mapper.Map(request, new List<Answer>());
 
-            await _dynamoDb.SaveAsync(convertedModel, new DynamoDBOperationConfig
+            var batchWrite = _dynamoDb.CreateBatchWrite<Answer>(new DynamoDBOperationConfig
             {
                 OverrideTableName = Constants.TableName
-            }, cancellationToken);
+            });
+
+            batchWrite.AddPutItems(convertedModel);
+
+            await batchWrite.ExecuteAsync(cancellationToken);
 
             return Unit.Value;
         }

@@ -10,6 +10,7 @@ namespace GivingAssistant.Api.Mappers
         public AnswerMapper()
         {
             CreateMap<CreateAnswerRequest, CreateAnswerCommand>();
+            CreateMap<CreateAnswerDetailRequest, CreateAnswerDetailCommand>();
             CreateMap<Unit, CreateAnswerResponse>(MemberList.None);
         }
     }

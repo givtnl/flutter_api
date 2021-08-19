@@ -20,19 +20,26 @@ namespace GivingAssistant.UnitTests
     {
 
         [Test]
-        [TestCase("My-Question-Id", "My-User-Id", "My-Answer")]
-        public async Task EnsureAnswerIsInserted(string questionId, string userId, string answerId)
+        [TestCase("My-Question-Id", "My-User-Id","My-Tag", 0.25)]
+        public async Task EnsureAnswerIsInserted(string questionId, string userId,string tag, decimal answer)
         {
             var commandHandler = new CreateAnswerCommandHandler(DynamoDb, Mapper);
             await commandHandler.Handle(new CreateAnswerCommand
             {
-                Answer = answerId,
                 QuestionId = questionId,
-                UserId = userId
+                UserId = userId,
+                Answers = new List<CreateAnswerDetailCommand>
+                {
+                    new()
+                    {
+                        Score = answer,
+                        Tag = tag
+                    }
+                }
             }, CancellationToken.None);
 
             var dynamoDbResponse = await DynamoDb.LoadAsync<BaseItem>($"{Constants.UserPlaceholder}#{userId}",
-                $"{Constants.AnswerPlaceholder}#{Constants.QuestionPlaceholder}#{questionId}", new DynamoDBOperationConfig
+                $"{Constants.AnswerPlaceholder}#{Constants.QuestionPlaceholder}#{questionId}#{tag}", new DynamoDBOperationConfig
                 {
                     OverrideTableName = Constants.TableName
                 });
