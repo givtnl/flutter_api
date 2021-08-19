@@ -12,7 +12,7 @@ namespace GivingAssistant.Api.Requests.Questions
         public QuestionType Type { get; set; }
         [NotNull]
         public Dictionary<string, string> Translations { get; set; }
-        [NotNull]
-        public Dictionary<string, int> TagScores { get; set; }
+        public List<CreateQuestionCategoryRequestOptions> CategoryOptions { get; set; }
+        public CreateQuestionStatementRequestOptions StatementOptions { get; set; }
     }
 }

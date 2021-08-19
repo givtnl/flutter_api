@@ -24,12 +24,12 @@ namespace GivingAssistant.Business.Questions.Queries.GetList
         }
         public async Task<IEnumerable<QuestionListModel>> Handle(GetQuestionsListQuery request, CancellationToken cancellationToken)
         {
-            var filter = new QueryFilter("PK", QueryOperator.Equal, nameof(Question).ToUpper());
+            var filter = new QueryFilter("PK", QueryOperator.Equal, Constants.QuestionPlaceholder);
 
             filter.AddCondition("SK", QueryOperator.BeginsWith, Constants.MetaDataPlaceholder);
 
             var response = await _dynamoDb
-                .FromQueryAsync<Question>(new QueryOperationConfig
+                .FromQueryAsync<QuestionMetaData>(new QueryOperationConfig
                 {
                     Filter = filter
                 }, new DynamoDBOperationConfig { OverrideTableName = Constants.TableName }).GetRemainingAsync(cancellationToken);

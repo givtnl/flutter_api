@@ -18,6 +18,9 @@ namespace GivingAssistant.Api.Mappers
 
             CreateMap<CreateQuestionRequest, CreateQuestionCommand>();
 
+            CreateMap<CreateQuestionStatementRequestOptions, CreateQuestionStatementCommandOptions>();
+            CreateMap<CreateQuestionCategoryRequestOptions, CreateQuestionCategoryCommandOptions>();
+
             CreateMap<QuestionDetailModel, CreateQuestionResponse>();
         }
     }

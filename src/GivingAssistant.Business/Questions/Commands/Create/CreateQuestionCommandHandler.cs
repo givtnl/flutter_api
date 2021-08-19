@@ -1,4 +1,6 @@
-﻿using System.Threading;
+﻿using System.Collections.Immutable;
+using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Amazon.DynamoDBv2.DataModel;
 using AutoMapper;
@@ -21,11 +23,11 @@ namespace GivingAssistant.Business.Questions.Commands.Create
         }
         public async Task<QuestionDetailModel> Handle(CreateQuestionCommand request, CancellationToken cancellationToken)
         {
-            var convertedModel = _mapper.Map(request, new Question());
+            var convertedModel = _mapper.Map(request, new QuestionMetaData());
 
             var response = _mapper.Map(convertedModel, new QuestionDetailModel());
 
-            var writeRequest = _dynamoDb.CreateBatchWrite<Question>(new DynamoDBOperationConfig
+            var writeRequest = _dynamoDb.CreateBatchWrite<QuestionMetaData>(new DynamoDBOperationConfig
             {
                 OverrideTableName = Constants.TableName
             });
@@ -37,10 +39,19 @@ namespace GivingAssistant.Business.Questions.Commands.Create
                 OverrideTableName = Constants.TableName
             });
 
-            foreach (var requestTagScore in request.TagScores)
+            foreach (var requestTagScore in request.CategoryOptions.SelectMany(x => x.TagScores))
             {
                 tagWriteRequest.AddPutItem(_mapper.Map(requestTagScore, new QuestionTag(response.Id)));
             }
+
+            if (request.StatementOptions?.TagScores?.Any() ?? false)
+            {
+                foreach (var statementTagScore in request.StatementOptions.TagScores)
+                {
+                    tagWriteRequest.AddPutItem(_mapper.Map(statementTagScore, new QuestionTag(response.Id)));
+                }
+            }
+           
 
             await writeRequest.Combine(tagWriteRequest).ExecuteAsync(cancellationToken);
 

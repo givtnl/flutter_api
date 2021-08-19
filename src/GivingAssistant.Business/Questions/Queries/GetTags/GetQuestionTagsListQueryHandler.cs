@@ -24,7 +24,7 @@ namespace GivingAssistant.Business.Questions.Queries.GetTags
         }
         public async Task<IEnumerable<QuestionTagListModel>> Handle(GetQuestionTagsListQuery request, CancellationToken cancellationToken)
         {
-            var filter = new QueryFilter("PK", QueryOperator.Equal, nameof(Question).ToUpper());
+            var filter = new QueryFilter("PK", QueryOperator.Equal, Constants.QuestionPlaceholder);
             filter.AddCondition("SK", ScanOperator.BeginsWith,$"{request.QuestionId}#{Constants.TagPlaceholder}");
             
             var response = await _dynamoDb

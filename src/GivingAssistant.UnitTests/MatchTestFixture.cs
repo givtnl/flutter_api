@@ -13,48 +13,19 @@ using GivingAssistant.Business.Matches.Queries.GetMatchesWithOrganisationsList;
 using GivingAssistant.Business.Organisations.Models;
 using GivingAssistant.Business.Questions.Mappers;
 using GivingAssistant.Persistence;
+using GivingAssistant.UnitTests.Infrastructure;
 using NUnit.Framework;
 
 namespace GivingAssistant.UnitTests
 {
     [TestFixture]
-    public class MatchTestFixture
+    public class MatchTestFixture : BaseTestFixture
     {
-        private IDynamoDBContext _dynamoDb;
-        private IMapper _mapper;
-
-        [SetUp]
-        public void Setup()
-        {
-            _dynamoDb = new DynamoDBContext(new AmazonDynamoDBClient(new AmazonDynamoDBConfig
-            {
-                ServiceURL = "http://localhost:8000"
-            }));
-            _mapper = new MapperConfiguration(x => x.AddMaps(typeof(QuestionMapper).Assembly)).CreateMapper();
-
-        }
-        [TearDown]
-        public async Task ClearDatabase()
-        {
-            var toDeleteItems = await _dynamoDb.ScanAsync<BaseItem>(Enumerable.Empty<ScanCondition>(),
-                new DynamoDBOperationConfig
-                {
-                    OverrideTableName = Constants.TableName
-                }).GetRemainingAsync();
-
-            foreach (var deleteItem in toDeleteItems)
-            {
-                await _dynamoDb.DeleteAsync(deleteItem, new DynamoDBOperationConfig
-                {
-                    OverrideTableName = Constants.TableName
-                });
-            }
-        }
-        [Test]
+     [Test]
         [TestCase("Anthony")]
         public async Task EnsureMatchesArePersisted(string userId)
         {
-            var commandHandler = new CreateUserOrganisationMatchCommandHandler(_dynamoDb, _mapper);
+            var commandHandler = new CreateUserOrganisationMatchCommandHandler(DynamoDb, Mapper);
             await commandHandler.Handle(new CreateUserOrganisationMatchCommand
             {
                 User = userId,
@@ -82,7 +53,7 @@ namespace GivingAssistant.UnitTests
               }}
             }, CancellationToken.None);
 
-            var response = await new GetMatchesWithOrganisationsListQueryHandler(_dynamoDb, _mapper).Handle(new GetMatchesWithOrganisationsListQuery() { UserId = userId }, CancellationToken.None);
+            var response = await new GetMatchesWithOrganisationsListQueryHandler(DynamoDb, Mapper).Handle(new GetMatchesWithOrganisationsListQuery() { UserId = userId }, CancellationToken.None);
 
             Assert.IsTrue(response.Any(x => x.Organisation.Id == "org-1" && x.Score == 20));
             Assert.IsTrue(response.Any(x => x.Organisation.Id == "org-2" && x.Score == 80));

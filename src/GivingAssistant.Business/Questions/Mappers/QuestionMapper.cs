@@ -6,6 +6,7 @@ using AutoMapper;
 using GivingAssistant.Business.Infrastructure;
 using GivingAssistant.Business.Questions.Commands.Create;
 using GivingAssistant.Business.Questions.Models;
+using GivingAssistant.Domain;
 using GivingAssistant.Persistence;
 
 namespace GivingAssistant.Business.Questions.Mappers
@@ -14,14 +15,16 @@ namespace GivingAssistant.Business.Questions.Mappers
     {
         public QuestionMapper()
         {
-            CreateMap<CreateQuestionCommand, Question>()
-                .ForMember(x => x.PrimaryKey, x => x.MapFrom(d => nameof(Question).ToUpper()))
-                .ForMember(x => x.SortKey, x => x.MapFrom(d => $"{Constants.MetaDataPlaceholder}#{Guid.NewGuid()}"));
+            CreateMap<CreateQuestionCommand, QuestionMetaData>()
+                .ForMember(x => x.PrimaryKey, x => x.MapFrom(d => Constants.QuestionPlaceholder))
+                .ForMember(x => x.SortKey, x => x.MapFrom(d => $"{Constants.MetaDataPlaceholder}#{Guid.NewGuid()}"))
+                .ForMember(x => x.CategoryOptions,c => c.MapFrom(d => d.Type == QuestionType.Category ? d.CategoryOptions : null))
+                .ForMember(x => x.StatementOptions, c => c.MapFrom(d => d.Type == QuestionType.Statement ? d.StatementOptions : null));
 
-            CreateMap<Question, QuestionDetailModel>()
+            CreateMap<QuestionMetaData, QuestionDetailModel>()
                 .ForMember(x => x.Id, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.None).ElementAtOrDefault(1)));
 
-            CreateMap<Question, QuestionListModel>()
+            CreateMap<QuestionMetaData, QuestionListModel>()
                 .ForMember(x => x.Id, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.None).ElementAtOrDefault(1)));
 
             //AnimalsQuestion#TAG#animals#SCORE#80
@@ -30,11 +33,15 @@ namespace GivingAssistant.Business.Questions.Mappers
                 .ForMember(x => x.Tag, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(2)))
                 .ForMember(x => x.Score, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(4)));
 
+            CreateMap<CreateQuestionStatementCommandOptions, QuestionStatementMetaData>(MemberList.Destination);
+            CreateMap<CreateQuestionCategoryCommandOptions, QuestionCategoryMetaData>(MemberList.Destination);
+            CreateMap<QuestionStatementMetaData, QuestionStatementModel>(MemberList.Destination);
+            CreateMap<QuestionCategoryMetaData, QuestionCategoryOptionModel>(MemberList.Destination);
 
             CreateMap<KeyValuePair<string, int>, QuestionTag>()
                 .ForMember(x => x.Score, c => c.MapFrom(d => d.Value))
                 .ForMember(x => x.Tag, c => c.MapFrom(d => d.Key))
-                .ForMember(x => x.PrimaryKey, x => x.MapFrom(d => nameof(Question).ToUpper()))
+                .ForMember(x => x.PrimaryKey, x => x.MapFrom(d => Constants.QuestionPlaceholder))
                 .ForMember(x => x.SortKey, x => x.MapFrom((dest, src) => $"{src.QuestionId}#{Constants.TagPlaceholder}#{dest.Key}"));
 
 

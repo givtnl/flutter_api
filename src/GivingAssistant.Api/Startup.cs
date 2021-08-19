@@ -35,6 +35,7 @@ namespace GivingAssistant.Api
             services.AddControllers();
             services.AddOpenApiDocument(options =>
             {
+          
                 options.GenerateEnumMappingDescription = true;
                 options.Title = "Giving Assistant API";
                 options.AllowNullableBodyParameters = false;
