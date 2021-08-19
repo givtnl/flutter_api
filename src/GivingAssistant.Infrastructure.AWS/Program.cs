@@ -101,6 +101,7 @@ namespace GivingAssistant.Infrastructure.AWS
                 Handler = Handler.FROM_IMAGE,
                 Code = Code.FromEcrImage(dockerRepository),
                 MemorySize = 4096,
+                Timeout = Duration.Seconds(10),
                 Runtime = Runtime.FROM_IMAGE,
                 LogRetention = RetentionDays.ONE_DAY,
                 FunctionName = "giving-assistant-api",
