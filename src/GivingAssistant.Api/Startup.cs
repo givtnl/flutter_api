@@ -33,6 +33,7 @@ namespace GivingAssistant.Api
             services.AddAutoMapper(x => x.AddMaps(typeof(QuestionMapper), typeof(Mappers.QuestionMapper)));
             services.AddMediatR(typeof(CreateQuestionCommand));
             services.AddControllers();
+            services.AddCors(x => x.AddDefaultPolicy(p => p.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));
             services.AddOpenApiDocument(options =>
             {
           
@@ -66,7 +67,7 @@ namespace GivingAssistant.Api
             });
 
             app.UseRouting();
-
+            app.UseCors();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
