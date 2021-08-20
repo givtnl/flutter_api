@@ -30,8 +30,7 @@ namespace GivingAssistant.Business.Questions.Mappers
             //AnimalsQuestion#TAG#animals#SCORE#80
             CreateMap<QuestionTag, QuestionTagListModel>()
                 .ForMember(x => x.QuestionId, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(0)))
-                .ForMember(x => x.Tag, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(2)))
-                .ForMember(x => x.Score, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(4)));
+                .ForMember(x => x.Tag, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(2)));
 
             CreateMap<CreateQuestionStatementCommandOptions, QuestionStatementMetaData>(MemberList.Destination);
             CreateMap<CreateQuestionCategoryCommandOptions, QuestionCategoryMetaData>(MemberList.Destination);
