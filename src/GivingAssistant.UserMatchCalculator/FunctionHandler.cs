@@ -82,6 +82,13 @@ namespace GivingAssistant.UserMatchCalculator
                         continue;
                     }
 
+                    var currentScoredAnswer = document["Score"].AsDecimal();
+                    if (currentScoredAnswer <= 0)
+                    {
+                        lambdaContext.Logger.LogLine($"currentScoredAnswer for this question is zero (PK:{primaryKey})(SK:{sortKey})");
+                        continue;
+
+                    }
 
                     // calculate the user his or her score for the tags
                     var createUserTagMatchCommandHandler = new CreateUserTagMatchCommandHandler(DynamoDbContext, Mapper);
@@ -90,7 +97,7 @@ namespace GivingAssistant.UserMatchCalculator
                         await createUserTagMatchCommandHandler.Handle(new CreateUserTagMatchCommand
                         {
                             User = user,
-                            Answer = document["Score"].AsDecimal(),
+                            Answer = currentScoredAnswer,
                             Question = questionTagListModel
                         }, CancellationToken.None);
 
