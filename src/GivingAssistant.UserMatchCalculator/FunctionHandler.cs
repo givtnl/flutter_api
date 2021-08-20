@@ -121,7 +121,7 @@ namespace GivingAssistant.UserMatchCalculator
                 }
                 catch (Exception e)
                 {
-                    lambdaContext.Logger.LogLine(e);
+                    lambdaContext.Logger.LogLine(e.ToString());
                 }
 
             }
