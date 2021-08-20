@@ -72,11 +72,11 @@ namespace GivingAssistant.UserMatchCalculator
                         continue;
                     }
                     // get the tags that belong to this question
-                    var tagForQuestion = await
+                    var tagsForQuestion = await
                         new GetQuestionTagsListQueryHandler(DynamoDbContext, Mapper)
                         .Handle(new GetQuestionTagsListQuery(questionIdentifier), CancellationToken.None);
 
-                    if (!tagForQuestion.Any())
+                    if (!tagsForQuestion.Any())
                     {
                         lambdaContext.Logger.LogLine($"No Tags for this question (PK:{primaryKey})(SK:{sortKey})");
                         continue;
@@ -92,8 +92,9 @@ namespace GivingAssistant.UserMatchCalculator
 
                     // calculate the user his or her score for the tags
                     var createUserTagMatchCommandHandler = new CreateUserTagMatchCommandHandler(DynamoDbContext, Mapper);
-                    foreach (var questionTagListModel in tagForQuestion)
+                    foreach (var questionTagListModel in tagsForQuestion)
                     {
+                        lambdaContext.Logger.LogLine($"Creating Match for user {user} with tag {questionTagListModel.Tag}(QUESTIONTAGSCORE:{questionTagListModel.Score}) (ANSWER:{currentScoredAnswer})(PK:{primaryKey})(SK:{sortKey})");
                         await createUserTagMatchCommandHandler.Handle(new CreateUserTagMatchCommand
                         {
                             User = user,
@@ -107,7 +108,7 @@ namespace GivingAssistant.UserMatchCalculator
                     var matchingOrganisations = await new GetOrganisationsByTagsListQueryHandler(DynamoDbContext, Mapper).Handle(
                         new GetOrganisationsByTagsListQuery
                         {
-                            Tags = tagForQuestion.Select(x => x.Tag)
+                            Tags = tagsForQuestion.Select(x => x.Tag)
                         }, CancellationToken.None);
 
 

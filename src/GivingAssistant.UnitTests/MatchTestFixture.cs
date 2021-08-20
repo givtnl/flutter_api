@@ -1,17 +1,13 @@
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
-using Amazon.DynamoDBv2.Model;
-using AutoMapper;
-using GivingAssistant.Business.Answers.Commands.Create;
 using GivingAssistant.Business.Infrastructure;
 using GivingAssistant.Business.Matches.Commands.CreateUserOrganisationMatch;
+using GivingAssistant.Business.Matches.Commands.CreateUserTagMatch;
 using GivingAssistant.Business.Matches.Queries.GetMatchesWithOrganisationsList;
 using GivingAssistant.Business.Organisations.Models;
-using GivingAssistant.Business.Questions.Mappers;
+using GivingAssistant.Business.Questions.Models;
 using GivingAssistant.Persistence;
 using GivingAssistant.UnitTests.Infrastructure;
 using NUnit.Framework;
@@ -21,7 +17,31 @@ namespace GivingAssistant.UnitTests
     [TestFixture]
     public class MatchTestFixture : BaseTestFixture
     {
-     [Test]
+        [Test]
+        [TestCase("Anthony", "animals", 0.75, 100)]
+        public async Task EnsureUserMatchesArePersisted(string userId, string tag, decimal answer, int tagScore)
+        {
+            var commandHandler = new CreateUserTagMatchCommandHandler(DynamoDb, Mapper);
+            await commandHandler.Handle(new CreateUserTagMatchCommand
+            {
+                User = userId,
+                Answer = answer,
+                Question = new QuestionTagListModel
+                {
+                    Tag = tag,
+                    Score = tagScore
+                }
+            }, CancellationToken.None);
+
+            var dynamoDbResponse = await DynamoDb.LoadAsync<UserTagMatch>($"{Constants.UserPlaceholder}#{userId}",
+                $"{Constants.MatchPlaceholder}#{Constants.TagPlaceholder}#{tag}", new DynamoDBOperationConfig
+                {
+                    OverrideTableName = Constants.TableName
+                });
+            Assert.AreEqual(answer * 100, dynamoDbResponse.Percentage);
+        }
+
+        [Test]
         [TestCase("Anthony")]
         public async Task EnsureMatchesArePersisted(string userId)
         {
@@ -38,7 +58,7 @@ namespace GivingAssistant.UnitTests
                       Organisation = new OrganisationDetailModel
                       {
                           Id = "org-2"
-                          
+
                       }
                   },
                   new OrganisationTagMatchListModel
