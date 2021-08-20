@@ -126,7 +126,7 @@ namespace GivingAssistant.Infrastructure.AWS
                 Handler = lambdaFunction
             });
 
-            DynamoDbApplicationTable.GrantReadWriteData(lambdaFunction);
+            DynamoDbApplicationTable.GrantFullAccess(lambdaFunction);
 
             return applicationStack;
         }
@@ -167,8 +167,8 @@ namespace GivingAssistant.Infrastructure.AWS
                 StartingPosition = StartingPosition.TRIM_HORIZON
             }));
 
-            DynamoDbApplicationTable.GrantReadWriteData(lambdaFunction);
-            DynamoDbApplicationTable.GrantStreamRead(lambdaFunction);
+            DynamoDbApplicationTable.GrantFullAccess(lambdaFunction);
+            
         }
     }
 }
