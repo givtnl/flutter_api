@@ -43,17 +43,17 @@
     {
       "PrimaryKey": "USER#Nico",
       "SortKey": "ANSWER#QUESTION#AnimalsQuestionTwo",
-      "Score": 30 // agreed
+      "Score": 0.5 // neutral
     },
     {
       "PrimaryKey": "USER#Nico",
       "SortKey": "ANSWER#QUESTION#AnimalsQuestion",
-      "Score": 80 // agreed
+      "Score": 0.75 // agreed
     },
     {
       "PrimaryKey": "USER#Anthony",
       "SortKey": "ANSWER#QUESTION#ReligionQuestion",
-      "Score": 10 // did not agree
+      "Score": 0.25 // did not agree
     }
   ],
   "UserTagMatch": [

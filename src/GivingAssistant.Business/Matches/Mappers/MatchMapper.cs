@@ -19,7 +19,7 @@ namespace GivingAssistant.Business.Matches.Mappers
                 .ForMember(x => x.PrimaryKey, c => c.MapFrom(d => $"{Constants.UserPlaceholder}#{d.User}"))
                 .ForMember(x => x.SortKey, c => c.MapFrom(d => $"{Constants.MatchPlaceholder}#{Constants.TagPlaceholder}#{d.Question.Tag}"))
                 .ForMember(x => x.MaximumScore, c => c.MapFrom((d, src) => src.MaximumScore + d.Question.Score))
-                .ForMember(x => x.CurrentScore, c => c.MapFrom((d, src) => src.CurrentScore + d.Answer))
+                .ForMember(x => x.CurrentScore, c => c.MapFrom((d, src) => src.CurrentScore + ((Convert.ToDecimal(d.Question.Score) * d.Answer))))
                 .ForMember(x => x.Tag, c => c.MapFrom(d => d.Question.Tag))
                 .AfterMap((cmd,tag,context) => tag.Percentage = (int)(Convert.ToDecimal(tag.CurrentScore) / Convert.ToDecimal(tag.MaximumScore) * 100));
                 

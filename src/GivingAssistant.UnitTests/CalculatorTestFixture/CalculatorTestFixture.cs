@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -64,9 +65,9 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
 
 
         [Test]
-        [TestCase("TestCaseOne.json", "Nico", "AnimalsQuestion", "animals", 100, 80, 80)]
-        [TestCase("TestCaseOne.json", "Anthony", "ReligionQuestion", "religion", 25, 40, 10)]
-        public async Task EnsureUserProfileIsUpdated(string file, string user, string questionId, string matchingTag, decimal expectedScorePercentage, int maxScore, int currentScore)
+        [TestCase("TestCaseOne.json", "Nico", "AnimalsQuestion", "animals", 75, 80, 0.75,60)]
+        [TestCase("TestCaseOne.json", "Anthony", "ReligionQuestion", "religion", 25, 40, 0.25,10)]
+        public async Task EnsureUserProfileIsUpdated(string file, string user, string questionId, string matchingTag, decimal expectedScorePercentage, int maxScore, decimal currentAnswer, decimal scoreAfterwards)
         {
             await LoadItems(Path.Combine(TestContext.CurrentContext.WorkDirectory, nameof(CalculatorTestFixture), file));
             var handler = new FunctionHandler { DynamoDbContext = DynamoDb, Mapper = Mapper };
@@ -82,7 +83,7 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
                             {
                                 {Constants.PrimaryKeyPlaceHolder, new AttributeValue($"USER#{user}")},
                                 {Constants.SortKeyPlaceHolder, new AttributeValue($"ANSWER#QUESTION#{questionId}#{matchingTag}")},
-                                {Constants.ScorePlaceholder, new AttributeValue{N = currentScore.ToString()}}
+                                {Constants.ScorePlaceholder, new AttributeValue{N = currentAnswer.ToString(CultureInfo.InvariantCulture)}}
                             }
                         }
                     }
@@ -103,13 +104,13 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
             Assert.AreEqual(1, queryResults.Count);
             Assert.AreEqual(queryResults.First().Tag, matchingTag);
             Assert.AreEqual(queryResults.First().MaximumScore, maxScore);
-            Assert.AreEqual(queryResults.First().CurrentScore, currentScore);
+            Assert.AreEqual(queryResults.First().CurrentScore, scoreAfterwards);
             Assert.AreEqual(queryResults.First().Percentage, expectedScorePercentage);
         }
 
         [Test]
         [TestCase("TestCaseOne.json", "Nico", "animals", 61, 180, 110)]
-       
+
         public async Task EnsureUserProfileIsUpdatedWithMultipleAnswers(string file, string user, string matchingTag, decimal expectedScorePercentage, int maxScore, int currentScore)
         {
             await LoadItems(Path.Combine(TestContext.CurrentContext.WorkDirectory, nameof(CalculatorTestFixture), file));
@@ -126,7 +127,7 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
                             {
                                 {Constants.PrimaryKeyPlaceHolder, new AttributeValue($"USER#{user}")},
                                 {Constants.SortKeyPlaceHolder, new AttributeValue($"ANSWER#QUESTION#AnimalsQuestion#{matchingTag}")},
-                                {Constants.ScorePlaceholder, new AttributeValue{N = "80"}}
+                                {Constants.ScorePlaceholder, new AttributeValue{N = "0.75"}}
                             }
                         }
                     },
@@ -137,8 +138,8 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
                             NewImage = new Dictionary<string, AttributeValue>
                             {
                                 {Constants.PrimaryKeyPlaceHolder, new AttributeValue($"USER#{user}")},
-                                {Constants.SortKeyPlaceHolder, new AttributeValue($"ANSWER#QUESTION#AnimalsQuestionTwo")},
-                                {Constants.ScorePlaceholder, new AttributeValue{N = "30"}}
+                                {Constants.SortKeyPlaceHolder, new AttributeValue($"ANSWER#QUESTION#AnimalsQuestionTwo#{matchingTag}")},
+                                {Constants.ScorePlaceholder, new AttributeValue{N = "0.5"}}
                             }
                         }
                     }

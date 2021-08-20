@@ -7,6 +7,6 @@ namespace GivingAssistant.Business.Matches.Commands.CreateUserTagMatch
     {
         public string User { get; set; }
         public QuestionTagListModel Question { get; set; }
-        public int Answer { get; set; }
+        public decimal Answer { get; set; }
     }
 }
