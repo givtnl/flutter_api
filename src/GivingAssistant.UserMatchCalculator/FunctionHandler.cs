@@ -88,7 +88,7 @@ namespace GivingAssistant.UserMatchCalculator
                     await createUserTagMatchCommandHandler.Handle(new CreateUserTagMatchCommand
                     {
                         User = user,
-                        Answer = document["SCORE"].AsDecimal(),
+                        Answer = document["Score"].AsDecimal(),
                         Question = questionTagListModel
                     }, CancellationToken.None)
                         ;

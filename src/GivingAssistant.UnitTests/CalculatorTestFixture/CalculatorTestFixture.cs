@@ -43,7 +43,7 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
                             {
                                 {Constants.PrimaryKeyPlaceHolder, new AttributeValue($"USER#{user}")},
                                 {Constants.SortKeyPlaceHolder, new AttributeValue($"ANSWER#QUESTION#{questionId}#{matchingTag}")},
-                                {Constants.ScorePlaceholder, new AttributeValue{N = "10"}}
+                                {"Score", new AttributeValue{N = "10"}}
                             }
                         }
                     }
@@ -83,7 +83,7 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
                             {
                                 {Constants.PrimaryKeyPlaceHolder, new AttributeValue($"USER#{user}")},
                                 {Constants.SortKeyPlaceHolder, new AttributeValue($"ANSWER#QUESTION#{questionId}#{matchingTag}")},
-                                {Constants.ScorePlaceholder, new AttributeValue{N = currentAnswer.ToString(CultureInfo.InvariantCulture)}}
+                                {"Score", new AttributeValue{N = currentAnswer.ToString(CultureInfo.InvariantCulture)}}
                             }
                         }
                     }
@@ -127,7 +127,7 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
                             {
                                 {Constants.PrimaryKeyPlaceHolder, new AttributeValue($"USER#{user}")},
                                 {Constants.SortKeyPlaceHolder, new AttributeValue($"ANSWER#QUESTION#AnimalsQuestion#{matchingTag}")},
-                                {Constants.ScorePlaceholder, new AttributeValue{N = "0.75"}}
+                                {"Score", new AttributeValue{N = "0.75"}}
                             }
                         }
                     },
@@ -139,7 +139,7 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
                             {
                                 {Constants.PrimaryKeyPlaceHolder, new AttributeValue($"USER#{user}")},
                                 {Constants.SortKeyPlaceHolder, new AttributeValue($"ANSWER#QUESTION#AnimalsQuestionTwo#{matchingTag}")},
-                                {Constants.ScorePlaceholder, new AttributeValue{N = "0.5"}}
+                                {"Score", new AttributeValue{N = "0.5"}}
                             }
                         }
                     }
