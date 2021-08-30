@@ -43,7 +43,7 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
                             {
                                 {Constants.PrimaryKeyPlaceHolder, new AttributeValue($"USER#{user}")},
                                 {Constants.SortKeyPlaceHolder, new AttributeValue($"ANSWER#QUESTION#{questionId}#{matchingTag}")},
-                                {"Score", new AttributeValue{N = "10"}}
+                                {"Score", new AttributeValue{N = "0.25"}}
                             }
                         }
                     }
@@ -60,7 +60,7 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
                 OverrideTableName = Constants.TableName
             }).GetRemainingAsync();
 
-            Assert.AreEqual(numberOfMatches, queryResults.Count(p => p.SortKey.Contains(matchedOrganisation) && p.SortKey.EndsWith(matchingTag)));
+            Assert.AreEqual(numberOfMatches, queryResults.Count(p => p.SortKey.EndsWith(matchedOrganisation)));
         }
 
 

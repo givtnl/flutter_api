@@ -2,6 +2,15 @@
 {
     public class MatchingResponse
     {
-        public decimal Score { get; set; }
+        public MatchingResponse(decimal score)
+        {
+            Score = score;
+        }
+        public decimal Score { get; }
+
+        public static MatchingResponse EmptyMatch()
+        {
+            return new MatchingResponse(decimal.Zero);
+        }
     }
 }

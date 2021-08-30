@@ -5,6 +5,7 @@ using Amazon.DynamoDBv2.DataModel;
 using GivingAssistant.Business.Infrastructure;
 using GivingAssistant.Business.Matches.Commands.CreateUserOrganisationMatch;
 using GivingAssistant.Business.Matches.Commands.CreateUserTagMatch;
+using GivingAssistant.Business.Matches.Infrastructure;
 using GivingAssistant.Business.Matches.Queries.GetMatchesWithOrganisationsList;
 using GivingAssistant.Business.Organisations.Models;
 using GivingAssistant.Business.Questions.Models;
@@ -45,7 +46,7 @@ namespace GivingAssistant.UnitTests
         [TestCase("Anthony")]
         public async Task EnsureMatchesArePersisted(string userId)
         {
-            var commandHandler = new CreateUserOrganisationMatchCommandHandler(DynamoDb, Mapper);
+            var commandHandler = new CreateUserOrganisationMatchCommandHandler(DynamoDb, Mapper,FakeMatcher.BuildFakeWithScore(80));
             await commandHandler.Handle(new CreateUserOrganisationMatchCommand
             {
                 User = userId,
@@ -75,8 +76,8 @@ namespace GivingAssistant.UnitTests
 
             var response = await new GetMatchesWithOrganisationsListQueryHandler(DynamoDb, Mapper).Handle(new GetMatchesWithOrganisationsListQuery() { UserId = userId }, CancellationToken.None);
 
-            Assert.IsTrue(response.Any(x => x.Organisation.Id == "org-1" && x.Score == 20));
-            Assert.IsTrue(response.Any(x => x.Organisation.Id == "org-2" && x.Score == 80));
+            Assert.IsTrue(response.Any(x => x.Organisation.Id == "org-1"));
+            Assert.IsTrue(response.Any(x => x.Organisation.Id == "org-2"));
         }
     }
 }

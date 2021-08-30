@@ -19,8 +19,9 @@ namespace GivingAssistant.Business.Organisations.Mappers
                 .ForMember(x => x.SortKey, x => x.MapFrom(d => $"{Constants.MetaDataPlaceholder}#{Constants.ProfilePlaceholder}"));
 
             CreateMap<OrganisationProfile, OrganisationDetailModel>()
-                .ForMember(x => x.MetaTags, c => c.MapFrom(d => new Dictionary<string,string>(d.MetaTags.Select(x => x.ToKeyValuePair()))))
-                .ForMember(x => x.Id, c => c.MapFrom(d => d.PrimaryKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(1)));
+                .ForMember(x => x.MetaTags,
+                    c => c.MapFrom(d => new Dictionary<string, string>(d.MetaTags.Select(x => x.ToKeyValuePair()))));
+                // .ForMember(x => x.Id, c => c.MapFrom(d => d.PrimaryKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(1)));
 
             CreateMap<OrganisationDetailModel, OrganisationProfile>();
 
