@@ -85,7 +85,11 @@
       "SortKey": "MATCH#TAG#animals#Dorcas",
       "Score": 80,
       "Organisation": {
-        "Name": "Dorcas"
+        "Name": "Dorcas",
+        "MetaTags": [{
+          "Name": "NameOne",
+          "Value": "ValueOne"
+        }]
       }
     },
     {
