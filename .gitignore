@@ -9,3 +9,4 @@ src/GivingAssistant.Infrastructure.AWS/obj/
 src/GivingAssistant.Persistence/obj/
 src/GivingAssistant.UnitTests/obj/
 src/GivingAssistant.UserMatchCalculator/obj/
+.idea/
