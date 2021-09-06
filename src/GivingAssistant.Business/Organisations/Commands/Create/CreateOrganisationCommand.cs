@@ -12,7 +12,6 @@ namespace GivingAssistant.Business.Organisations.Commands.Create
         public string ImageUrl { get; set; }
         public string Mission { get; set; }
         public string Vision { get; set; }
-        public string GivtIdentifier { get; set; }
         public Dictionary<string, string> MetaTags { get; set; }
         public Dictionary<string, int> TagScores { get; set; }
     }

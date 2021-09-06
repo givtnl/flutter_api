@@ -15,7 +15,6 @@ namespace GivingAssistant.Api.Requests.Organisations
         public string Mission { get; set; }
         [NotNull]
         public string Vision { get; set; }
-        public string GivtIdentifier { get; set; }
         public Dictionary<string, string> MetaTags { get; set; }
         [NotNull]
         public Dictionary<string, int> TagScores { get; set; }

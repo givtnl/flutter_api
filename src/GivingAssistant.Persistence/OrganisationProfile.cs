@@ -17,7 +17,6 @@ namespace GivingAssistant.Persistence
         public string ImageUrl { get; set; }
         public string Mission { get; set; }
         public string Vision { get; set; }
-        public string GivtIdentifier { get; set; }
         public List<OrganisationMetaTag> MetaTags { get; set; } 
     }
 }
