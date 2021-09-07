@@ -25,7 +25,7 @@ namespace GivingAssistant.Business.Matches.Queries.GetMatchesWithTagsList
         public async Task<IEnumerable<UserTagMatchListModel>> Handle(GetMatchesWithTagsListQuery request, CancellationToken cancellationToken)
         {
             var filter = new QueryFilter("PK", QueryOperator.Equal, $"{Constants.UserPlaceholder}#{request.UserId}");
-            filter.AddCondition("SK", ScanOperator.BeginsWith, $"{Constants.MatchPlaceholder}#{Constants.TagPlaceholder}");
+            filter.AddCondition("SK", QueryOperator.BeginsWith, $"{Constants.MatchPlaceholder}#{Constants.TagPlaceholder}");
 
             var response = await _dynamoDb
                 .FromQueryAsync<UserTagMatch>(new QueryOperationConfig

@@ -20,8 +20,7 @@ namespace GivingAssistant.Business.Matches.Commands.CreateUserTagMatch
         }
         public async Task<Unit> Handle(CreateUserTagMatchCommand request, CancellationToken cancellationToken)
         {
-            var existingMatchItem =
-                await _context.LoadAsync<UserTagMatch>($"{Constants.UserPlaceholder}#{request.User}",
+            var existingMatchItem = await _context.LoadAsync<UserTagMatch>($"{Constants.UserPlaceholder}#{request.User}",
                     $"{Constants.MatchPlaceholder}#{Constants.TagPlaceholder}#{request.Question.Tag}", new DynamoDBOperationConfig
                     {
                         OverrideTableName = Constants.TableName

@@ -1,0 +1,54 @@
+{
+  "Description": "Enkel checks op 1 tag nu, simpelste use-case",
+  "Expectations": [
+    {
+      "OrganisationId": "16c5df5c-6dca-41fe-94b2-6b00daf9d257",
+      "ExpectedScore": 93.5,
+      "Comment": "Mercy Ships"
+    },
+    {
+      "Comment": "compassion",
+      "OrganisationId": "5763467e-9ac5-4605-a8b2-352d4994e18a",
+      "ExpectedScore": 93.5
+    },
+    {
+      "OrganisationId": "81bb04e5-5d77-46c7-b4f9-5bd00a1635d8",
+      "ExpectedScore": 93.5,
+      "Comment": "svoc schotland"
+    }
+  ],
+  "Records": [
+    {
+      "EventName": "INSERT",
+      "DynamoDB": {
+        "NewImage": {
+          "PK": {
+            "S": "USER#TestFixture"
+          },
+          "SK": {
+            "S": "ANSWER#QUESTION#6528a56a-f4c3-4ec3-be29-193e08b4eedf#Religion and philosophy"
+          },
+          "Score": {
+            "N": "1"
+          }
+        }
+      }
+    },
+    {
+      "EventName": "INSERT",
+      "DynamoDB": {
+        "NewImage": {
+          "PK": {
+            "S": "USER#TestFixture"
+          },
+          "SK": {
+            "S": "ANSWER#QUESTION#92b8ed20-17f3-4ac9-a175-0b0394ff2c58#Religion and philosophy"
+          },
+          "Score": {
+            "N": "0.75"
+          }
+        }
+      }
+    }
+  ]
+}

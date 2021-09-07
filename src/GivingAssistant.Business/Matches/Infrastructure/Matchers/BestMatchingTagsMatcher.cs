@@ -43,7 +43,7 @@ namespace GivingAssistant.Business.Matches.Infrastructure.Matchers
                     evaluatedScores.Add(organisationMatch.Score / match.Percentage * 100);
             }
 
-            return Task.FromResult(new MatchingResponse(decimal.Round(evaluatedScores.Average(), 2)));
+            return Task.FromResult(evaluatedScores.Any() ? new MatchingResponse(decimal.Round(evaluatedScores.Average(), 2)) : MatchingResponse.EmptyMatch());
         }
     }
 }

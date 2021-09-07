@@ -15,6 +15,7 @@ namespace GivingAssistant.Business.Matches.Infrastructure.Matchers
             if (!context.UserMatches.Any())
                 return Task.FromResult(MatchingResponse.EmptyMatch());
             
+            
             // 7
             var numberOfTotalUserMatches = context.UserMatches.Count();
             // 3
