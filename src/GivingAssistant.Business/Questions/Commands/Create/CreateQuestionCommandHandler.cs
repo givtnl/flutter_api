@@ -39,6 +39,7 @@ namespace GivingAssistant.Business.Questions.Commands.Create
                 OverrideTableName = Constants.TableName
             });
 
+            
             foreach (var requestTagScore in request.CategoryOptions.SelectMany(x => x.TagScores))
             {
                 tagWriteRequest.AddPutItem(_mapper.Map(requestTagScore, new QuestionTag(response.Id)));

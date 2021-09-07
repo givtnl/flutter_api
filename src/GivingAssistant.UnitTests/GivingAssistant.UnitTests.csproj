@@ -20,13 +20,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="CalculatorTestFixture\TestCaseOne.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="CalculatorTestFixture\TestCaseOne.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="CalculatorTestFixture\DatabaseState.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="CalculatorTestFixture\AnswersWithGoodMatches.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

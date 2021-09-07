@@ -29,7 +29,9 @@ namespace GivingAssistant.Business.Organisations.Queries.GetByTags
 
             if (request.Tags.Count() > 1)
             {
-                filter.AddCondition("SK", QueryOperator.Between, $"{Constants.MatchPlaceholder}#{Constants.TagPlaceholder}#{request.Tags.Min()}", $"{Constants.MatchPlaceholder}#{Constants.TagPlaceholder}#{request.Tags.Max()}");
+                // do not remove the 1 ad the end of the filter
+                // this makes sure the second parameter of the between is INCLUSIVE and not EXCLUSIVE
+                filter.AddCondition("SK", QueryOperator.Between, $"{Constants.MatchPlaceholder}#{Constants.TagPlaceholder}#{request.Tags.Min()}", $"{Constants.MatchPlaceholder}#{Constants.TagPlaceholder}#{request.Tags.Max()}1");
             }
             else
             {

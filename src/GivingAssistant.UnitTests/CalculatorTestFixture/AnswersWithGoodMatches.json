@@ -1,0 +1,36 @@
+{
+  "Records": [
+    {
+      "EventName": "INSERT",
+      "DynamoDB": {
+        "NewImage": {
+          "PK": {
+            "S": "USER#TestFixture"
+          },
+          "SK": {
+            "S":"ANSWER#QUESTION#3da16886-46eb-45df-9277-d942d7160a20#Religion and philosophy"
+          },
+          "Score": {
+            "N": "1"
+          }
+        }
+      }
+    },
+    {
+      "EventName": "INSERT",
+      "DynamoDB": {
+        "NewImage": {
+          "PK": {
+            "S": "USER#TestFixture"
+          },
+          "SK": {
+            "S":"ANSWER#QUESTION#78b0c451-0e2f-487e-b3ec-27e7125e84bc#Religion and philosophy"
+          },
+          "Score": {
+            "N": "0.75"
+          }
+        }
+      }
+    }
+  ]
+}

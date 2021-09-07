@@ -23,7 +23,8 @@ namespace GivingAssistant.Business.Organisations.Mappers
                     c => c.MapFrom(d => new Dictionary<string, string>(d.MetaTags.Select(x => x.ToKeyValuePair()))));
                 // .ForMember(x => x.Id, c => c.MapFrom(d => d.PrimaryKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(1)));
 
-            CreateMap<OrganisationDetailModel, OrganisationProfile>();
+                CreateMap<OrganisationDetailModel, OrganisationProfile>()
+                    .ForMember(x => x.MetaTags, c => c.MapFrom(d => d.MetaTags.Select(OrganisationMetaTag.FromKeyValuePair)));
 
 
 

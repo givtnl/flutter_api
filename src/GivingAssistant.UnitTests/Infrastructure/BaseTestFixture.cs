@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
+using Amazon.DynamoDBv2.DocumentModel;
+using Amazon.DynamoDBv2.Model;
 using AutoMapper;
 using GivingAssistant.Business.Infrastructure;
 using GivingAssistant.Business.Questions.Mappers;
@@ -19,16 +21,30 @@ namespace GivingAssistant.UnitTests.Infrastructure
         protected IMapper Mapper;
 
         [SetUp]
-        public void Setup()
+        public virtual Task Setup()
         {
             DynamoDb = new DynamoDBContext(new AmazonDynamoDBClient(new AmazonDynamoDBConfig
             {
                 ServiceURL = "http://localhost:8000"
             }));
             Mapper = new MapperConfiguration(x => x.AddMaps(typeof(QuestionMapper).Assembly)).CreateMapper();
+            
+            return Task.CompletedTask;
         }
 
-        protected async Task LoadItems(string file)
+        public async Task<List<T>> RetrieveRecords<T>(string primaryKey, string sortingKey)
+        {
+            var filter = new QueryFilter("PK", QueryOperator.Equal, primaryKey);
+            filter.AddCondition("SK", QueryOperator.BeginsWith, sortingKey);
+            
+           return await DynamoDb
+                .FromQueryAsync<T>(new QueryOperationConfig
+                {
+                    Filter = filter
+                }, new DynamoDBOperationConfig { OverrideTableName = Constants.TableName }).GetRemainingAsync();
+        }
+        
+        protected async Task<SeedModel> LoadItems(string file)
         {
             var fileContents = await File.ReadAllTextAsync(file);
             var contents = JsonConvert.DeserializeObject<SeedModel>(fileContents);
@@ -72,6 +88,8 @@ namespace GivingAssistant.UnitTests.Infrastructure
                     OverrideTableName = Constants.TableName
                 });
             }
+
+            return contents;
         }
 
         [TearDown]

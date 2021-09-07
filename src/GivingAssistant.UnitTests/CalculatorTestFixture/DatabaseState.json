@@ -1,0 +1,4655 @@
+[
+  {
+    "Description": "...",
+    "Vision": "Jantje Beton is hét goede doel dat zich sinds 1968 samen met kinderen en jongeren inzet voor meer en uitdagender speelruimte en meer speelkansen.",
+    "WebsiteUrl": "https://jantjebeton.nl/",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://jantjebeton.nl/assets/images/jantje-beton-stop-nooit-met-spelen.svg",
+    "Mission": "We moeten steeds meer en spelen steeds minder. Daarom zeggen wij: Stop nooit met spelen.",
+    "Id": "054182c5-7563-4a17-90fe-edec349c59e6",
+    "PrimaryKey": "ORGANISATION#054182c5-7563-4a17-90fe-edec349c59e6",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDcxOWQwMDkuZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "Well-being,Education and science",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "Jantje Beton"
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 100,
+        "Tag": "Certification mark"
+      },
+      {
+        "Score": 100,
+        "Tag": "National"
+      },
+      {
+        "Score": 100,
+        "Tag": "Well-being"
+      },
+      {
+        "Score": 95,
+        "Tag": "Large scale"
+      },
+      {
+        "Score": 78,
+        "Tag": "Directness"
+      },
+      {
+        "Score": 100,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "054182c5-7563-4a17-90fe-edec349c59e6",
+    "PrimaryKey": "ORGANISATION#054182c5-7563-4a17-90fe-edec349c59e6"
+  },
+  {
+    "Description": "...",
+    "Vision": "Armoede heeft een vernietigend effect op elk gebied van je leven. Daarom moet het antwoord ook op elk gebied komen: cognitief, lichamelijk, sociaal, emotioneel, economisch én geestelijk. In het kindsponsorprogramma worden de kinderen op al deze gebieden begeleid om hun van God gegeven talenten te ontdekken.",
+    "WebsiteUrl": "https://www.compassion.nl/",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://www.compassion.nl/app/uploads/2020/11/logo_payoff.svg",
+    "Mission": "Compassion bevrijdt kinderen van armoede in Jezus\u0027 naam via lokale kerken in 25 landen wereldwijd",
+    "Id": "ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+    "PrimaryKey": "ORGANISATION#ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDgxOWQwMDMuZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "Religion and philosophy,Health",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "Compassion Nederland"
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 100,
+        "Tag": "Certification mark"
+      },
+      {
+        "Score": 100,
+        "Tag": "International"
+      },
+      {
+        "Score": 100,
+        "Tag": "Religion and philosophy"
+      },
+      {
+        "Score": 100,
+        "Tag": "Financial adoption"
+      },
+      {
+        "Score": 100,
+        "Tag": "Directness"
+      },
+      {
+        "Score": 100,
+        "Tag": "Large scale"
+      },
+      {
+        "Score": 100,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+    "PrimaryKey": "ORGANISATION#ec66beb2-a461-475b-a66d-dfe6bc80aba3"
+  },
+  {
+    "Description": "...",
+    "Vision": "Wij verbeteren structureel de gezondheidszorg van het land waar we te gast zijn door in te zetten op duurzame hulpverlening.",
+    "WebsiteUrl": "https://mercyships.org",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://www.mercyships.nl/wp-content/uploads/2020/10/Logo-web-stories.jpg",
+    "Mission": "Wij maken medische en chirurgische zorg toegankelijk voor de allerarmste mensen ter wereld.",
+    "Id": "da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+    "PrimaryKey": "ORGANISATION#da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDMyMGQwMDMuZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "International aid and human rights,Religion and philosophy",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "Mercy Ships"
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 100,
+        "Tag": "Certification mark"
+      },
+      {
+        "Score": 95,
+        "Tag": "International"
+      },
+      {
+        "Score": 100,
+        "Tag": "Religion and philosophy"
+      },
+      {
+        "Score": 95,
+        "Tag": "International aid and human rights"
+      },
+      {
+        "Score": 87,
+        "Tag": "Directness"
+      },
+      {
+        "Score": 100,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+    "PrimaryKey": "ORGANISATION#da1a415e-f3b6-4d28-b7f3-239847c9e6fd"
+  },
+  {
+    "Description": "...",
+    "Vision": "De kinderboerderij organiseert met grote regelmaat evenementen en themadagen voor jong en oud, en is een informatiepunt op het gebied van natuur en milieu, met mooie faciliteiten voor het ontvangen van schoolklassen en andere doelgroepen.",
+    "WebsiteUrl": "https://www.kinderboerderij-driebergen.nl/",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://www.kinderboerderij-driebergen.nl/wp-content/uploads/2015/10/header.png",
+    "Mission": "Kinderboerderij \u0027t Woelige Nest is een gezellige ontmoetingsplaats voor jong en oud uit de regio.",
+    "Id": "1eb001ee-e197-45c6-9a53-91305f6aa052",
+    "PrimaryKey": "ORGANISATION#1eb001ee-e197-45c6-9a53-91305f6aa052",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDUyMWQwMDUuZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "Animals,Nature and environment",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "Kinderboerderij Driebergen"
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 100,
+        "Tag": "Animals"
+      },
+      {
+        "Score": 20,
+        "Tag": "Nature and environment"
+      },
+      {
+        "Score": 100,
+        "Tag": "National"
+      },
+      {
+        "Score": 100,
+        "Tag": "Directness"
+      },
+      {
+        "Score": 100,
+        "Tag": "Small scale"
+      },
+      {
+        "Score": 100,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "1eb001ee-e197-45c6-9a53-91305f6aa052",
+    "PrimaryKey": "ORGANISATION#1eb001ee-e197-45c6-9a53-91305f6aa052"
+  },
+  {
+    "Description": "...",
+    "Vision": "Wij geloven in de kracht van de natuur en het samen afkoelen van de aarde door gedegradeerd land te vergroenen en vegetatie terug te brengen. Onze missie is om Afrika in de komende 10 jaar te vergroenen, samen met alle 350 miljoen boeren, en samen met jou.",
+    "WebsiteUrl": "https://justdiggit.org/nl",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://buy-a-bund.justdiggit.org/static/media/logo.855d848c.svg",
+    "Mission": "We zijn op een missie om Afrika in de komende 10 jaar te vergroenen, samen met miljoenen boeren én samen met jou",
+    "Id": "ff53f6ed-33b4-45b5-9a7b-3c3d86942a7f",
+    "PrimaryKey": "ORGANISATION#ff53f6ed-33b4-45b5-9a7b-3c3d86942a7f",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDkuZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "Nature and environment, International aid and human rights",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "Justdiggit"
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 100,
+        "Tag": "Nature and environment"
+      },
+      {
+        "Score": 100,
+        "Tag": "International"
+      },
+      {
+        "Score": 100,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "ff53f6ed-33b4-45b5-9a7b-3c3d86942a7f",
+    "PrimaryKey": "ORGANISATION#ff53f6ed-33b4-45b5-9a7b-3c3d86942a7f"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "De kinderboerderij organiseert met grote regelmaat evenementen en themadagen voor jong en oud, en is een informatiepunt op het gebied van natuur en milieu, met mooie faciliteiten voor het ontvangen van schoolklassen en andere doelgroepen.",
+      "WebsiteUrl": "https://www.kinderboerderij-driebergen.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.kinderboerderij-driebergen.nl/wp-content/uploads/2015/10/header.png",
+      "Id": "1eb001ee-e197-45c6-9a53-91305f6aa052",
+      "Mission": "Kinderboerderij \u0027t Woelige Nest is een gezellige ontmoetingsplaats voor jong en oud uit de regio.",
+      "PrimaryKey": "ORGANISATION#1eb001ee-e197-45c6-9a53-91305f6aa052",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDUyMWQwMDUuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Animals,Nature and environment",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Kinderboerderij Driebergen"
+    },
+    "SortKey": "MATCH#TAG#Animals#1eb001ee-e197-45c6-9a53-91305f6aa052",
+    "OrganisationId": "1eb001ee-e197-45c6-9a53-91305f6aa052",
+    "Tag": "Animals",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Stichting ZuiderZee Zwerfdieren trekt zich het lot van de dieren aan en dringt het aantal zwerfdieren in Lelystad, Flevoland en de Noordoostpolder terug.",
+      "WebsiteUrl": "https://www.zuiderzeezwerfdieren.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.zuiderzeezwerfdieren.nl/wp-content/uploads/2016/07/header-logo.png",
+      "Id": "a747598e-18e0-45b2-bffb-00328b0d5312",
+      "Mission": "Medische zorg én onderdak van zwerfdieren",
+      "PrimaryKey": "ORGANISATION#a747598e-18e0-45b2-bffb-00328b0d5312",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDQyMGQwMDQuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Animals,Nature and environment",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "St. Zuiderzee Zwerfdieren"
+    },
+    "SortKey": "MATCH#TAG#Animals#a747598e-18e0-45b2-bffb-00328b0d5312",
+    "OrganisationId": "a747598e-18e0-45b2-bffb-00328b0d5312",
+    "Tag": "Animals",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 80,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We draw on our experience to guide visual journalists, storytellers, and audiences around the world through this challenging and exciting landscape.",
+      "WebsiteUrl": "https://www.worldpressphoto.org/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.worldpressphoto.org/Frontend/images/logo.svg",
+      "Id": "0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+      "Mission": "The World Press Photo Foundation believes in the power of showing and the importance of seeing high-quality visual stories.",
+      "PrimaryKey": "ORGANISATION#0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDIyMWQwMWMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Art and culture,International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "World Press Photo Foundation"
+    },
+    "SortKey": "MATCH#TAG#Art and culture#0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+    "OrganisationId": "0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+    "Tag": "Art and culture",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 75,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We zijn geen museum, maar een beweging. Met scheppingskracht kunnen we de wereld positief beïnvloeden.",
+      "WebsiteUrl": "https://museumofhumanity.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://museumofhumanity.nl/themes/museum_of_humanity_theme/logo.svg",
+      "Id": "23dc4074-2e26-42c2-85c0-e98827366103",
+      "Mission": "Wij geloven in de schoonheid en waarde van ieder mens. Als iedereen daarvan overtuigd raakt veranderen we samen de wereld.",
+      "PrimaryKey": "ORGANISATION#23dc4074-2e26-42c2-85c0-e98827366103",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIxOWQwMDguZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Art and culture",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Museum of Humanity"
+    },
+    "SortKey": "MATCH#TAG#Art and culture#23dc4074-2e26-42c2-85c0-e98827366103",
+    "OrganisationId": "23dc4074-2e26-42c2-85c0-e98827366103",
+    "Tag": "Art and culture",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Jantje Beton is hét goede doel dat zich sinds 1968 samen met kinderen en jongeren inzet voor meer en uitdagender speelruimte en meer speelkansen.",
+      "WebsiteUrl": "https://jantjebeton.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://jantjebeton.nl/assets/images/jantje-beton-stop-nooit-met-spelen.svg",
+      "Id": "054182c5-7563-4a17-90fe-edec349c59e6",
+      "Mission": "We moeten steeds meer en spelen steeds minder. Daarom zeggen wij: Stop nooit met spelen.",
+      "PrimaryKey": "ORGANISATION#054182c5-7563-4a17-90fe-edec349c59e6",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDcxOWQwMDkuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Well-being,Education and science",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Jantje Beton"
+    },
+    "SortKey": "MATCH#TAG#Certification mark#054182c5-7563-4a17-90fe-edec349c59e6",
+    "OrganisationId": "054182c5-7563-4a17-90fe-edec349c59e6",
+    "Tag": "Certification mark",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We are a global organization partnering with local justice systems to end violence against people living in poverty. We need you with us.",
+      "WebsiteUrl": "https://www.ijm.org/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://endingpovertytogether.org/wp-content/uploads/2018/09/IJM-Logo.001.jpeg",
+      "Id": "0832f067-c470-4cfc-9603-1c034e5c0e4e",
+      "Mission": "Every person deserves to be free from violence.",
+      "PrimaryKey": "ORGANISATION#0832f067-c470-4cfc-9603-1c034e5c0e4e",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDExOWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Int. Justice Mission NL (IJM)"
+    },
+    "SortKey": "MATCH#TAG#Certification mark#0832f067-c470-4cfc-9603-1c034e5c0e4e",
+    "OrganisationId": "0832f067-c470-4cfc-9603-1c034e5c0e4e",
+    "Tag": "Certification mark",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We draw on our experience to guide visual journalists, storytellers, and audiences around the world through this challenging and exciting landscape.",
+      "WebsiteUrl": "https://www.worldpressphoto.org/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.worldpressphoto.org/Frontend/images/logo.svg",
+      "Id": "0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+      "Mission": "The World Press Photo Foundation believes in the power of showing and the importance of seeing high-quality visual stories.",
+      "PrimaryKey": "ORGANISATION#0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDIyMWQwMWMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Art and culture,International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "World Press Photo Foundation"
+    },
+    "SortKey": "MATCH#TAG#Certification mark#0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+    "OrganisationId": "0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+    "Tag": "Certification mark",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Samen kunnen we onrecht stoppen. De vrijheid eisen van mensen die vastzitten om wie ze zijn of waarin ze geloven. De rechten van vrouwen en meisjes beter beschermen. Een einde maken aan folteringen en de doodstraf. Jouw gift maakt een structureel verschil in het leven van mensen, dichtbij én veraf.",
+      "WebsiteUrl": "https://www.amnesty.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://webshop.amnesty.nl/static/version1615452727/frontend/Amnesty/default/nl_NL/images/logo-amnesty.svg",
+      "Id": "1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+      "Mission": "Mensenrechten verdedig je met vuur!",
+      "PrimaryKey": "ORGANISATION#1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTAyMGQwMTEuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Amnesty International"
+    },
+    "SortKey": "MATCH#TAG#Certification mark#1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+    "OrganisationId": "1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+    "Tag": "Certification mark",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Niet alleen in Nederland, maar ook in de rest van de wereld bieden wij medische hulp aan kansarme mensen. In meer dan tachtig landen helpen we hen die geen of slechte toegang hebben tot medische zorg. Gezondheidszorg is geen privilege, maar een mensenrecht. Onze missie is ervoor te zorgen dat dit recht wordt nageleefd.",
+      "WebsiteUrl": "https://doktersvandewereld.org/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://doktersvandewereld.org/wp-content/themes/dvdw/assets/images/logo-dvdw.png",
+      "Id": "59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+      "Mission": "Gezondheidszorg is geen privilege, maar een mensenrecht.",
+      "PrimaryKey": "ORGANISATION#59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDEyMGQwMDYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Dokters van de Wereld"
+    },
+    "SortKey": "MATCH#TAG#Certification mark#59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+    "OrganisationId": "59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+    "Tag": "Certification mark",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Iedereen een gezond hart. Dat is de droom van de Hartstichting. Want met een gezond hart haal je meer uit het leven. Al meer dan 55 jaar investeren we in onderzoek en innovatie op het gebied van preventie en zorg. Maar net zo belangrijk vinden wij het om Nederlanders te helpen hun hart te kennen en goed voor hun hart te zorgen.",
+      "WebsiteUrl": "https://www.hartstichting.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.hartstichting.nl/assets/img/icons/logo.svg",
+      "Id": "83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+      "Mission": "Help ons jouw hart gezond te houden.",
+      "PrimaryKey": "ORGANISATION#83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDEyMWQwMGYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Hartstichting"
+    },
+    "SortKey": "MATCH#TAG#Certification mark#83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+    "OrganisationId": "83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+    "Tag": "Certification mark",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Mensen met financiële zorgen zijn nu ontzettend kwetsbaar in deze onzekere tijd. Zij hebben geen buffer om op terug te vallen, en soms ook geen vrienden of familie die kunnen helpen. Er zijn prachtige initiatieven in Nederland die hulp bieden in deze moeilijke tijd. Met jouw hulp kunnen wij lokale (hulp)organisaties ondersteunen.",
+      "WebsiteUrl": "https://www.armoedefonds.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.armoedefonds.nl/resources/images/logo_Armoedefonds.png",
+      "Id": "9598576f-7cce-4e79-a11f-ab88db58bb1b",
+      "Mission": "Lokale organisaties ondersteunen die actief zijn op het gebied van armoedebestrijding in Nederland.",
+      "PrimaryKey": "ORGANISATION#9598576f-7cce-4e79-a11f-ab88db58bb1b",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDIyMWQwMDYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Well-being",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Armoedefonds Nederland, Stg."
+    },
+    "SortKey": "MATCH#TAG#Certification mark#9598576f-7cce-4e79-a11f-ab88db58bb1b",
+    "OrganisationId": "9598576f-7cce-4e79-a11f-ab88db58bb1b",
+    "Tag": "Certification mark",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Wij verbeteren structureel de gezondheidszorg van het land waar we te gast zijn door in te zetten op duurzame hulpverlening.",
+      "WebsiteUrl": "https://mercyships.org",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.mercyships.nl/wp-content/uploads/2020/10/Logo-web-stories.jpg",
+      "Id": "da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+      "Mission": "Wij maken medische en chirurgische zorg toegankelijk voor de allerarmste mensen ter wereld.",
+      "PrimaryKey": "ORGANISATION#da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDMyMGQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights,Religion and philosophy",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Mercy Ships"
+    },
+    "SortKey": "MATCH#TAG#Certification mark#da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+    "OrganisationId": "da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+    "Tag": "Certification mark",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "De Nederlandse Brandwonden Stichting helpt mensen met brandwonden. Kort na het ongeval, maar ook later in hun dagelijkse strijd tegen littekens. We financieren onderzoek en doen er alles aan om brandwonden te voorkomen. En we zetten ons in voor de best mogelijke zorg voor brandwondenpatiënten, en de hoogst mogelijke kwaliteit van leven.",
+      "WebsiteUrl": "http://brandwondenstichting.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://brandwondenstichting.nl/wp-content/uploads/2017/02/xbws-logo-kleur.png.pagespeed.ic.EdaYY8cDA4.webp",
+      "Id": "dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+      "Mission": "Wij gaan voor de beste brandwondenzorg: de beste zorg aan patiënten, de hoogst mogelijke kwaliteit van leven en de meest effectieve preventie.",
+      "PrimaryKey": "ORGANISATION#dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTEyMGQwMDYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Brandwonden Stichting"
+    },
+    "SortKey": "MATCH#TAG#Certification mark#dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+    "OrganisationId": "dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+    "Tag": "Certification mark",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Armoede heeft een vernietigend effect op elk gebied van je leven. Daarom moet het antwoord ook op elk gebied komen: cognitief, lichamelijk, sociaal, emotioneel, economisch én geestelijk. In het kindsponsorprogramma worden de kinderen op al deze gebieden begeleid om hun van God gegeven talenten te ontdekken.",
+      "WebsiteUrl": "https://www.compassion.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.compassion.nl/app/uploads/2020/11/logo_payoff.svg",
+      "Id": "ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+      "Mission": "Compassion bevrijdt kinderen van armoede in Jezus\u0027 naam via lokale kerken in 25 landen wereldwijd",
+      "PrimaryKey": "ORGANISATION#ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDgxOWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Religion and philosophy,Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Compassion Nederland"
+    },
+    "SortKey": "MATCH#TAG#Certification mark#ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+    "OrganisationId": "ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+    "Tag": "Certification mark",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Wij geven als stabiele en professionele non-profit organisatie een positief tegengeluid op de ontbossing en teruggang van biodiversiteit in de tropen.",
+      "WebsiteUrl": "https://www.adopteerregenwoud.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.adopteerregenwoud.nl/wp-content/uploads/2019/10/logo.svg",
+      "Id": "f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+      "Mission": "Adopteer jouw eigen stukje regenwoud!",
+      "PrimaryKey": "ORGANISATION#f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDMyMWQwMDIuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Nature and environment,International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Stichting Adopteer Regenwoud"
+    },
+    "SortKey": "MATCH#TAG#Certification mark#f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+    "OrganisationId": "f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+    "Tag": "Certification mark",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Jaarlijks krijgen ruim 550 kinderen in Nederland kanker. Op dit moment geneest 75% van deze kinderen. Ons doel is om dit percentage te verhogen naar 95%.",
+      "WebsiteUrl": "https://www.kika.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.kika.nl/themes/custom/ef2_custom/logo.svg",
+      "Id": "fc2418c8-83f5-4c79-a940-5e88559467c2",
+      "Mission": "KiKa financiert onderzoeken naar kinderkanker om de behandelingen te verbeteren. ",
+      "PrimaryKey": "ORGANISATION#fc2418c8-83f5-4c79-a940-5e88559467c2",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDEuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health,Well-being",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "KiKa"
+    },
+    "SortKey": "MATCH#TAG#Certification mark#fc2418c8-83f5-4c79-a940-5e88559467c2",
+    "OrganisationId": "fc2418c8-83f5-4c79-a940-5e88559467c2",
+    "Tag": "Certification mark",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 78,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Jantje Beton is hét goede doel dat zich sinds 1968 samen met kinderen en jongeren inzet voor meer en uitdagender speelruimte en meer speelkansen.",
+      "WebsiteUrl": "https://jantjebeton.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://jantjebeton.nl/assets/images/jantje-beton-stop-nooit-met-spelen.svg",
+      "Id": "054182c5-7563-4a17-90fe-edec349c59e6",
+      "Mission": "We moeten steeds meer en spelen steeds minder. Daarom zeggen wij: Stop nooit met spelen.",
+      "PrimaryKey": "ORGANISATION#054182c5-7563-4a17-90fe-edec349c59e6",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDcxOWQwMDkuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Well-being,Education and science",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Jantje Beton"
+    },
+    "SortKey": "MATCH#TAG#Directness#054182c5-7563-4a17-90fe-edec349c59e6",
+    "OrganisationId": "054182c5-7563-4a17-90fe-edec349c59e6",
+    "Tag": "Directness",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 84,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We draw on our experience to guide visual journalists, storytellers, and audiences around the world through this challenging and exciting landscape.",
+      "WebsiteUrl": "https://www.worldpressphoto.org/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.worldpressphoto.org/Frontend/images/logo.svg",
+      "Id": "0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+      "Mission": "The World Press Photo Foundation believes in the power of showing and the importance of seeing high-quality visual stories.",
+      "PrimaryKey": "ORGANISATION#0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDIyMWQwMWMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Art and culture,International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "World Press Photo Foundation"
+    },
+    "SortKey": "MATCH#TAG#Directness#0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+    "OrganisationId": "0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+    "Tag": "Directness",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Samen kunnen we onrecht stoppen. De vrijheid eisen van mensen die vastzitten om wie ze zijn of waarin ze geloven. De rechten van vrouwen en meisjes beter beschermen. Een einde maken aan folteringen en de doodstraf. Jouw gift maakt een structureel verschil in het leven van mensen, dichtbij én veraf.",
+      "WebsiteUrl": "https://www.amnesty.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://webshop.amnesty.nl/static/version1615452727/frontend/Amnesty/default/nl_NL/images/logo-amnesty.svg",
+      "Id": "1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+      "Mission": "Mensenrechten verdedig je met vuur!",
+      "PrimaryKey": "ORGANISATION#1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTAyMGQwMTEuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Amnesty International"
+    },
+    "SortKey": "MATCH#TAG#Directness#1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+    "OrganisationId": "1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+    "Tag": "Directness",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "De kinderboerderij organiseert met grote regelmaat evenementen en themadagen voor jong en oud, en is een informatiepunt op het gebied van natuur en milieu, met mooie faciliteiten voor het ontvangen van schoolklassen en andere doelgroepen.",
+      "WebsiteUrl": "https://www.kinderboerderij-driebergen.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.kinderboerderij-driebergen.nl/wp-content/uploads/2015/10/header.png",
+      "Id": "1eb001ee-e197-45c6-9a53-91305f6aa052",
+      "Mission": "Kinderboerderij \u0027t Woelige Nest is een gezellige ontmoetingsplaats voor jong en oud uit de regio.",
+      "PrimaryKey": "ORGANISATION#1eb001ee-e197-45c6-9a53-91305f6aa052",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDUyMWQwMDUuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Animals,Nature and environment",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Kinderboerderij Driebergen"
+    },
+    "SortKey": "MATCH#TAG#Directness#1eb001ee-e197-45c6-9a53-91305f6aa052",
+    "OrganisationId": "1eb001ee-e197-45c6-9a53-91305f6aa052",
+    "Tag": "Directness",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Niet alleen in Nederland, maar ook in de rest van de wereld bieden wij medische hulp aan kansarme mensen. In meer dan tachtig landen helpen we hen die geen of slechte toegang hebben tot medische zorg. Gezondheidszorg is geen privilege, maar een mensenrecht. Onze missie is ervoor te zorgen dat dit recht wordt nageleefd.",
+      "WebsiteUrl": "https://doktersvandewereld.org/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://doktersvandewereld.org/wp-content/themes/dvdw/assets/images/logo-dvdw.png",
+      "Id": "59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+      "Mission": "Gezondheidszorg is geen privilege, maar een mensenrecht.",
+      "PrimaryKey": "ORGANISATION#59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDEyMGQwMDYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Dokters van de Wereld"
+    },
+    "SortKey": "MATCH#TAG#Directness#59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+    "OrganisationId": "59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+    "Tag": "Directness",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Iedereen een gezond hart. Dat is de droom van de Hartstichting. Want met een gezond hart haal je meer uit het leven. Al meer dan 55 jaar investeren we in onderzoek en innovatie op het gebied van preventie en zorg. Maar net zo belangrijk vinden wij het om Nederlanders te helpen hun hart te kennen en goed voor hun hart te zorgen.",
+      "WebsiteUrl": "https://www.hartstichting.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.hartstichting.nl/assets/img/icons/logo.svg",
+      "Id": "83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+      "Mission": "Help ons jouw hart gezond te houden.",
+      "PrimaryKey": "ORGANISATION#83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDEyMWQwMGYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Hartstichting"
+    },
+    "SortKey": "MATCH#TAG#Directness#83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+    "OrganisationId": "83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+    "Tag": "Directness",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Mensen met financiële zorgen zijn nu ontzettend kwetsbaar in deze onzekere tijd. Zij hebben geen buffer om op terug te vallen, en soms ook geen vrienden of familie die kunnen helpen. Er zijn prachtige initiatieven in Nederland die hulp bieden in deze moeilijke tijd. Met jouw hulp kunnen wij lokale (hulp)organisaties ondersteunen.",
+      "WebsiteUrl": "https://www.armoedefonds.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.armoedefonds.nl/resources/images/logo_Armoedefonds.png",
+      "Id": "9598576f-7cce-4e79-a11f-ab88db58bb1b",
+      "Mission": "Lokale organisaties ondersteunen die actief zijn op het gebied van armoedebestrijding in Nederland.",
+      "PrimaryKey": "ORGANISATION#9598576f-7cce-4e79-a11f-ab88db58bb1b",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDIyMWQwMDYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Well-being",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Armoedefonds Nederland, Stg."
+    },
+    "SortKey": "MATCH#TAG#Directness#9598576f-7cce-4e79-a11f-ab88db58bb1b",
+    "OrganisationId": "9598576f-7cce-4e79-a11f-ab88db58bb1b",
+    "Tag": "Directness",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 87,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Wij verbeteren structureel de gezondheidszorg van het land waar we te gast zijn door in te zetten op duurzame hulpverlening.",
+      "WebsiteUrl": "https://mercyships.org",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.mercyships.nl/wp-content/uploads/2020/10/Logo-web-stories.jpg",
+      "Id": "da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+      "Mission": "Wij maken medische en chirurgische zorg toegankelijk voor de allerarmste mensen ter wereld.",
+      "PrimaryKey": "ORGANISATION#da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDMyMGQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights,Religion and philosophy",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Mercy Ships"
+    },
+    "SortKey": "MATCH#TAG#Directness#da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+    "OrganisationId": "da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+    "Tag": "Directness",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "De Nederlandse Brandwonden Stichting helpt mensen met brandwonden. Kort na het ongeval, maar ook later in hun dagelijkse strijd tegen littekens. We financieren onderzoek en doen er alles aan om brandwonden te voorkomen. En we zetten ons in voor de best mogelijke zorg voor brandwondenpatiënten, en de hoogst mogelijke kwaliteit van leven.",
+      "WebsiteUrl": "http://brandwondenstichting.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://brandwondenstichting.nl/wp-content/uploads/2017/02/xbws-logo-kleur.png.pagespeed.ic.EdaYY8cDA4.webp",
+      "Id": "dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+      "Mission": "Wij gaan voor de beste brandwondenzorg: de beste zorg aan patiënten, de hoogst mogelijke kwaliteit van leven en de meest effectieve preventie.",
+      "PrimaryKey": "ORGANISATION#dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTEyMGQwMDYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Brandwonden Stichting"
+    },
+    "SortKey": "MATCH#TAG#Directness#dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+    "OrganisationId": "dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+    "Tag": "Directness",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Armoede heeft een vernietigend effect op elk gebied van je leven. Daarom moet het antwoord ook op elk gebied komen: cognitief, lichamelijk, sociaal, emotioneel, economisch én geestelijk. In het kindsponsorprogramma worden de kinderen op al deze gebieden begeleid om hun van God gegeven talenten te ontdekken.",
+      "WebsiteUrl": "https://www.compassion.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.compassion.nl/app/uploads/2020/11/logo_payoff.svg",
+      "Id": "ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+      "Mission": "Compassion bevrijdt kinderen van armoede in Jezus\u0027 naam via lokale kerken in 25 landen wereldwijd",
+      "PrimaryKey": "ORGANISATION#ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDgxOWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Religion and philosophy,Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Compassion Nederland"
+    },
+    "SortKey": "MATCH#TAG#Directness#ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+    "OrganisationId": "ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+    "Tag": "Directness",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 96,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Wij geven als stabiele en professionele non-profit organisatie een positief tegengeluid op de ontbossing en teruggang van biodiversiteit in de tropen.",
+      "WebsiteUrl": "https://www.adopteerregenwoud.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.adopteerregenwoud.nl/wp-content/uploads/2019/10/logo.svg",
+      "Id": "f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+      "Mission": "Adopteer jouw eigen stukje regenwoud!",
+      "PrimaryKey": "ORGANISATION#f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDMyMWQwMDIuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Nature and environment,International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Stichting Adopteer Regenwoud"
+    },
+    "SortKey": "MATCH#TAG#Directness#f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+    "OrganisationId": "f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+    "Tag": "Directness",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 81,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Jaarlijks krijgen ruim 550 kinderen in Nederland kanker. Op dit moment geneest 75% van deze kinderen. Ons doel is om dit percentage te verhogen naar 95%.",
+      "WebsiteUrl": "https://www.kika.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.kika.nl/themes/custom/ef2_custom/logo.svg",
+      "Id": "fc2418c8-83f5-4c79-a940-5e88559467c2",
+      "Mission": "KiKa financiert onderzoeken naar kinderkanker om de behandelingen te verbeteren. ",
+      "PrimaryKey": "ORGANISATION#fc2418c8-83f5-4c79-a940-5e88559467c2",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDEuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health,Well-being",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "KiKa"
+    },
+    "SortKey": "MATCH#TAG#Directness#fc2418c8-83f5-4c79-a940-5e88559467c2",
+    "OrganisationId": "fc2418c8-83f5-4c79-a940-5e88559467c2",
+    "Tag": "Directness",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Onze doelstelling is de scholen voorzien van geldelijke middelen door donateurs te werven en kerken, scholen en verenigingen te vragen acties te organiseren.",
+      "WebsiteUrl": "https://svcos.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://svcos.nl/wp-content/uploads/2020/06/logo_stichting-vrienden_klein.png",
+      "Id": "4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+      "Mission": "Wij beogen samen met u ondersteuning en uitbreiding van christelijk onderwijs in Schotland.",
+      "PrimaryKey": "ORGANISATION#4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDUuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Education and science,Religion and philosophy",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "SVCOS Schotland"
+    },
+    "SortKey": "MATCH#TAG#Education and science#4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+    "OrganisationId": "4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+    "Tag": "Education and science",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 90,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We willen graag meebouwen aan een school waar kinderen en jongeren zich kunnen ontwikkelen. Een goede plek met een sterk programma aan lessen en activiteiten.",
+      "WebsiteUrl": "https://hiskits.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://hiskits.nl/wp-content/uploads/2020/06/logo-st-hiskits-Logo-Website-9@0.5x-e1592589202645.png",
+      "Id": "ce168aa4-4763-4f3d-a284-392aad7972f3",
+      "Mission": "Vanuit Nederland meebouwen aan een school in Lesotho!",
+      "PrimaryKey": "ORGANISATION#ce168aa4-4763-4f3d-a284-392aad7972f3",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDUuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Education and science,International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Stichting Hiskits"
+    },
+    "SortKey": "MATCH#TAG#Education and science#ce168aa4-4763-4f3d-a284-392aad7972f3",
+    "OrganisationId": "ce168aa4-4763-4f3d-a284-392aad7972f3",
+    "Tag": "Education and science",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Armoede heeft een vernietigend effect op elk gebied van je leven. Daarom moet het antwoord ook op elk gebied komen: cognitief, lichamelijk, sociaal, emotioneel, economisch én geestelijk. In het kindsponsorprogramma worden de kinderen op al deze gebieden begeleid om hun van God gegeven talenten te ontdekken.",
+      "WebsiteUrl": "https://www.compassion.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.compassion.nl/app/uploads/2020/11/logo_payoff.svg",
+      "Id": "ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+      "Mission": "Compassion bevrijdt kinderen van armoede in Jezus\u0027 naam via lokale kerken in 25 landen wereldwijd",
+      "PrimaryKey": "ORGANISATION#ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDgxOWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Religion and philosophy,Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Compassion Nederland"
+    },
+    "SortKey": "MATCH#TAG#Financial adoption#ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+    "OrganisationId": "ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+    "Tag": "Financial adoption",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Niet alleen in Nederland, maar ook in de rest van de wereld bieden wij medische hulp aan kansarme mensen. In meer dan tachtig landen helpen we hen die geen of slechte toegang hebben tot medische zorg. Gezondheidszorg is geen privilege, maar een mensenrecht. Onze missie is ervoor te zorgen dat dit recht wordt nageleefd.",
+      "WebsiteUrl": "https://doktersvandewereld.org/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://doktersvandewereld.org/wp-content/themes/dvdw/assets/images/logo-dvdw.png",
+      "Id": "59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+      "Mission": "Gezondheidszorg is geen privilege, maar een mensenrecht.",
+      "PrimaryKey": "ORGANISATION#59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDEyMGQwMDYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Dokters van de Wereld"
+    },
+    "SortKey": "MATCH#TAG#Health#59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+    "OrganisationId": "59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+    "Tag": "Health",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Iedereen een gezond hart. Dat is de droom van de Hartstichting. Want met een gezond hart haal je meer uit het leven. Al meer dan 55 jaar investeren we in onderzoek en innovatie op het gebied van preventie en zorg. Maar net zo belangrijk vinden wij het om Nederlanders te helpen hun hart te kennen en goed voor hun hart te zorgen.",
+      "WebsiteUrl": "https://www.hartstichting.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.hartstichting.nl/assets/img/icons/logo.svg",
+      "Id": "83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+      "Mission": "Help ons jouw hart gezond te houden.",
+      "PrimaryKey": "ORGANISATION#83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDEyMWQwMGYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Hartstichting"
+    },
+    "SortKey": "MATCH#TAG#Health#83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+    "OrganisationId": "83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+    "Tag": "Health",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "De Nederlandse Brandwonden Stichting helpt mensen met brandwonden. Kort na het ongeval, maar ook later in hun dagelijkse strijd tegen littekens. We financieren onderzoek en doen er alles aan om brandwonden te voorkomen. En we zetten ons in voor de best mogelijke zorg voor brandwondenpatiënten, en de hoogst mogelijke kwaliteit van leven.",
+      "WebsiteUrl": "http://brandwondenstichting.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://brandwondenstichting.nl/wp-content/uploads/2017/02/xbws-logo-kleur.png.pagespeed.ic.EdaYY8cDA4.webp",
+      "Id": "dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+      "Mission": "Wij gaan voor de beste brandwondenzorg: de beste zorg aan patiënten, de hoogst mogelijke kwaliteit van leven en de meest effectieve preventie.",
+      "PrimaryKey": "ORGANISATION#dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTEyMGQwMDYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Brandwonden Stichting"
+    },
+    "SortKey": "MATCH#TAG#Health#dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+    "OrganisationId": "dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+    "Tag": "Health",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Bij uitzonderlijke rampen slaan de 11 samenwerkende hulporganisaties de handen ineen onder de naam Giro555. Zij vragen heel Nederland zich aan te sluiten om geld in te zamelen voor hulp aan slachtoffers. Want samen redden we meer levens.",
+      "WebsiteUrl": "https://giro555.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://giro555.nl/wp-content/uploads/2020/08/Logo-payoff-zwartebg.jpg",
+      "Id": "e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+      "Mission": "Want samen redden we meer levens.",
+      "PrimaryKey": "ORGANISATION#e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDUyMWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights,Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Giro555"
+    },
+    "SortKey": "MATCH#TAG#Health#e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+    "OrganisationId": "e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+    "Tag": "Health",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 92,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Jaarlijks krijgen ruim 550 kinderen in Nederland kanker. Op dit moment geneest 75% van deze kinderen. Ons doel is om dit percentage te verhogen naar 95%.",
+      "WebsiteUrl": "https://www.kika.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.kika.nl/themes/custom/ef2_custom/logo.svg",
+      "Id": "fc2418c8-83f5-4c79-a940-5e88559467c2",
+      "Mission": "KiKa financiert onderzoeken naar kinderkanker om de behandelingen te verbeteren. ",
+      "PrimaryKey": "ORGANISATION#fc2418c8-83f5-4c79-a940-5e88559467c2",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDEuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health,Well-being",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "KiKa"
+    },
+    "SortKey": "MATCH#TAG#Health#fc2418c8-83f5-4c79-a940-5e88559467c2",
+    "OrganisationId": "fc2418c8-83f5-4c79-a940-5e88559467c2",
+    "Tag": "Health",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We are a global organization partnering with local justice systems to end violence against people living in poverty. We need you with us.",
+      "WebsiteUrl": "https://www.ijm.org/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://endingpovertytogether.org/wp-content/uploads/2018/09/IJM-Logo.001.jpeg",
+      "Id": "0832f067-c470-4cfc-9603-1c034e5c0e4e",
+      "Mission": "Every person deserves to be free from violence.",
+      "PrimaryKey": "ORGANISATION#0832f067-c470-4cfc-9603-1c034e5c0e4e",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDExOWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Int. Justice Mission NL (IJM)"
+    },
+    "SortKey": "MATCH#TAG#International aid and human rights#0832f067-c470-4cfc-9603-1c034e5c0e4e",
+    "OrganisationId": "0832f067-c470-4cfc-9603-1c034e5c0e4e",
+    "Tag": "International aid and human rights",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Samen kunnen we onrecht stoppen. De vrijheid eisen van mensen die vastzitten om wie ze zijn of waarin ze geloven. De rechten van vrouwen en meisjes beter beschermen. Een einde maken aan folteringen en de doodstraf. Jouw gift maakt een structureel verschil in het leven van mensen, dichtbij én veraf.",
+      "WebsiteUrl": "https://www.amnesty.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://webshop.amnesty.nl/static/version1615452727/frontend/Amnesty/default/nl_NL/images/logo-amnesty.svg",
+      "Id": "1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+      "Mission": "Mensenrechten verdedig je met vuur!",
+      "PrimaryKey": "ORGANISATION#1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTAyMGQwMTEuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Amnesty International"
+    },
+    "SortKey": "MATCH#TAG#International aid and human rights#1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+    "OrganisationId": "1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+    "Tag": "International aid and human rights",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 95,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Wij verbeteren structureel de gezondheidszorg van het land waar we te gast zijn door in te zetten op duurzame hulpverlening.",
+      "WebsiteUrl": "https://mercyships.org",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.mercyships.nl/wp-content/uploads/2020/10/Logo-web-stories.jpg",
+      "Id": "da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+      "Mission": "Wij maken medische en chirurgische zorg toegankelijk voor de allerarmste mensen ter wereld.",
+      "PrimaryKey": "ORGANISATION#da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDMyMGQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights,Religion and philosophy",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Mercy Ships"
+    },
+    "SortKey": "MATCH#TAG#International aid and human rights#da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+    "OrganisationId": "da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+    "Tag": "International aid and human rights",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Bij uitzonderlijke rampen slaan de 11 samenwerkende hulporganisaties de handen ineen onder de naam Giro555. Zij vragen heel Nederland zich aan te sluiten om geld in te zamelen voor hulp aan slachtoffers. Want samen redden we meer levens.",
+      "WebsiteUrl": "https://giro555.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://giro555.nl/wp-content/uploads/2020/08/Logo-payoff-zwartebg.jpg",
+      "Id": "e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+      "Mission": "Want samen redden we meer levens.",
+      "PrimaryKey": "ORGANISATION#e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDUyMWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights,Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Giro555"
+    },
+    "SortKey": "MATCH#TAG#International aid and human rights#e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+    "OrganisationId": "e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+    "Tag": "International aid and human rights",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We are a global organization partnering with local justice systems to end violence against people living in poverty. We need you with us.",
+      "WebsiteUrl": "https://www.ijm.org/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://endingpovertytogether.org/wp-content/uploads/2018/09/IJM-Logo.001.jpeg",
+      "Id": "0832f067-c470-4cfc-9603-1c034e5c0e4e",
+      "Mission": "Every person deserves to be free from violence.",
+      "PrimaryKey": "ORGANISATION#0832f067-c470-4cfc-9603-1c034e5c0e4e",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDExOWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Int. Justice Mission NL (IJM)"
+    },
+    "SortKey": "MATCH#TAG#International#0832f067-c470-4cfc-9603-1c034e5c0e4e",
+    "OrganisationId": "0832f067-c470-4cfc-9603-1c034e5c0e4e",
+    "Tag": "International",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We draw on our experience to guide visual journalists, storytellers, and audiences around the world through this challenging and exciting landscape.",
+      "WebsiteUrl": "https://www.worldpressphoto.org/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.worldpressphoto.org/Frontend/images/logo.svg",
+      "Id": "0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+      "Mission": "The World Press Photo Foundation believes in the power of showing and the importance of seeing high-quality visual stories.",
+      "PrimaryKey": "ORGANISATION#0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDIyMWQwMWMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Art and culture,International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "World Press Photo Foundation"
+    },
+    "SortKey": "MATCH#TAG#International#0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+    "OrganisationId": "0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+    "Tag": "International",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Samen kunnen we onrecht stoppen. De vrijheid eisen van mensen die vastzitten om wie ze zijn of waarin ze geloven. De rechten van vrouwen en meisjes beter beschermen. Een einde maken aan folteringen en de doodstraf. Jouw gift maakt een structureel verschil in het leven van mensen, dichtbij én veraf.",
+      "WebsiteUrl": "https://www.amnesty.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://webshop.amnesty.nl/static/version1615452727/frontend/Amnesty/default/nl_NL/images/logo-amnesty.svg",
+      "Id": "1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+      "Mission": "Mensenrechten verdedig je met vuur!",
+      "PrimaryKey": "ORGANISATION#1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTAyMGQwMTEuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Amnesty International"
+    },
+    "SortKey": "MATCH#TAG#International#1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+    "OrganisationId": "1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+    "Tag": "International",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 75,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Onze doelstelling is de scholen voorzien van geldelijke middelen door donateurs te werven en kerken, scholen en verenigingen te vragen acties te organiseren.",
+      "WebsiteUrl": "https://svcos.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://svcos.nl/wp-content/uploads/2020/06/logo_stichting-vrienden_klein.png",
+      "Id": "4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+      "Mission": "Wij beogen samen met u ondersteuning en uitbreiding van christelijk onderwijs in Schotland.",
+      "PrimaryKey": "ORGANISATION#4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDUuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Education and science,Religion and philosophy",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "SVCOS Schotland"
+    },
+    "SortKey": "MATCH#TAG#International#4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+    "OrganisationId": "4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+    "Tag": "International",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Niet alleen in Nederland, maar ook in de rest van de wereld bieden wij medische hulp aan kansarme mensen. In meer dan tachtig landen helpen we hen die geen of slechte toegang hebben tot medische zorg. Gezondheidszorg is geen privilege, maar een mensenrecht. Onze missie is ervoor te zorgen dat dit recht wordt nageleefd.",
+      "WebsiteUrl": "https://doktersvandewereld.org/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://doktersvandewereld.org/wp-content/themes/dvdw/assets/images/logo-dvdw.png",
+      "Id": "59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+      "Mission": "Gezondheidszorg is geen privilege, maar een mensenrecht.",
+      "PrimaryKey": "ORGANISATION#59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDEyMGQwMDYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Dokters van de Wereld"
+    },
+    "SortKey": "MATCH#TAG#International#59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+    "OrganisationId": "59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+    "Tag": "International",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 80,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We willen graag meebouwen aan een school waar kinderen en jongeren zich kunnen ontwikkelen. Een goede plek met een sterk programma aan lessen en activiteiten.",
+      "WebsiteUrl": "https://hiskits.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://hiskits.nl/wp-content/uploads/2020/06/logo-st-hiskits-Logo-Website-9@0.5x-e1592589202645.png",
+      "Id": "ce168aa4-4763-4f3d-a284-392aad7972f3",
+      "Mission": "Vanuit Nederland meebouwen aan een school in Lesotho!",
+      "PrimaryKey": "ORGANISATION#ce168aa4-4763-4f3d-a284-392aad7972f3",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDUuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Education and science,International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Stichting Hiskits"
+    },
+    "SortKey": "MATCH#TAG#International#ce168aa4-4763-4f3d-a284-392aad7972f3",
+    "OrganisationId": "ce168aa4-4763-4f3d-a284-392aad7972f3",
+    "Tag": "International",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 95,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Wij verbeteren structureel de gezondheidszorg van het land waar we te gast zijn door in te zetten op duurzame hulpverlening.",
+      "WebsiteUrl": "https://mercyships.org",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.mercyships.nl/wp-content/uploads/2020/10/Logo-web-stories.jpg",
+      "Id": "da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+      "Mission": "Wij maken medische en chirurgische zorg toegankelijk voor de allerarmste mensen ter wereld.",
+      "PrimaryKey": "ORGANISATION#da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDMyMGQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights,Religion and philosophy",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Mercy Ships"
+    },
+    "SortKey": "MATCH#TAG#International#da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+    "OrganisationId": "da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+    "Tag": "International",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Bij uitzonderlijke rampen slaan de 11 samenwerkende hulporganisaties de handen ineen onder de naam Giro555. Zij vragen heel Nederland zich aan te sluiten om geld in te zamelen voor hulp aan slachtoffers. Want samen redden we meer levens.",
+      "WebsiteUrl": "https://giro555.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://giro555.nl/wp-content/uploads/2020/08/Logo-payoff-zwartebg.jpg",
+      "Id": "e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+      "Mission": "Want samen redden we meer levens.",
+      "PrimaryKey": "ORGANISATION#e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDUyMWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights,Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Giro555"
+    },
+    "SortKey": "MATCH#TAG#International#e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+    "OrganisationId": "e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+    "Tag": "International",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Armoede heeft een vernietigend effect op elk gebied van je leven. Daarom moet het antwoord ook op elk gebied komen: cognitief, lichamelijk, sociaal, emotioneel, economisch én geestelijk. In het kindsponsorprogramma worden de kinderen op al deze gebieden begeleid om hun van God gegeven talenten te ontdekken.",
+      "WebsiteUrl": "https://www.compassion.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.compassion.nl/app/uploads/2020/11/logo_payoff.svg",
+      "Id": "ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+      "Mission": "Compassion bevrijdt kinderen van armoede in Jezus\u0027 naam via lokale kerken in 25 landen wereldwijd",
+      "PrimaryKey": "ORGANISATION#ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDgxOWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Religion and philosophy,Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Compassion Nederland"
+    },
+    "SortKey": "MATCH#TAG#International#ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+    "OrganisationId": "ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+    "Tag": "International",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Wij geven als stabiele en professionele non-profit organisatie een positief tegengeluid op de ontbossing en teruggang van biodiversiteit in de tropen.",
+      "WebsiteUrl": "https://www.adopteerregenwoud.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.adopteerregenwoud.nl/wp-content/uploads/2019/10/logo.svg",
+      "Id": "f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+      "Mission": "Adopteer jouw eigen stukje regenwoud!",
+      "PrimaryKey": "ORGANISATION#f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDMyMWQwMDIuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Nature and environment,International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Stichting Adopteer Regenwoud"
+    },
+    "SortKey": "MATCH#TAG#International#f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+    "OrganisationId": "f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+    "Tag": "International",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Wij geloven in de kracht van de natuur en het samen afkoelen van de aarde door gedegradeerd land te vergroenen en vegetatie terug te brengen. Onze missie is om Afrika in de komende 10 jaar te vergroenen, samen met alle 350 miljoen boeren, en samen met jou.",
+      "WebsiteUrl": "https://justdiggit.org/nl",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://buy-a-bund.justdiggit.org/static/media/logo.855d848c.svg",
+      "Id": "ff53f6ed-33b4-45b5-9a7b-3c3d86942a7f",
+      "Mission": "We zijn op een missie om Afrika in de komende 10 jaar te vergroenen, samen met miljoenen boeren én samen met jou",
+      "PrimaryKey": "ORGANISATION#ff53f6ed-33b4-45b5-9a7b-3c3d86942a7f",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDkuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Nature and environment, International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Justdiggit"
+    },
+    "SortKey": "MATCH#TAG#International#ff53f6ed-33b4-45b5-9a7b-3c3d86942a7f",
+    "OrganisationId": "ff53f6ed-33b4-45b5-9a7b-3c3d86942a7f",
+    "Tag": "International",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 28,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We are a global organization partnering with local justice systems to end violence against people living in poverty. We need you with us.",
+      "WebsiteUrl": "https://www.ijm.org/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://endingpovertytogether.org/wp-content/uploads/2018/09/IJM-Logo.001.jpeg",
+      "Id": "0832f067-c470-4cfc-9603-1c034e5c0e4e",
+      "Mission": "Every person deserves to be free from violence.",
+      "PrimaryKey": "ORGANISATION#0832f067-c470-4cfc-9603-1c034e5c0e4e",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDExOWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Int. Justice Mission NL (IJM)"
+    },
+    "SortKey": "MATCH#TAG#Investing#0832f067-c470-4cfc-9603-1c034e5c0e4e",
+    "OrganisationId": "0832f067-c470-4cfc-9603-1c034e5c0e4e",
+    "Tag": "Investing",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Bij uitzonderlijke rampen slaan de 11 samenwerkende hulporganisaties de handen ineen onder de naam Giro555. Zij vragen heel Nederland zich aan te sluiten om geld in te zamelen voor hulp aan slachtoffers. Want samen redden we meer levens.",
+      "WebsiteUrl": "https://giro555.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://giro555.nl/wp-content/uploads/2020/08/Logo-payoff-zwartebg.jpg",
+      "Id": "e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+      "Mission": "Want samen redden we meer levens.",
+      "PrimaryKey": "ORGANISATION#e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDUyMWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights,Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Giro555"
+    },
+    "SortKey": "MATCH#TAG#Investing#e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+    "OrganisationId": "e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+    "Tag": "Investing",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 95,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Jantje Beton is hét goede doel dat zich sinds 1968 samen met kinderen en jongeren inzet voor meer en uitdagender speelruimte en meer speelkansen.",
+      "WebsiteUrl": "https://jantjebeton.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://jantjebeton.nl/assets/images/jantje-beton-stop-nooit-met-spelen.svg",
+      "Id": "054182c5-7563-4a17-90fe-edec349c59e6",
+      "Mission": "We moeten steeds meer en spelen steeds minder. Daarom zeggen wij: Stop nooit met spelen.",
+      "PrimaryKey": "ORGANISATION#054182c5-7563-4a17-90fe-edec349c59e6",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDcxOWQwMDkuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Well-being,Education and science",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Jantje Beton"
+    },
+    "SortKey": "MATCH#TAG#Large scale#054182c5-7563-4a17-90fe-edec349c59e6",
+    "OrganisationId": "054182c5-7563-4a17-90fe-edec349c59e6",
+    "Tag": "Large scale",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We are a global organization partnering with local justice systems to end violence against people living in poverty. We need you with us.",
+      "WebsiteUrl": "https://www.ijm.org/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://endingpovertytogether.org/wp-content/uploads/2018/09/IJM-Logo.001.jpeg",
+      "Id": "0832f067-c470-4cfc-9603-1c034e5c0e4e",
+      "Mission": "Every person deserves to be free from violence.",
+      "PrimaryKey": "ORGANISATION#0832f067-c470-4cfc-9603-1c034e5c0e4e",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDExOWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Int. Justice Mission NL (IJM)"
+    },
+    "SortKey": "MATCH#TAG#Large scale#0832f067-c470-4cfc-9603-1c034e5c0e4e",
+    "OrganisationId": "0832f067-c470-4cfc-9603-1c034e5c0e4e",
+    "Tag": "Large scale",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We draw on our experience to guide visual journalists, storytellers, and audiences around the world through this challenging and exciting landscape.",
+      "WebsiteUrl": "https://www.worldpressphoto.org/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.worldpressphoto.org/Frontend/images/logo.svg",
+      "Id": "0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+      "Mission": "The World Press Photo Foundation believes in the power of showing and the importance of seeing high-quality visual stories.",
+      "PrimaryKey": "ORGANISATION#0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDIyMWQwMWMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Art and culture,International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "World Press Photo Foundation"
+    },
+    "SortKey": "MATCH#TAG#Large scale#0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+    "OrganisationId": "0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+    "Tag": "Large scale",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Samen kunnen we onrecht stoppen. De vrijheid eisen van mensen die vastzitten om wie ze zijn of waarin ze geloven. De rechten van vrouwen en meisjes beter beschermen. Een einde maken aan folteringen en de doodstraf. Jouw gift maakt een structureel verschil in het leven van mensen, dichtbij én veraf.",
+      "WebsiteUrl": "https://www.amnesty.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://webshop.amnesty.nl/static/version1615452727/frontend/Amnesty/default/nl_NL/images/logo-amnesty.svg",
+      "Id": "1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+      "Mission": "Mensenrechten verdedig je met vuur!",
+      "PrimaryKey": "ORGANISATION#1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTAyMGQwMTEuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Amnesty International"
+    },
+    "SortKey": "MATCH#TAG#Large scale#1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+    "OrganisationId": "1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+    "Tag": "Large scale",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Niet alleen in Nederland, maar ook in de rest van de wereld bieden wij medische hulp aan kansarme mensen. In meer dan tachtig landen helpen we hen die geen of slechte toegang hebben tot medische zorg. Gezondheidszorg is geen privilege, maar een mensenrecht. Onze missie is ervoor te zorgen dat dit recht wordt nageleefd.",
+      "WebsiteUrl": "https://doktersvandewereld.org/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://doktersvandewereld.org/wp-content/themes/dvdw/assets/images/logo-dvdw.png",
+      "Id": "59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+      "Mission": "Gezondheidszorg is geen privilege, maar een mensenrecht.",
+      "PrimaryKey": "ORGANISATION#59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDEyMGQwMDYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Dokters van de Wereld"
+    },
+    "SortKey": "MATCH#TAG#Large scale#59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+    "OrganisationId": "59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+    "Tag": "Large scale",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Iedereen een gezond hart. Dat is de droom van de Hartstichting. Want met een gezond hart haal je meer uit het leven. Al meer dan 55 jaar investeren we in onderzoek en innovatie op het gebied van preventie en zorg. Maar net zo belangrijk vinden wij het om Nederlanders te helpen hun hart te kennen en goed voor hun hart te zorgen.",
+      "WebsiteUrl": "https://www.hartstichting.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.hartstichting.nl/assets/img/icons/logo.svg",
+      "Id": "83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+      "Mission": "Help ons jouw hart gezond te houden.",
+      "PrimaryKey": "ORGANISATION#83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDEyMWQwMGYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Hartstichting"
+    },
+    "SortKey": "MATCH#TAG#Large scale#83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+    "OrganisationId": "83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+    "Tag": "Large scale",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Mensen met financiële zorgen zijn nu ontzettend kwetsbaar in deze onzekere tijd. Zij hebben geen buffer om op terug te vallen, en soms ook geen vrienden of familie die kunnen helpen. Er zijn prachtige initiatieven in Nederland die hulp bieden in deze moeilijke tijd. Met jouw hulp kunnen wij lokale (hulp)organisaties ondersteunen.",
+      "WebsiteUrl": "https://www.armoedefonds.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.armoedefonds.nl/resources/images/logo_Armoedefonds.png",
+      "Id": "9598576f-7cce-4e79-a11f-ab88db58bb1b",
+      "Mission": "Lokale organisaties ondersteunen die actief zijn op het gebied van armoedebestrijding in Nederland.",
+      "PrimaryKey": "ORGANISATION#9598576f-7cce-4e79-a11f-ab88db58bb1b",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDIyMWQwMDYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Well-being",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Armoedefonds Nederland, Stg."
+    },
+    "SortKey": "MATCH#TAG#Large scale#9598576f-7cce-4e79-a11f-ab88db58bb1b",
+    "OrganisationId": "9598576f-7cce-4e79-a11f-ab88db58bb1b",
+    "Tag": "Large scale",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "De Nederlandse Brandwonden Stichting helpt mensen met brandwonden. Kort na het ongeval, maar ook later in hun dagelijkse strijd tegen littekens. We financieren onderzoek en doen er alles aan om brandwonden te voorkomen. En we zetten ons in voor de best mogelijke zorg voor brandwondenpatiënten, en de hoogst mogelijke kwaliteit van leven.",
+      "WebsiteUrl": "http://brandwondenstichting.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://brandwondenstichting.nl/wp-content/uploads/2017/02/xbws-logo-kleur.png.pagespeed.ic.EdaYY8cDA4.webp",
+      "Id": "dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+      "Mission": "Wij gaan voor de beste brandwondenzorg: de beste zorg aan patiënten, de hoogst mogelijke kwaliteit van leven en de meest effectieve preventie.",
+      "PrimaryKey": "ORGANISATION#dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTEyMGQwMDYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Brandwonden Stichting"
+    },
+    "SortKey": "MATCH#TAG#Large scale#dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+    "OrganisationId": "dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+    "Tag": "Large scale",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Bij uitzonderlijke rampen slaan de 11 samenwerkende hulporganisaties de handen ineen onder de naam Giro555. Zij vragen heel Nederland zich aan te sluiten om geld in te zamelen voor hulp aan slachtoffers. Want samen redden we meer levens.",
+      "WebsiteUrl": "https://giro555.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://giro555.nl/wp-content/uploads/2020/08/Logo-payoff-zwartebg.jpg",
+      "Id": "e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+      "Mission": "Want samen redden we meer levens.",
+      "PrimaryKey": "ORGANISATION#e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDUyMWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights,Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Giro555"
+    },
+    "SortKey": "MATCH#TAG#Large scale#e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+    "OrganisationId": "e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+    "Tag": "Large scale",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Armoede heeft een vernietigend effect op elk gebied van je leven. Daarom moet het antwoord ook op elk gebied komen: cognitief, lichamelijk, sociaal, emotioneel, economisch én geestelijk. In het kindsponsorprogramma worden de kinderen op al deze gebieden begeleid om hun van God gegeven talenten te ontdekken.",
+      "WebsiteUrl": "https://www.compassion.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.compassion.nl/app/uploads/2020/11/logo_payoff.svg",
+      "Id": "ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+      "Mission": "Compassion bevrijdt kinderen van armoede in Jezus\u0027 naam via lokale kerken in 25 landen wereldwijd",
+      "PrimaryKey": "ORGANISATION#ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDgxOWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Religion and philosophy,Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Compassion Nederland"
+    },
+    "SortKey": "MATCH#TAG#Large scale#ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+    "OrganisationId": "ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+    "Tag": "Large scale",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Jaarlijks krijgen ruim 550 kinderen in Nederland kanker. Op dit moment geneest 75% van deze kinderen. Ons doel is om dit percentage te verhogen naar 95%.",
+      "WebsiteUrl": "https://www.kika.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.kika.nl/themes/custom/ef2_custom/logo.svg",
+      "Id": "fc2418c8-83f5-4c79-a940-5e88559467c2",
+      "Mission": "KiKa financiert onderzoeken naar kinderkanker om de behandelingen te verbeteren. ",
+      "PrimaryKey": "ORGANISATION#fc2418c8-83f5-4c79-a940-5e88559467c2",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDEuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health,Well-being",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "KiKa"
+    },
+    "SortKey": "MATCH#TAG#Large scale#fc2418c8-83f5-4c79-a940-5e88559467c2",
+    "OrganisationId": "fc2418c8-83f5-4c79-a940-5e88559467c2",
+    "Tag": "Large scale",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Jantje Beton is hét goede doel dat zich sinds 1968 samen met kinderen en jongeren inzet voor meer en uitdagender speelruimte en meer speelkansen.",
+      "WebsiteUrl": "https://jantjebeton.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://jantjebeton.nl/assets/images/jantje-beton-stop-nooit-met-spelen.svg",
+      "Id": "054182c5-7563-4a17-90fe-edec349c59e6",
+      "Mission": "We moeten steeds meer en spelen steeds minder. Daarom zeggen wij: Stop nooit met spelen.",
+      "PrimaryKey": "ORGANISATION#054182c5-7563-4a17-90fe-edec349c59e6",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDcxOWQwMDkuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Well-being,Education and science",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Jantje Beton"
+    },
+    "SortKey": "MATCH#TAG#National#054182c5-7563-4a17-90fe-edec349c59e6",
+    "OrganisationId": "054182c5-7563-4a17-90fe-edec349c59e6",
+    "Tag": "National",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "De kinderboerderij organiseert met grote regelmaat evenementen en themadagen voor jong en oud, en is een informatiepunt op het gebied van natuur en milieu, met mooie faciliteiten voor het ontvangen van schoolklassen en andere doelgroepen.",
+      "WebsiteUrl": "https://www.kinderboerderij-driebergen.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.kinderboerderij-driebergen.nl/wp-content/uploads/2015/10/header.png",
+      "Id": "1eb001ee-e197-45c6-9a53-91305f6aa052",
+      "Mission": "Kinderboerderij \u0027t Woelige Nest is een gezellige ontmoetingsplaats voor jong en oud uit de regio.",
+      "PrimaryKey": "ORGANISATION#1eb001ee-e197-45c6-9a53-91305f6aa052",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDUyMWQwMDUuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Animals,Nature and environment",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Kinderboerderij Driebergen"
+    },
+    "SortKey": "MATCH#TAG#National#1eb001ee-e197-45c6-9a53-91305f6aa052",
+    "OrganisationId": "1eb001ee-e197-45c6-9a53-91305f6aa052",
+    "Tag": "National",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 60,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We zijn geen museum, maar een beweging. Met scheppingskracht kunnen we de wereld positief beïnvloeden.",
+      "WebsiteUrl": "https://museumofhumanity.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://museumofhumanity.nl/themes/museum_of_humanity_theme/logo.svg",
+      "Id": "23dc4074-2e26-42c2-85c0-e98827366103",
+      "Mission": "Wij geloven in de schoonheid en waarde van ieder mens. Als iedereen daarvan overtuigd raakt veranderen we samen de wereld.",
+      "PrimaryKey": "ORGANISATION#23dc4074-2e26-42c2-85c0-e98827366103",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIxOWQwMDguZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Art and culture",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Museum of Humanity"
+    },
+    "SortKey": "MATCH#TAG#National#23dc4074-2e26-42c2-85c0-e98827366103",
+    "OrganisationId": "23dc4074-2e26-42c2-85c0-e98827366103",
+    "Tag": "National",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 65,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Maxima is een modezaak zonder kassa. Klanten moeten het goede gevoel in de winkel krijgen; ze worden serieus genomen en met respect behandeld.",
+      "WebsiteUrl": "https://www.kledingbankmaxima.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.kledingbankmaxima.nl/uploads/7/9/3/0/79304076/published/maxima-logo_4.png?1556823006",
+      "Id": "831cad33-e7c4-4a7c-bd3f-17c0f4efb14e",
+      "Mission": "Mensen met een uitkering of met een laag inkomen helpen op de weg van minima naar maxima, o.a. door gratis kleding aan te bieden in modezaken zonder kassa.",
+      "PrimaryKey": "ORGANISATION#831cad33-e7c4-4a7c-bd3f-17c0f4efb14e",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDMyMWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Well-being",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Kledingbank Maxima, Grootegast"
+    },
+    "SortKey": "MATCH#TAG#National#831cad33-e7c4-4a7c-bd3f-17c0f4efb14e",
+    "OrganisationId": "831cad33-e7c4-4a7c-bd3f-17c0f4efb14e",
+    "Tag": "National",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Iedereen een gezond hart. Dat is de droom van de Hartstichting. Want met een gezond hart haal je meer uit het leven. Al meer dan 55 jaar investeren we in onderzoek en innovatie op het gebied van preventie en zorg. Maar net zo belangrijk vinden wij het om Nederlanders te helpen hun hart te kennen en goed voor hun hart te zorgen.",
+      "WebsiteUrl": "https://www.hartstichting.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.hartstichting.nl/assets/img/icons/logo.svg",
+      "Id": "83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+      "Mission": "Help ons jouw hart gezond te houden.",
+      "PrimaryKey": "ORGANISATION#83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDEyMWQwMGYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Hartstichting"
+    },
+    "SortKey": "MATCH#TAG#National#83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+    "OrganisationId": "83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+    "Tag": "National",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Mensen met financiële zorgen zijn nu ontzettend kwetsbaar in deze onzekere tijd. Zij hebben geen buffer om op terug te vallen, en soms ook geen vrienden of familie die kunnen helpen. Er zijn prachtige initiatieven in Nederland die hulp bieden in deze moeilijke tijd. Met jouw hulp kunnen wij lokale (hulp)organisaties ondersteunen.",
+      "WebsiteUrl": "https://www.armoedefonds.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.armoedefonds.nl/resources/images/logo_Armoedefonds.png",
+      "Id": "9598576f-7cce-4e79-a11f-ab88db58bb1b",
+      "Mission": "Lokale organisaties ondersteunen die actief zijn op het gebied van armoedebestrijding in Nederland.",
+      "PrimaryKey": "ORGANISATION#9598576f-7cce-4e79-a11f-ab88db58bb1b",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDIyMWQwMDYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Well-being",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Armoedefonds Nederland, Stg."
+    },
+    "SortKey": "MATCH#TAG#National#9598576f-7cce-4e79-a11f-ab88db58bb1b",
+    "OrganisationId": "9598576f-7cce-4e79-a11f-ab88db58bb1b",
+    "Tag": "National",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 70,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Stichting ZuiderZee Zwerfdieren trekt zich het lot van de dieren aan en dringt het aantal zwerfdieren in Lelystad, Flevoland en de Noordoostpolder terug.",
+      "WebsiteUrl": "https://www.zuiderzeezwerfdieren.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.zuiderzeezwerfdieren.nl/wp-content/uploads/2016/07/header-logo.png",
+      "Id": "a747598e-18e0-45b2-bffb-00328b0d5312",
+      "Mission": "Medische zorg én onderdak van zwerfdieren",
+      "PrimaryKey": "ORGANISATION#a747598e-18e0-45b2-bffb-00328b0d5312",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDQyMGQwMDQuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Animals,Nature and environment",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "St. Zuiderzee Zwerfdieren"
+    },
+    "SortKey": "MATCH#TAG#National#a747598e-18e0-45b2-bffb-00328b0d5312",
+    "OrganisationId": "a747598e-18e0-45b2-bffb-00328b0d5312",
+    "Tag": "National",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "De Nederlandse Brandwonden Stichting helpt mensen met brandwonden. Kort na het ongeval, maar ook later in hun dagelijkse strijd tegen littekens. We financieren onderzoek en doen er alles aan om brandwonden te voorkomen. En we zetten ons in voor de best mogelijke zorg voor brandwondenpatiënten, en de hoogst mogelijke kwaliteit van leven.",
+      "WebsiteUrl": "http://brandwondenstichting.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://brandwondenstichting.nl/wp-content/uploads/2017/02/xbws-logo-kleur.png.pagespeed.ic.EdaYY8cDA4.webp",
+      "Id": "dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+      "Mission": "Wij gaan voor de beste brandwondenzorg: de beste zorg aan patiënten, de hoogst mogelijke kwaliteit van leven en de meest effectieve preventie.",
+      "PrimaryKey": "ORGANISATION#dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTEyMGQwMDYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Brandwonden Stichting"
+    },
+    "SortKey": "MATCH#TAG#National#dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+    "OrganisationId": "dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+    "Tag": "National",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Jaarlijks krijgen ruim 550 kinderen in Nederland kanker. Op dit moment geneest 75% van deze kinderen. Ons doel is om dit percentage te verhogen naar 95%.",
+      "WebsiteUrl": "https://www.kika.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.kika.nl/themes/custom/ef2_custom/logo.svg",
+      "Id": "fc2418c8-83f5-4c79-a940-5e88559467c2",
+      "Mission": "KiKa financiert onderzoeken naar kinderkanker om de behandelingen te verbeteren. ",
+      "PrimaryKey": "ORGANISATION#fc2418c8-83f5-4c79-a940-5e88559467c2",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDEuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health,Well-being",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "KiKa"
+    },
+    "SortKey": "MATCH#TAG#National#fc2418c8-83f5-4c79-a940-5e88559467c2",
+    "OrganisationId": "fc2418c8-83f5-4c79-a940-5e88559467c2",
+    "Tag": "National",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 20,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "De kinderboerderij organiseert met grote regelmaat evenementen en themadagen voor jong en oud, en is een informatiepunt op het gebied van natuur en milieu, met mooie faciliteiten voor het ontvangen van schoolklassen en andere doelgroepen.",
+      "WebsiteUrl": "https://www.kinderboerderij-driebergen.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.kinderboerderij-driebergen.nl/wp-content/uploads/2015/10/header.png",
+      "Id": "1eb001ee-e197-45c6-9a53-91305f6aa052",
+      "Mission": "Kinderboerderij \u0027t Woelige Nest is een gezellige ontmoetingsplaats voor jong en oud uit de regio.",
+      "PrimaryKey": "ORGANISATION#1eb001ee-e197-45c6-9a53-91305f6aa052",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDUyMWQwMDUuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Animals,Nature and environment",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Kinderboerderij Driebergen"
+    },
+    "SortKey": "MATCH#TAG#Nature and environment#1eb001ee-e197-45c6-9a53-91305f6aa052",
+    "OrganisationId": "1eb001ee-e197-45c6-9a53-91305f6aa052",
+    "Tag": "Nature and environment",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Wij geven als stabiele en professionele non-profit organisatie een positief tegengeluid op de ontbossing en teruggang van biodiversiteit in de tropen.",
+      "WebsiteUrl": "https://www.adopteerregenwoud.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.adopteerregenwoud.nl/wp-content/uploads/2019/10/logo.svg",
+      "Id": "f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+      "Mission": "Adopteer jouw eigen stukje regenwoud!",
+      "PrimaryKey": "ORGANISATION#f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDMyMWQwMDIuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Nature and environment,International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Stichting Adopteer Regenwoud"
+    },
+    "SortKey": "MATCH#TAG#Nature and environment#f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+    "OrganisationId": "f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+    "Tag": "Nature and environment",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Wij geloven in de kracht van de natuur en het samen afkoelen van de aarde door gedegradeerd land te vergroenen en vegetatie terug te brengen. Onze missie is om Afrika in de komende 10 jaar te vergroenen, samen met alle 350 miljoen boeren, en samen met jou.",
+      "WebsiteUrl": "https://justdiggit.org/nl",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://buy-a-bund.justdiggit.org/static/media/logo.855d848c.svg",
+      "Id": "ff53f6ed-33b4-45b5-9a7b-3c3d86942a7f",
+      "Mission": "We zijn op een missie om Afrika in de komende 10 jaar te vergroenen, samen met miljoenen boeren én samen met jou",
+      "PrimaryKey": "ORGANISATION#ff53f6ed-33b4-45b5-9a7b-3c3d86942a7f",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDkuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Nature and environment, International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Justdiggit"
+    },
+    "SortKey": "MATCH#TAG#Nature and environment#ff53f6ed-33b4-45b5-9a7b-3c3d86942a7f",
+    "OrganisationId": "ff53f6ed-33b4-45b5-9a7b-3c3d86942a7f",
+    "Tag": "Nature and environment",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Onze doelstelling is de scholen voorzien van geldelijke middelen door donateurs te werven en kerken, scholen en verenigingen te vragen acties te organiseren.",
+      "WebsiteUrl": "https://svcos.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://svcos.nl/wp-content/uploads/2020/06/logo_stichting-vrienden_klein.png",
+      "Id": "4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+      "Mission": "Wij beogen samen met u ondersteuning en uitbreiding van christelijk onderwijs in Schotland.",
+      "PrimaryKey": "ORGANISATION#4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDUuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Education and science,Religion and philosophy",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "SVCOS Schotland"
+    },
+    "SortKey": "MATCH#TAG#Religion and philosophy#4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+    "OrganisationId": "4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+    "Tag": "Religion and philosophy",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Wij verbeteren structureel de gezondheidszorg van het land waar we te gast zijn door in te zetten op duurzame hulpverlening.",
+      "WebsiteUrl": "https://mercyships.org",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.mercyships.nl/wp-content/uploads/2020/10/Logo-web-stories.jpg",
+      "Id": "da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+      "Mission": "Wij maken medische en chirurgische zorg toegankelijk voor de allerarmste mensen ter wereld.",
+      "PrimaryKey": "ORGANISATION#da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDMyMGQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights,Religion and philosophy",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Mercy Ships"
+    },
+    "SortKey": "MATCH#TAG#Religion and philosophy#da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+    "OrganisationId": "da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+    "Tag": "Religion and philosophy",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Armoede heeft een vernietigend effect op elk gebied van je leven. Daarom moet het antwoord ook op elk gebied komen: cognitief, lichamelijk, sociaal, emotioneel, economisch én geestelijk. In het kindsponsorprogramma worden de kinderen op al deze gebieden begeleid om hun van God gegeven talenten te ontdekken.",
+      "WebsiteUrl": "https://www.compassion.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.compassion.nl/app/uploads/2020/11/logo_payoff.svg",
+      "Id": "ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+      "Mission": "Compassion bevrijdt kinderen van armoede in Jezus\u0027 naam via lokale kerken in 25 landen wereldwijd",
+      "PrimaryKey": "ORGANISATION#ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDgxOWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Religion and philosophy,Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Compassion Nederland"
+    },
+    "SortKey": "MATCH#TAG#Religion and philosophy#ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+    "OrganisationId": "ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+    "Tag": "Religion and philosophy",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "De kinderboerderij organiseert met grote regelmaat evenementen en themadagen voor jong en oud, en is een informatiepunt op het gebied van natuur en milieu, met mooie faciliteiten voor het ontvangen van schoolklassen en andere doelgroepen.",
+      "WebsiteUrl": "https://www.kinderboerderij-driebergen.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.kinderboerderij-driebergen.nl/wp-content/uploads/2015/10/header.png",
+      "Id": "1eb001ee-e197-45c6-9a53-91305f6aa052",
+      "Mission": "Kinderboerderij \u0027t Woelige Nest is een gezellige ontmoetingsplaats voor jong en oud uit de regio.",
+      "PrimaryKey": "ORGANISATION#1eb001ee-e197-45c6-9a53-91305f6aa052",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDUyMWQwMDUuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Animals,Nature and environment",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Kinderboerderij Driebergen"
+    },
+    "SortKey": "MATCH#TAG#Small scale#1eb001ee-e197-45c6-9a53-91305f6aa052",
+    "OrganisationId": "1eb001ee-e197-45c6-9a53-91305f6aa052",
+    "Tag": "Small scale",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We zijn geen museum, maar een beweging. Met scheppingskracht kunnen we de wereld positief beïnvloeden.",
+      "WebsiteUrl": "https://museumofhumanity.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://museumofhumanity.nl/themes/museum_of_humanity_theme/logo.svg",
+      "Id": "23dc4074-2e26-42c2-85c0-e98827366103",
+      "Mission": "Wij geloven in de schoonheid en waarde van ieder mens. Als iedereen daarvan overtuigd raakt veranderen we samen de wereld.",
+      "PrimaryKey": "ORGANISATION#23dc4074-2e26-42c2-85c0-e98827366103",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIxOWQwMDguZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Art and culture",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Museum of Humanity"
+    },
+    "SortKey": "MATCH#TAG#Small scale#23dc4074-2e26-42c2-85c0-e98827366103",
+    "OrganisationId": "23dc4074-2e26-42c2-85c0-e98827366103",
+    "Tag": "Small scale",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 95,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Onze doelstelling is de scholen voorzien van geldelijke middelen door donateurs te werven en kerken, scholen en verenigingen te vragen acties te organiseren.",
+      "WebsiteUrl": "https://svcos.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://svcos.nl/wp-content/uploads/2020/06/logo_stichting-vrienden_klein.png",
+      "Id": "4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+      "Mission": "Wij beogen samen met u ondersteuning en uitbreiding van christelijk onderwijs in Schotland.",
+      "PrimaryKey": "ORGANISATION#4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDUuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Education and science,Religion and philosophy",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "SVCOS Schotland"
+    },
+    "SortKey": "MATCH#TAG#Small scale#4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+    "OrganisationId": "4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+    "Tag": "Small scale",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Maxima is een modezaak zonder kassa. Klanten moeten het goede gevoel in de winkel krijgen; ze worden serieus genomen en met respect behandeld.",
+      "WebsiteUrl": "https://www.kledingbankmaxima.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.kledingbankmaxima.nl/uploads/7/9/3/0/79304076/published/maxima-logo_4.png?1556823006",
+      "Id": "831cad33-e7c4-4a7c-bd3f-17c0f4efb14e",
+      "Mission": "Mensen met een uitkering of met een laag inkomen helpen op de weg van minima naar maxima, o.a. door gratis kleding aan te bieden in modezaken zonder kassa.",
+      "PrimaryKey": "ORGANISATION#831cad33-e7c4-4a7c-bd3f-17c0f4efb14e",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDMyMWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Well-being",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Kledingbank Maxima, Grootegast"
+    },
+    "SortKey": "MATCH#TAG#Small scale#831cad33-e7c4-4a7c-bd3f-17c0f4efb14e",
+    "OrganisationId": "831cad33-e7c4-4a7c-bd3f-17c0f4efb14e",
+    "Tag": "Small scale",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Stichting ZuiderZee Zwerfdieren trekt zich het lot van de dieren aan en dringt het aantal zwerfdieren in Lelystad, Flevoland en de Noordoostpolder terug.",
+      "WebsiteUrl": "https://www.zuiderzeezwerfdieren.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.zuiderzeezwerfdieren.nl/wp-content/uploads/2016/07/header-logo.png",
+      "Id": "a747598e-18e0-45b2-bffb-00328b0d5312",
+      "Mission": "Medische zorg én onderdak van zwerfdieren",
+      "PrimaryKey": "ORGANISATION#a747598e-18e0-45b2-bffb-00328b0d5312",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDQyMGQwMDQuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Animals,Nature and environment",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "St. Zuiderzee Zwerfdieren"
+    },
+    "SortKey": "MATCH#TAG#Small scale#a747598e-18e0-45b2-bffb-00328b0d5312",
+    "OrganisationId": "a747598e-18e0-45b2-bffb-00328b0d5312",
+    "Tag": "Small scale",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We willen graag meebouwen aan een school waar kinderen en jongeren zich kunnen ontwikkelen. Een goede plek met een sterk programma aan lessen en activiteiten.",
+      "WebsiteUrl": "https://hiskits.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://hiskits.nl/wp-content/uploads/2020/06/logo-st-hiskits-Logo-Website-9@0.5x-e1592589202645.png",
+      "Id": "ce168aa4-4763-4f3d-a284-392aad7972f3",
+      "Mission": "Vanuit Nederland meebouwen aan een school in Lesotho!",
+      "PrimaryKey": "ORGANISATION#ce168aa4-4763-4f3d-a284-392aad7972f3",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDUuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Education and science,International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Stichting Hiskits"
+    },
+    "SortKey": "MATCH#TAG#Small scale#ce168aa4-4763-4f3d-a284-392aad7972f3",
+    "OrganisationId": "ce168aa4-4763-4f3d-a284-392aad7972f3",
+    "Tag": "Small scale",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 70,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Wij geven als stabiele en professionele non-profit organisatie een positief tegengeluid op de ontbossing en teruggang van biodiversiteit in de tropen.",
+      "WebsiteUrl": "https://www.adopteerregenwoud.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.adopteerregenwoud.nl/wp-content/uploads/2019/10/logo.svg",
+      "Id": "f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+      "Mission": "Adopteer jouw eigen stukje regenwoud!",
+      "PrimaryKey": "ORGANISATION#f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDMyMWQwMDIuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Nature and environment,International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Stichting Adopteer Regenwoud"
+    },
+    "SortKey": "MATCH#TAG#Small scale#f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+    "OrganisationId": "f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+    "Tag": "Small scale",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Jantje Beton is hét goede doel dat zich sinds 1968 samen met kinderen en jongeren inzet voor meer en uitdagender speelruimte en meer speelkansen.",
+      "WebsiteUrl": "https://jantjebeton.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://jantjebeton.nl/assets/images/jantje-beton-stop-nooit-met-spelen.svg",
+      "Id": "054182c5-7563-4a17-90fe-edec349c59e6",
+      "Mission": "We moeten steeds meer en spelen steeds minder. Daarom zeggen wij: Stop nooit met spelen.",
+      "PrimaryKey": "ORGANISATION#054182c5-7563-4a17-90fe-edec349c59e6",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDcxOWQwMDkuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Well-being,Education and science",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Jantje Beton"
+    },
+    "SortKey": "MATCH#TAG#Tax relief#054182c5-7563-4a17-90fe-edec349c59e6",
+    "OrganisationId": "054182c5-7563-4a17-90fe-edec349c59e6",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We are a global organization partnering with local justice systems to end violence against people living in poverty. We need you with us.",
+      "WebsiteUrl": "https://www.ijm.org/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://endingpovertytogether.org/wp-content/uploads/2018/09/IJM-Logo.001.jpeg",
+      "Id": "0832f067-c470-4cfc-9603-1c034e5c0e4e",
+      "Mission": "Every person deserves to be free from violence.",
+      "PrimaryKey": "ORGANISATION#0832f067-c470-4cfc-9603-1c034e5c0e4e",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDExOWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Int. Justice Mission NL (IJM)"
+    },
+    "SortKey": "MATCH#TAG#Tax relief#0832f067-c470-4cfc-9603-1c034e5c0e4e",
+    "OrganisationId": "0832f067-c470-4cfc-9603-1c034e5c0e4e",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We draw on our experience to guide visual journalists, storytellers, and audiences around the world through this challenging and exciting landscape.",
+      "WebsiteUrl": "https://www.worldpressphoto.org/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.worldpressphoto.org/Frontend/images/logo.svg",
+      "Id": "0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+      "Mission": "The World Press Photo Foundation believes in the power of showing and the importance of seeing high-quality visual stories.",
+      "PrimaryKey": "ORGANISATION#0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDIyMWQwMWMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Art and culture,International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "World Press Photo Foundation"
+    },
+    "SortKey": "MATCH#TAG#Tax relief#0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+    "OrganisationId": "0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Samen kunnen we onrecht stoppen. De vrijheid eisen van mensen die vastzitten om wie ze zijn of waarin ze geloven. De rechten van vrouwen en meisjes beter beschermen. Een einde maken aan folteringen en de doodstraf. Jouw gift maakt een structureel verschil in het leven van mensen, dichtbij én veraf.",
+      "WebsiteUrl": "https://www.amnesty.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://webshop.amnesty.nl/static/version1615452727/frontend/Amnesty/default/nl_NL/images/logo-amnesty.svg",
+      "Id": "1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+      "Mission": "Mensenrechten verdedig je met vuur!",
+      "PrimaryKey": "ORGANISATION#1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTAyMGQwMTEuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Amnesty International"
+    },
+    "SortKey": "MATCH#TAG#Tax relief#1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+    "OrganisationId": "1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "De kinderboerderij organiseert met grote regelmaat evenementen en themadagen voor jong en oud, en is een informatiepunt op het gebied van natuur en milieu, met mooie faciliteiten voor het ontvangen van schoolklassen en andere doelgroepen.",
+      "WebsiteUrl": "https://www.kinderboerderij-driebergen.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.kinderboerderij-driebergen.nl/wp-content/uploads/2015/10/header.png",
+      "Id": "1eb001ee-e197-45c6-9a53-91305f6aa052",
+      "Mission": "Kinderboerderij \u0027t Woelige Nest is een gezellige ontmoetingsplaats voor jong en oud uit de regio.",
+      "PrimaryKey": "ORGANISATION#1eb001ee-e197-45c6-9a53-91305f6aa052",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDUyMWQwMDUuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Animals,Nature and environment",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Kinderboerderij Driebergen"
+    },
+    "SortKey": "MATCH#TAG#Tax relief#1eb001ee-e197-45c6-9a53-91305f6aa052",
+    "OrganisationId": "1eb001ee-e197-45c6-9a53-91305f6aa052",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 0,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We zijn geen museum, maar een beweging. Met scheppingskracht kunnen we de wereld positief beïnvloeden.",
+      "WebsiteUrl": "https://museumofhumanity.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://museumofhumanity.nl/themes/museum_of_humanity_theme/logo.svg",
+      "Id": "23dc4074-2e26-42c2-85c0-e98827366103",
+      "Mission": "Wij geloven in de schoonheid en waarde van ieder mens. Als iedereen daarvan overtuigd raakt veranderen we samen de wereld.",
+      "PrimaryKey": "ORGANISATION#23dc4074-2e26-42c2-85c0-e98827366103",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIxOWQwMDguZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Art and culture",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Museum of Humanity"
+    },
+    "SortKey": "MATCH#TAG#Tax relief#23dc4074-2e26-42c2-85c0-e98827366103",
+    "OrganisationId": "23dc4074-2e26-42c2-85c0-e98827366103",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Onze doelstelling is de scholen voorzien van geldelijke middelen door donateurs te werven en kerken, scholen en verenigingen te vragen acties te organiseren.",
+      "WebsiteUrl": "https://svcos.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://svcos.nl/wp-content/uploads/2020/06/logo_stichting-vrienden_klein.png",
+      "Id": "4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+      "Mission": "Wij beogen samen met u ondersteuning en uitbreiding van christelijk onderwijs in Schotland.",
+      "PrimaryKey": "ORGANISATION#4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDUuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Education and science,Religion and philosophy",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "SVCOS Schotland"
+    },
+    "SortKey": "MATCH#TAG#Tax relief#4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+    "OrganisationId": "4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Niet alleen in Nederland, maar ook in de rest van de wereld bieden wij medische hulp aan kansarme mensen. In meer dan tachtig landen helpen we hen die geen of slechte toegang hebben tot medische zorg. Gezondheidszorg is geen privilege, maar een mensenrecht. Onze missie is ervoor te zorgen dat dit recht wordt nageleefd.",
+      "WebsiteUrl": "https://doktersvandewereld.org/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://doktersvandewereld.org/wp-content/themes/dvdw/assets/images/logo-dvdw.png",
+      "Id": "59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+      "Mission": "Gezondheidszorg is geen privilege, maar een mensenrecht.",
+      "PrimaryKey": "ORGANISATION#59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDEyMGQwMDYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Dokters van de Wereld"
+    },
+    "SortKey": "MATCH#TAG#Tax relief#59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+    "OrganisationId": "59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Maxima is een modezaak zonder kassa. Klanten moeten het goede gevoel in de winkel krijgen; ze worden serieus genomen en met respect behandeld.",
+      "WebsiteUrl": "https://www.kledingbankmaxima.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.kledingbankmaxima.nl/uploads/7/9/3/0/79304076/published/maxima-logo_4.png?1556823006",
+      "Id": "831cad33-e7c4-4a7c-bd3f-17c0f4efb14e",
+      "Mission": "Mensen met een uitkering of met een laag inkomen helpen op de weg van minima naar maxima, o.a. door gratis kleding aan te bieden in modezaken zonder kassa.",
+      "PrimaryKey": "ORGANISATION#831cad33-e7c4-4a7c-bd3f-17c0f4efb14e",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDMyMWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Well-being",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Kledingbank Maxima, Grootegast"
+    },
+    "SortKey": "MATCH#TAG#Tax relief#831cad33-e7c4-4a7c-bd3f-17c0f4efb14e",
+    "OrganisationId": "831cad33-e7c4-4a7c-bd3f-17c0f4efb14e",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Iedereen een gezond hart. Dat is de droom van de Hartstichting. Want met een gezond hart haal je meer uit het leven. Al meer dan 55 jaar investeren we in onderzoek en innovatie op het gebied van preventie en zorg. Maar net zo belangrijk vinden wij het om Nederlanders te helpen hun hart te kennen en goed voor hun hart te zorgen.",
+      "WebsiteUrl": "https://www.hartstichting.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.hartstichting.nl/assets/img/icons/logo.svg",
+      "Id": "83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+      "Mission": "Help ons jouw hart gezond te houden.",
+      "PrimaryKey": "ORGANISATION#83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDEyMWQwMGYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Hartstichting"
+    },
+    "SortKey": "MATCH#TAG#Tax relief#83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+    "OrganisationId": "83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Mensen met financiële zorgen zijn nu ontzettend kwetsbaar in deze onzekere tijd. Zij hebben geen buffer om op terug te vallen, en soms ook geen vrienden of familie die kunnen helpen. Er zijn prachtige initiatieven in Nederland die hulp bieden in deze moeilijke tijd. Met jouw hulp kunnen wij lokale (hulp)organisaties ondersteunen.",
+      "WebsiteUrl": "https://www.armoedefonds.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.armoedefonds.nl/resources/images/logo_Armoedefonds.png",
+      "Id": "9598576f-7cce-4e79-a11f-ab88db58bb1b",
+      "Mission": "Lokale organisaties ondersteunen die actief zijn op het gebied van armoedebestrijding in Nederland.",
+      "PrimaryKey": "ORGANISATION#9598576f-7cce-4e79-a11f-ab88db58bb1b",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDIyMWQwMDYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Well-being",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Armoedefonds Nederland, Stg."
+    },
+    "SortKey": "MATCH#TAG#Tax relief#9598576f-7cce-4e79-a11f-ab88db58bb1b",
+    "OrganisationId": "9598576f-7cce-4e79-a11f-ab88db58bb1b",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Stichting ZuiderZee Zwerfdieren trekt zich het lot van de dieren aan en dringt het aantal zwerfdieren in Lelystad, Flevoland en de Noordoostpolder terug.",
+      "WebsiteUrl": "https://www.zuiderzeezwerfdieren.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.zuiderzeezwerfdieren.nl/wp-content/uploads/2016/07/header-logo.png",
+      "Id": "a747598e-18e0-45b2-bffb-00328b0d5312",
+      "Mission": "Medische zorg én onderdak van zwerfdieren",
+      "PrimaryKey": "ORGANISATION#a747598e-18e0-45b2-bffb-00328b0d5312",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDQyMGQwMDQuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Animals,Nature and environment",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "St. Zuiderzee Zwerfdieren"
+    },
+    "SortKey": "MATCH#TAG#Tax relief#a747598e-18e0-45b2-bffb-00328b0d5312",
+    "OrganisationId": "a747598e-18e0-45b2-bffb-00328b0d5312",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "We willen graag meebouwen aan een school waar kinderen en jongeren zich kunnen ontwikkelen. Een goede plek met een sterk programma aan lessen en activiteiten.",
+      "WebsiteUrl": "https://hiskits.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://hiskits.nl/wp-content/uploads/2020/06/logo-st-hiskits-Logo-Website-9@0.5x-e1592589202645.png",
+      "Id": "ce168aa4-4763-4f3d-a284-392aad7972f3",
+      "Mission": "Vanuit Nederland meebouwen aan een school in Lesotho!",
+      "PrimaryKey": "ORGANISATION#ce168aa4-4763-4f3d-a284-392aad7972f3",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDUuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Education and science,International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Stichting Hiskits"
+    },
+    "SortKey": "MATCH#TAG#Tax relief#ce168aa4-4763-4f3d-a284-392aad7972f3",
+    "OrganisationId": "ce168aa4-4763-4f3d-a284-392aad7972f3",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Wij verbeteren structureel de gezondheidszorg van het land waar we te gast zijn door in te zetten op duurzame hulpverlening.",
+      "WebsiteUrl": "https://mercyships.org",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.mercyships.nl/wp-content/uploads/2020/10/Logo-web-stories.jpg",
+      "Id": "da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+      "Mission": "Wij maken medische en chirurgische zorg toegankelijk voor de allerarmste mensen ter wereld.",
+      "PrimaryKey": "ORGANISATION#da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDMyMGQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights,Religion and philosophy",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Mercy Ships"
+    },
+    "SortKey": "MATCH#TAG#Tax relief#da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+    "OrganisationId": "da1a415e-f3b6-4d28-b7f3-239847c9e6fd",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "De Nederlandse Brandwonden Stichting helpt mensen met brandwonden. Kort na het ongeval, maar ook later in hun dagelijkse strijd tegen littekens. We financieren onderzoek en doen er alles aan om brandwonden te voorkomen. En we zetten ons in voor de best mogelijke zorg voor brandwondenpatiënten, en de hoogst mogelijke kwaliteit van leven.",
+      "WebsiteUrl": "http://brandwondenstichting.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://brandwondenstichting.nl/wp-content/uploads/2017/02/xbws-logo-kleur.png.pagespeed.ic.EdaYY8cDA4.webp",
+      "Id": "dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+      "Mission": "Wij gaan voor de beste brandwondenzorg: de beste zorg aan patiënten, de hoogst mogelijke kwaliteit van leven en de meest effectieve preventie.",
+      "PrimaryKey": "ORGANISATION#dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTEyMGQwMDYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Brandwonden Stichting"
+    },
+    "SortKey": "MATCH#TAG#Tax relief#dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+    "OrganisationId": "dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Bij uitzonderlijke rampen slaan de 11 samenwerkende hulporganisaties de handen ineen onder de naam Giro555. Zij vragen heel Nederland zich aan te sluiten om geld in te zamelen voor hulp aan slachtoffers. Want samen redden we meer levens.",
+      "WebsiteUrl": "https://giro555.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://giro555.nl/wp-content/uploads/2020/08/Logo-payoff-zwartebg.jpg",
+      "Id": "e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+      "Mission": "Want samen redden we meer levens.",
+      "PrimaryKey": "ORGANISATION#e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDUyMWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "International aid and human rights,Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Giro555"
+    },
+    "SortKey": "MATCH#TAG#Tax relief#e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+    "OrganisationId": "e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Armoede heeft een vernietigend effect op elk gebied van je leven. Daarom moet het antwoord ook op elk gebied komen: cognitief, lichamelijk, sociaal, emotioneel, economisch én geestelijk. In het kindsponsorprogramma worden de kinderen op al deze gebieden begeleid om hun van God gegeven talenten te ontdekken.",
+      "WebsiteUrl": "https://www.compassion.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.compassion.nl/app/uploads/2020/11/logo_payoff.svg",
+      "Id": "ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+      "Mission": "Compassion bevrijdt kinderen van armoede in Jezus\u0027 naam via lokale kerken in 25 landen wereldwijd",
+      "PrimaryKey": "ORGANISATION#ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDgxOWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Religion and philosophy,Health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Compassion Nederland"
+    },
+    "SortKey": "MATCH#TAG#Tax relief#ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+    "OrganisationId": "ec66beb2-a461-475b-a66d-dfe6bc80aba3",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Wij geven als stabiele en professionele non-profit organisatie een positief tegengeluid op de ontbossing en teruggang van biodiversiteit in de tropen.",
+      "WebsiteUrl": "https://www.adopteerregenwoud.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.adopteerregenwoud.nl/wp-content/uploads/2019/10/logo.svg",
+      "Id": "f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+      "Mission": "Adopteer jouw eigen stukje regenwoud!",
+      "PrimaryKey": "ORGANISATION#f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDMyMWQwMDIuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Nature and environment,International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Stichting Adopteer Regenwoud"
+    },
+    "SortKey": "MATCH#TAG#Tax relief#f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+    "OrganisationId": "f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Jaarlijks krijgen ruim 550 kinderen in Nederland kanker. Op dit moment geneest 75% van deze kinderen. Ons doel is om dit percentage te verhogen naar 95%.",
+      "WebsiteUrl": "https://www.kika.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.kika.nl/themes/custom/ef2_custom/logo.svg",
+      "Id": "fc2418c8-83f5-4c79-a940-5e88559467c2",
+      "Mission": "KiKa financiert onderzoeken naar kinderkanker om de behandelingen te verbeteren. ",
+      "PrimaryKey": "ORGANISATION#fc2418c8-83f5-4c79-a940-5e88559467c2",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDEuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Health,Well-being",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "KiKa"
+    },
+    "SortKey": "MATCH#TAG#Tax relief#fc2418c8-83f5-4c79-a940-5e88559467c2",
+    "OrganisationId": "fc2418c8-83f5-4c79-a940-5e88559467c2",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Wij geloven in de kracht van de natuur en het samen afkoelen van de aarde door gedegradeerd land te vergroenen en vegetatie terug te brengen. Onze missie is om Afrika in de komende 10 jaar te vergroenen, samen met alle 350 miljoen boeren, en samen met jou.",
+      "WebsiteUrl": "https://justdiggit.org/nl",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://buy-a-bund.justdiggit.org/static/media/logo.855d848c.svg",
+      "Id": "ff53f6ed-33b4-45b5-9a7b-3c3d86942a7f",
+      "Mission": "We zijn op een missie om Afrika in de komende 10 jaar te vergroenen, samen met miljoenen boeren én samen met jou",
+      "PrimaryKey": "ORGANISATION#ff53f6ed-33b4-45b5-9a7b-3c3d86942a7f",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDkuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Nature and environment, International aid and human rights",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Justdiggit"
+    },
+    "SortKey": "MATCH#TAG#Tax relief#ff53f6ed-33b4-45b5-9a7b-3c3d86942a7f",
+    "OrganisationId": "ff53f6ed-33b4-45b5-9a7b-3c3d86942a7f",
+    "Tag": "Tax relief",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Jantje Beton is hét goede doel dat zich sinds 1968 samen met kinderen en jongeren inzet voor meer en uitdagender speelruimte en meer speelkansen.",
+      "WebsiteUrl": "https://jantjebeton.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://jantjebeton.nl/assets/images/jantje-beton-stop-nooit-met-spelen.svg",
+      "Id": "054182c5-7563-4a17-90fe-edec349c59e6",
+      "Mission": "We moeten steeds meer en spelen steeds minder. Daarom zeggen wij: Stop nooit met spelen.",
+      "PrimaryKey": "ORGANISATION#054182c5-7563-4a17-90fe-edec349c59e6",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDcxOWQwMDkuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Well-being,Education and science",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Jantje Beton"
+    },
+    "SortKey": "MATCH#TAG#Well-being#054182c5-7563-4a17-90fe-edec349c59e6",
+    "OrganisationId": "054182c5-7563-4a17-90fe-edec349c59e6",
+    "Tag": "Well-being",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Maxima is een modezaak zonder kassa. Klanten moeten het goede gevoel in de winkel krijgen; ze worden serieus genomen en met respect behandeld.",
+      "WebsiteUrl": "https://www.kledingbankmaxima.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.kledingbankmaxima.nl/uploads/7/9/3/0/79304076/published/maxima-logo_4.png?1556823006",
+      "Id": "831cad33-e7c4-4a7c-bd3f-17c0f4efb14e",
+      "Mission": "Mensen met een uitkering of met een laag inkomen helpen op de weg van minima naar maxima, o.a. door gratis kleding aan te bieden in modezaken zonder kassa.",
+      "PrimaryKey": "ORGANISATION#831cad33-e7c4-4a7c-bd3f-17c0f4efb14e",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDMyMWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Well-being",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Kledingbank Maxima, Grootegast"
+    },
+    "SortKey": "MATCH#TAG#Well-being#831cad33-e7c4-4a7c-bd3f-17c0f4efb14e",
+    "OrganisationId": "831cad33-e7c4-4a7c-bd3f-17c0f4efb14e",
+    "Tag": "Well-being",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Score": 100,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Mensen met financiële zorgen zijn nu ontzettend kwetsbaar in deze onzekere tijd. Zij hebben geen buffer om op terug te vallen, en soms ook geen vrienden of familie die kunnen helpen. Er zijn prachtige initiatieven in Nederland die hulp bieden in deze moeilijke tijd. Met jouw hulp kunnen wij lokale (hulp)organisaties ondersteunen.",
+      "WebsiteUrl": "https://www.armoedefonds.nl/",
+      "SortKey": "METADATA#PROFILE",
+      "ImageUrl": "https://www.armoedefonds.nl/resources/images/logo_Armoedefonds.png",
+      "Id": "9598576f-7cce-4e79-a11f-ab88db58bb1b",
+      "Mission": "Lokale organisaties ondersteunen die actief zijn op het gebied van armoedebestrijding in Nederland.",
+      "PrimaryKey": "ORGANISATION#9598576f-7cce-4e79-a11f-ab88db58bb1b",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDIyMWQwMDYuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "Well-being",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Armoedefonds Nederland, Stg."
+    },
+    "SortKey": "MATCH#TAG#Well-being#9598576f-7cce-4e79-a11f-ab88db58bb1b",
+    "OrganisationId": "9598576f-7cce-4e79-a11f-ab88db58bb1b",
+    "Tag": "Well-being",
+    "PrimaryKey": "ORGANISATION"
+  },
+  {
+    "Description": "...",
+    "Vision": "Samen kunnen we onrecht stoppen. De vrijheid eisen van mensen die vastzitten om wie ze zijn of waarin ze geloven. De rechten van vrouwen en meisjes beter beschermen. Een einde maken aan folteringen en de doodstraf. Jouw gift maakt een structureel verschil in het leven van mensen, dichtbij én veraf.",
+    "WebsiteUrl": "https://www.amnesty.nl/",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://webshop.amnesty.nl/static/version1615452727/frontend/Amnesty/default/nl_NL/images/logo-amnesty.svg",
+    "Mission": "Mensenrechten verdedig je met vuur!",
+    "Id": "1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+    "PrimaryKey": "ORGANISATION#1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTAyMGQwMTEuZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "International aid and human rights",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "Amnesty International"
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 100,
+        "Tag": "Certification mark"
+      },
+      {
+        "Score": 100,
+        "Tag": "International"
+      },
+      {
+        "Score": 100,
+        "Tag": "International aid and human rights"
+      },
+      {
+        "Score": 100,
+        "Tag": "Directness"
+      },
+      {
+        "Score": 100,
+        "Tag": "Large scale"
+      },
+      {
+        "Score": 100,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6",
+    "PrimaryKey": "ORGANISATION#1288f0fd-a7c7-434c-b308-ca7a9c5e6ca6"
+  },
+  {
+    "Description": "...",
+    "Vision": "Onze doelstelling is de scholen voorzien van geldelijke middelen door donateurs te werven en kerken, scholen en verenigingen te vragen acties te organiseren.",
+    "WebsiteUrl": "https://svcos.nl/",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://svcos.nl/wp-content/uploads/2020/06/logo_stichting-vrienden_klein.png",
+    "Mission": "Wij beogen samen met u ondersteuning en uitbreiding van christelijk onderwijs in Schotland.",
+    "Id": "4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+    "PrimaryKey": "ORGANISATION#4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDUuZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "Education and science,Religion and philosophy",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "SVCOS Schotland"
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 100,
+        "Tag": "Education and science"
+      },
+      {
+        "Score": 100,
+        "Tag": "Religion and philosophy"
+      },
+      {
+        "Score": 75,
+        "Tag": "International"
+      },
+      {
+        "Score": 95,
+        "Tag": "Small scale"
+      },
+      {
+        "Score": 100,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "4fa16917-a5a1-4765-8f25-4e2cb873ce19",
+    "PrimaryKey": "ORGANISATION#4fa16917-a5a1-4765-8f25-4e2cb873ce19"
+  },
+  {
+    "Description": "...",
+    "Vision": "Mensen met financiële zorgen zijn nu ontzettend kwetsbaar in deze onzekere tijd. Zij hebben geen buffer om op terug te vallen, en soms ook geen vrienden of familie die kunnen helpen. Er zijn prachtige initiatieven in Nederland die hulp bieden in deze moeilijke tijd. Met jouw hulp kunnen wij lokale (hulp)organisaties ondersteunen.",
+    "WebsiteUrl": "https://www.armoedefonds.nl/",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://www.armoedefonds.nl/resources/images/logo_Armoedefonds.png",
+    "Mission": "Lokale organisaties ondersteunen die actief zijn op het gebied van armoedebestrijding in Nederland.",
+    "Id": "9598576f-7cce-4e79-a11f-ab88db58bb1b",
+    "PrimaryKey": "ORGANISATION#9598576f-7cce-4e79-a11f-ab88db58bb1b",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDIyMWQwMDYuZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "Well-being",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "Armoedefonds Nederland, Stg."
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 100,
+        "Tag": "Certification mark"
+      },
+      {
+        "Score": 100,
+        "Tag": "National"
+      },
+      {
+        "Score": 100,
+        "Tag": "Directness"
+      },
+      {
+        "Score": 100,
+        "Tag": "Large scale"
+      },
+      {
+        "Score": 100,
+        "Tag": "Well-being"
+      },
+      {
+        "Score": 100,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "9598576f-7cce-4e79-a11f-ab88db58bb1b",
+    "PrimaryKey": "ORGANISATION#9598576f-7cce-4e79-a11f-ab88db58bb1b"
+  },
+  {
+    "Description": "...",
+    "Vision": "Jaarlijks krijgen ruim 550 kinderen in Nederland kanker. Op dit moment geneest 75% van deze kinderen. Ons doel is om dit percentage te verhogen naar 95%.",
+    "WebsiteUrl": "https://www.kika.nl/",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://www.kika.nl/themes/custom/ef2_custom/logo.svg",
+    "Mission": "KiKa financiert onderzoeken naar kinderkanker om de behandelingen te verbeteren. ",
+    "Id": "fc2418c8-83f5-4c79-a940-5e88559467c2",
+    "PrimaryKey": "ORGANISATION#fc2418c8-83f5-4c79-a940-5e88559467c2",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDEuZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "Health,Well-being",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "KiKa"
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 100,
+        "Tag": "Certification mark"
+      },
+      {
+        "Score": 92,
+        "Tag": "Health"
+      },
+      {
+        "Score": 100,
+        "Tag": "National"
+      },
+      {
+        "Score": 100,
+        "Tag": "Large scale"
+      },
+      {
+        "Score": 81,
+        "Tag": "Directness"
+      },
+      {
+        "Score": 100,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "fc2418c8-83f5-4c79-a940-5e88559467c2",
+    "PrimaryKey": "ORGANISATION#fc2418c8-83f5-4c79-a940-5e88559467c2"
+  },
+  {
+    "Description": "...",
+    "Vision": "De Nederlandse Brandwonden Stichting helpt mensen met brandwonden. Kort na het ongeval, maar ook later in hun dagelijkse strijd tegen littekens. We financieren onderzoek en doen er alles aan om brandwonden te voorkomen. En we zetten ons in voor de best mogelijke zorg voor brandwondenpatiënten, en de hoogst mogelijke kwaliteit van leven.",
+    "WebsiteUrl": "http://brandwondenstichting.nl/",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://brandwondenstichting.nl/wp-content/uploads/2017/02/xbws-logo-kleur.png.pagespeed.ic.EdaYY8cDA4.webp",
+    "Mission": "Wij gaan voor de beste brandwondenzorg: de beste zorg aan patiënten, de hoogst mogelijke kwaliteit van leven en de meest effectieve preventie.",
+    "Id": "dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+    "PrimaryKey": "ORGANISATION#dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTEyMGQwMDYuZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "Health",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "Brandwonden Stichting"
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 100,
+        "Tag": "Certification mark"
+      },
+      {
+        "Score": 100,
+        "Tag": "National"
+      },
+      {
+        "Score": 100,
+        "Tag": "Directness"
+      },
+      {
+        "Score": 100,
+        "Tag": "Large scale"
+      },
+      {
+        "Score": 100,
+        "Tag": "Health"
+      },
+      {
+        "Score": 100,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "dc343c4f-4b99-4a2f-b6bd-9a669072bdd7",
+    "PrimaryKey": "ORGANISATION#dc343c4f-4b99-4a2f-b6bd-9a669072bdd7"
+  },
+  {
+    "Description": "...",
+    "Vision": "Maxima is een modezaak zonder kassa. Klanten moeten het goede gevoel in de winkel krijgen; ze worden serieus genomen en met respect behandeld.",
+    "WebsiteUrl": "https://www.kledingbankmaxima.nl/",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://www.kledingbankmaxima.nl/uploads/7/9/3/0/79304076/published/maxima-logo_4.png?1556823006",
+    "Mission": "Mensen met een uitkering of met een laag inkomen helpen op de weg van minima naar maxima, o.a. door gratis kleding aan te bieden in modezaken zonder kassa.",
+    "Id": "831cad33-e7c4-4a7c-bd3f-17c0f4efb14e",
+    "PrimaryKey": "ORGANISATION#831cad33-e7c4-4a7c-bd3f-17c0f4efb14e",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDMyMWQwMDMuZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "Well-being",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "Kledingbank Maxima, Grootegast"
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 100,
+        "Tag": "Well-being"
+      },
+      {
+        "Score": 65,
+        "Tag": "National"
+      },
+      {
+        "Score": 100,
+        "Tag": "Small scale"
+      },
+      {
+        "Score": 100,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "831cad33-e7c4-4a7c-bd3f-17c0f4efb14e",
+    "PrimaryKey": "ORGANISATION#831cad33-e7c4-4a7c-bd3f-17c0f4efb14e"
+  },
+  {
+    "Description": "...",
+    "Vision": "We willen graag meebouwen aan een school waar kinderen en jongeren zich kunnen ontwikkelen. Een goede plek met een sterk programma aan lessen en activiteiten.",
+    "WebsiteUrl": "https://hiskits.nl/",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://hiskits.nl/wp-content/uploads/2020/06/logo-st-hiskits-Logo-Website-9@0.5x-e1592589202645.png",
+    "Mission": "Vanuit Nederland meebouwen aan een school in Lesotho!",
+    "Id": "ce168aa4-4763-4f3d-a284-392aad7972f3",
+    "PrimaryKey": "ORGANISATION#ce168aa4-4763-4f3d-a284-392aad7972f3",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIyMGQwMDUuZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "Education and science,International aid and human rights",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "Stichting Hiskits"
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 90,
+        "Tag": "Education and science"
+      },
+      {
+        "Score": 80,
+        "Tag": "International"
+      },
+      {
+        "Score": 100,
+        "Tag": "Small scale"
+      },
+      {
+        "Score": 100,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "ce168aa4-4763-4f3d-a284-392aad7972f3",
+    "PrimaryKey": "ORGANISATION#ce168aa4-4763-4f3d-a284-392aad7972f3"
+  },
+  {
+    "Description": "...",
+    "Vision": "Niet alleen in Nederland, maar ook in de rest van de wereld bieden wij medische hulp aan kansarme mensen. In meer dan tachtig landen helpen we hen die geen of slechte toegang hebben tot medische zorg. Gezondheidszorg is geen privilege, maar een mensenrecht. Onze missie is ervoor te zorgen dat dit recht wordt nageleefd.",
+    "WebsiteUrl": "https://doktersvandewereld.org/",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://doktersvandewereld.org/wp-content/themes/dvdw/assets/images/logo-dvdw.png",
+    "Mission": "Gezondheidszorg is geen privilege, maar een mensenrecht.",
+    "Id": "59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+    "PrimaryKey": "ORGANISATION#59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDEyMGQwMDYuZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "Health",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "Dokters van de Wereld"
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 100,
+        "Tag": "Certification mark"
+      },
+      {
+        "Score": 100,
+        "Tag": "International"
+      },
+      {
+        "Score": 100,
+        "Tag": "Directness"
+      },
+      {
+        "Score": 100,
+        "Tag": "Large scale"
+      },
+      {
+        "Score": 100,
+        "Tag": "Health"
+      },
+      {
+        "Score": 100,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "59e4c0c3-bfa3-4ba5-9405-ed2ffb985112",
+    "PrimaryKey": "ORGANISATION#59e4c0c3-bfa3-4ba5-9405-ed2ffb985112"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "025a9854-4aac-4a62-b980-634f0208aa23",
+    "SortKey": "025a9854-4aac-4a62-b980-634f0208aa23#TAG#National",
+    "Tag": "National",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "0ea1c6ec-387f-4f41-a40a-5d518ca0b299",
+    "SortKey": "0ea1c6ec-387f-4f41-a40a-5d518ca0b299#TAG#International",
+    "Tag": "International",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "3b7128f1-c213-4f50-aa38-dc8cbc5d1251",
+    "SortKey": "3b7128f1-c213-4f50-aa38-dc8cbc5d1251#TAG#Tax relief",
+    "Tag": "Tax relief",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "3da16886-46eb-45df-9277-d942d7160a20",
+    "SortKey": "3da16886-46eb-45df-9277-d942d7160a20#TAG#Education and science",
+    "Tag": "Education and science",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 10,
+    "QuestionId": "3da16886-46eb-45df-9277-d942d7160a20",
+    "SortKey": "3da16886-46eb-45df-9277-d942d7160a20#TAG#Financial adoption",
+    "Tag": "Financial adoption",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "3da16886-46eb-45df-9277-d942d7160a20",
+    "SortKey": "3da16886-46eb-45df-9277-d942d7160a20#TAG#Nature and environment",
+    "Tag": "Nature and environment",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "3da16886-46eb-45df-9277-d942d7160a20",
+    "SortKey": "3da16886-46eb-45df-9277-d942d7160a20#TAG#Religion and philosophy",
+    "Tag": "Religion and philosophy",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "3da16886-46eb-45df-9277-d942d7160a20",
+    "SortKey": "3da16886-46eb-45df-9277-d942d7160a20#TAG#Well-being",
+    "Tag": "Well-being",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "459a6e9a-9cd0-46bc-9c59-b3c2c8710594",
+    "SortKey": "459a6e9a-9cd0-46bc-9c59-b3c2c8710594#TAG#Certification mark",
+    "Tag": "Certification mark",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "4fb764e4-da26-42a3-b05a-26daf2a35c8b",
+    "SortKey": "4fb764e4-da26-42a3-b05a-26daf2a35c8b#TAG#Directness",
+    "Tag": "Directness",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "4fb764e4-da26-42a3-b05a-26daf2a35c8b",
+    "SortKey": "4fb764e4-da26-42a3-b05a-26daf2a35c8b#TAG#Education and science",
+    "Tag": "Education and science",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "4fb764e4-da26-42a3-b05a-26daf2a35c8b",
+    "SortKey": "4fb764e4-da26-42a3-b05a-26daf2a35c8b#TAG#Nature and environment",
+    "Tag": "Nature and environment",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "4fb764e4-da26-42a3-b05a-26daf2a35c8b",
+    "SortKey": "4fb764e4-da26-42a3-b05a-26daf2a35c8b#TAG#Religion and philosophy",
+    "Tag": "Religion and philosophy",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "4fb764e4-da26-42a3-b05a-26daf2a35c8b",
+    "SortKey": "4fb764e4-da26-42a3-b05a-26daf2a35c8b#TAG#Well-being",
+    "Tag": "Well-being",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "5f4485ab-e1d6-45be-b9b5-a2de206c09c5",
+    "SortKey": "5f4485ab-e1d6-45be-b9b5-a2de206c09c5#TAG#Animals",
+    "Tag": "Animals",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "5f4485ab-e1d6-45be-b9b5-a2de206c09c5",
+    "SortKey": "5f4485ab-e1d6-45be-b9b5-a2de206c09c5#TAG#Art and culture",
+    "Tag": "Art and culture",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "5f4485ab-e1d6-45be-b9b5-a2de206c09c5",
+    "SortKey": "5f4485ab-e1d6-45be-b9b5-a2de206c09c5#TAG#Health",
+    "Tag": "Health",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "5f4485ab-e1d6-45be-b9b5-a2de206c09c5",
+    "SortKey": "5f4485ab-e1d6-45be-b9b5-a2de206c09c5#TAG#International aid and human rights",
+    "Tag": "International aid and human rights",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "717a7826-4d85-452a-a9c7-9410a453c29c",
+    "SortKey": "717a7826-4d85-452a-a9c7-9410a453c29c#TAG#Animals",
+    "Tag": "Animals",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "717a7826-4d85-452a-a9c7-9410a453c29c",
+    "SortKey": "717a7826-4d85-452a-a9c7-9410a453c29c#TAG#Art and culture",
+    "Tag": "Art and culture",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 10,
+    "QuestionId": "717a7826-4d85-452a-a9c7-9410a453c29c",
+    "SortKey": "717a7826-4d85-452a-a9c7-9410a453c29c#TAG#Financial adoption",
+    "Tag": "Financial adoption",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "717a7826-4d85-452a-a9c7-9410a453c29c",
+    "SortKey": "717a7826-4d85-452a-a9c7-9410a453c29c#TAG#Health",
+    "Tag": "Health",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "717a7826-4d85-452a-a9c7-9410a453c29c",
+    "SortKey": "717a7826-4d85-452a-a9c7-9410a453c29c#TAG#International aid and human rights",
+    "Tag": "International aid and human rights",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "78b0c451-0e2f-487e-b3ec-27e7125e84bc",
+    "SortKey": "78b0c451-0e2f-487e-b3ec-27e7125e84bc#TAG#Education and science",
+    "Tag": "Education and science",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "78b0c451-0e2f-487e-b3ec-27e7125e84bc",
+    "SortKey": "78b0c451-0e2f-487e-b3ec-27e7125e84bc#TAG#Large scale",
+    "Tag": "Large scale",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "78b0c451-0e2f-487e-b3ec-27e7125e84bc",
+    "SortKey": "78b0c451-0e2f-487e-b3ec-27e7125e84bc#TAG#Nature and environment",
+    "Tag": "Nature and environment",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "78b0c451-0e2f-487e-b3ec-27e7125e84bc",
+    "SortKey": "78b0c451-0e2f-487e-b3ec-27e7125e84bc#TAG#Religion and philosophy",
+    "Tag": "Religion and philosophy",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "78b0c451-0e2f-487e-b3ec-27e7125e84bc",
+    "SortKey": "78b0c451-0e2f-487e-b3ec-27e7125e84bc#TAG#Well-being",
+    "Tag": "Well-being",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "StatementOptions": {
+      "TagScores": {
+        "National": 100
+      }
+    },
+    "Type": 0,
+    "DisplayOrder": 1,
+    "SortKey": "METADATA#025a9854-4aac-4a62-b980-634f0208aa23",
+    "PrimaryKey": "QUESTION",
+    "Translations": {
+      "en": "[Only translated question, because of time sake] I want to give to charities which have an effect in my immediate environment.",
+      "nl": "Ik wil geven aan doelen die een effect hebben in mijn directe omgeving."
+    },
+    "CategoryOptions": null
+  },
+  {
+    "StatementOptions": {
+      "TagScores": {
+        "International": 100
+      }
+    },
+    "Type": 0,
+    "DisplayOrder": 2,
+    "SortKey": "METADATA#0ea1c6ec-387f-4f41-a40a-5d518ca0b299",
+    "PrimaryKey": "QUESTION",
+    "Translations": {
+      "nl": "Ik geef graag aan doelen die zich voornamelijk internationaal inzetten."
+    },
+    "CategoryOptions": null
+  },
+  {
+    "StatementOptions": {
+      "TagScores": {
+        "Tax relief": 100
+      }
+    },
+    "Type": 0,
+    "DisplayOrder": 4,
+    "SortKey": "METADATA#3b7128f1-c213-4f50-aa38-dc8cbc5d1251",
+    "PrimaryKey": "QUESTION",
+    "Translations": {
+      "nl": "Voordat ik geef, controleer ik of mijn donatie belastingaftrekbaar is."
+    },
+    "CategoryOptions": null
+  },
+  {
+    "Type": 1,
+    "DisplayOrder": 9,
+    "SortKey": "METADATA#3da16886-46eb-45df-9277-d942d7160a20",
+    "PrimaryKey": "QUESTION",
+    "Translations": {
+      "nl": "Welke van deze thema’s vind jij belangrijk?"
+    },
+    "CategoryOptions": [
+      {
+        "DisplayOrder": 1,
+        "TagScores": {
+          "Nature and environment": 100
+        },
+        "Translations": {
+          "en": "nature and environment",
+          "nl": "natuur en milieu"
+        }
+      },
+      {
+        "DisplayOrder": 2,
+        "TagScores": {
+          "Education and science": 100
+        },
+        "Translations": {
+          "en": "education and science",
+          "nl": "onderwijs en wetenschap"
+        }
+      },
+      {
+        "DisplayOrder": 3,
+        "TagScores": {
+          "Religion and philosophy": 100
+        },
+        "Translations": {
+          "en": "religion and philosophy",
+          "nl": "Religie en levensbeschouwing"
+        }
+      },
+      {
+        "DisplayOrder": 4,
+        "TagScores": {
+          "Well-being": 100
+        },
+        "Translations": {
+          "en": "well-being",
+          "nl": "welzijn"
+        }
+      }
+    ]
+  },
+  {
+    "StatementOptions": {
+      "TagScores": {
+        "Certification mark": 100
+      }
+    },
+    "Type": 0,
+    "DisplayOrder": 3,
+    "SortKey": "METADATA#459a6e9a-9cd0-46bc-9c59-b3c2c8710594",
+    "PrimaryKey": "QUESTION",
+    "Translations": {
+      "nl": "Een goed doel met keurmerk geeft mij meer vertrouwen in een juiste besteding van mijn donatie."
+    },
+    "CategoryOptions": null
+  },
+  {
+    "StatementOptions": {
+      "TagScores": {
+        "Directness": 100
+      }
+    },
+    "Type": 0,
+    "DisplayOrder": 12,
+    "SortKey": "METADATA#4fb764e4-da26-42a3-b05a-26daf2a35c8b",
+    "PrimaryKey": "QUESTION",
+    "Translations": {
+      "nl": "Ik vind het belangrijk dat minstens [75%] van mijn gift rechtstreeks naar het doel gaat."
+    },
+    "CategoryOptions": null
+  },
+  {
+    "Type": 1,
+    "DisplayOrder": 5,
+    "SortKey": "METADATA#5f4485ab-e1d6-45be-b9b5-a2de206c09c5",
+    "PrimaryKey": "QUESTION",
+    "Translations": {
+      "en": "Which of these categories do you think are important?",
+      "nl": "Welke van deze thema’s vind jij belangrijk?"
+    },
+    "CategoryOptions": [
+      {
+        "DisplayOrder": 1,
+        "TagScores": {
+          "Animals": 100
+        },
+        "Translations": {
+          "en": "animals",
+          "nl": "dieren"
+        }
+      },
+      {
+        "DisplayOrder": 2,
+        "TagScores": {
+          "Health": 100
+        },
+        "Translations": {
+          "en": "health",
+          "nl": "gezondheid"
+        }
+      },
+      {
+        "DisplayOrder": 3,
+        "TagScores": {
+          "International aid and human rights": 100
+        },
+        "Translations": {
+          "en": "international aid and human rights",
+          "nl": "internationale hulp en mensenrechten"
+        }
+      },
+      {
+        "DisplayOrder": 4,
+        "TagScores": {
+          "Art and culture": 100
+        },
+        "Translations": {
+          "en": "art and culture",
+          "nl": "kunst en cultuur"
+        }
+      }
+    ]
+  },
+  {
+    "StatementOptions": {
+      "TagScores": {
+        "Financial adoption": 10
+      }
+    },
+    "Type": 0,
+    "DisplayOrder": 8,
+    "SortKey": "METADATA#717a7826-4d85-452a-a9c7-9410a453c29c",
+    "PrimaryKey": "QUESTION",
+    "Translations": {
+      "nl": "Ik geef liever tien mensen in nood € 1, dan één iemand in nood € 10."
+    },
+    "CategoryOptions": null
+  },
+  {
+    "StatementOptions": {
+      "TagScores": {
+        "Large scale": 100
+      }
+    },
+    "Type": 0,
+    "DisplayOrder": 11,
+    "SortKey": "METADATA#78b0c451-0e2f-487e-b3ec-27e7125e84bc",
+    "PrimaryKey": "QUESTION",
+    "Translations": {
+      "nl": "Ik doneer graag aan grote organisaties. Zij maken het grootste verschil."
+    },
+    "CategoryOptions": null
+  },
+  {
+    "StatementOptions": {
+      "TagScores": {
+        "Religion and philosophy": 100
+      }
+    },
+    "Type": 0,
+    "DisplayOrder": 6,
+    "SortKey": "METADATA#c3c7fb39-f2cc-4955-ac96-2661f079c41b",
+    "PrimaryKey": "QUESTION",
+    "Translations": {
+      "nl": "Het is voor mij een meerwaarde als een doel handelt vanuit een religieuze identiteit."
+    },
+    "CategoryOptions": null
+  },
+  {
+    "StatementOptions": {
+      "TagScores": {
+        "Small scale": 100
+      }
+    },
+    "Type": 0,
+    "DisplayOrder": 10,
+    "SortKey": "METADATA#c405e011-c2e9-40c8-b97e-e0d586d47c80",
+    "PrimaryKey": "QUESTION",
+    "Translations": {
+      "nl": "Kleine organisaties zijn effectiever dan grote."
+    },
+    "CategoryOptions": null
+  },
+  {
+    "StatementOptions": {
+      "TagScores": {
+        "Financial adoption": 100
+      }
+    },
+    "Type": 0,
+    "DisplayOrder": 7,
+    "SortKey": "METADATA#ce7c7d72-16f4-4fa8-8034-f9356682b9f5",
+    "PrimaryKey": "QUESTION",
+    "Translations": {
+      "nl": "Ik steun het liefst adoptieprogramma’s waarbij ik mij graag persoonlijk verbind met één individu."
+    },
+    "CategoryOptions": null
+  },
+  {
+    "StatementOptions": {
+      "TagScores": {
+        "Investing": 100
+      }
+    },
+    "Type": 0,
+    "DisplayOrder": 13,
+    "SortKey": "METADATA#f891b347-3983-4c5b-9e5b-4c6e4c5a4cea",
+    "PrimaryKey": "QUESTION",
+    "Translations": {
+      "nl": "Ik begrijp dat organisaties geld moeten investeren om een groter draagvlak te creëren."
+    },
+    "CategoryOptions": null
+  },
+  {
+    "Score": 100,
+    "QuestionId": "c3c7fb39-f2cc-4955-ac96-2661f079c41b",
+    "SortKey": "c3c7fb39-f2cc-4955-ac96-2661f079c41b#TAG#Animals",
+    "Tag": "Animals",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "c3c7fb39-f2cc-4955-ac96-2661f079c41b",
+    "SortKey": "c3c7fb39-f2cc-4955-ac96-2661f079c41b#TAG#Art and culture",
+    "Tag": "Art and culture",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "c3c7fb39-f2cc-4955-ac96-2661f079c41b",
+    "SortKey": "c3c7fb39-f2cc-4955-ac96-2661f079c41b#TAG#Health",
+    "Tag": "Health",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "c3c7fb39-f2cc-4955-ac96-2661f079c41b",
+    "SortKey": "c3c7fb39-f2cc-4955-ac96-2661f079c41b#TAG#International aid and human rights",
+    "Tag": "International aid and human rights",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "c3c7fb39-f2cc-4955-ac96-2661f079c41b",
+    "SortKey": "c3c7fb39-f2cc-4955-ac96-2661f079c41b#TAG#Religion and philosophy",
+    "Tag": "Religion and philosophy",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "c405e011-c2e9-40c8-b97e-e0d586d47c80",
+    "SortKey": "c405e011-c2e9-40c8-b97e-e0d586d47c80#TAG#Education and science",
+    "Tag": "Education and science",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "c405e011-c2e9-40c8-b97e-e0d586d47c80",
+    "SortKey": "c405e011-c2e9-40c8-b97e-e0d586d47c80#TAG#Nature and environment",
+    "Tag": "Nature and environment",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "c405e011-c2e9-40c8-b97e-e0d586d47c80",
+    "SortKey": "c405e011-c2e9-40c8-b97e-e0d586d47c80#TAG#Religion and philosophy",
+    "Tag": "Religion and philosophy",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "c405e011-c2e9-40c8-b97e-e0d586d47c80",
+    "SortKey": "c405e011-c2e9-40c8-b97e-e0d586d47c80#TAG#Small scale",
+    "Tag": "Small scale",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "c405e011-c2e9-40c8-b97e-e0d586d47c80",
+    "SortKey": "c405e011-c2e9-40c8-b97e-e0d586d47c80#TAG#Well-being",
+    "Tag": "Well-being",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "ce7c7d72-16f4-4fa8-8034-f9356682b9f5",
+    "SortKey": "ce7c7d72-16f4-4fa8-8034-f9356682b9f5#TAG#Animals",
+    "Tag": "Animals",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "ce7c7d72-16f4-4fa8-8034-f9356682b9f5",
+    "SortKey": "ce7c7d72-16f4-4fa8-8034-f9356682b9f5#TAG#Art and culture",
+    "Tag": "Art and culture",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "ce7c7d72-16f4-4fa8-8034-f9356682b9f5",
+    "SortKey": "ce7c7d72-16f4-4fa8-8034-f9356682b9f5#TAG#Financial adoption",
+    "Tag": "Financial adoption",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "ce7c7d72-16f4-4fa8-8034-f9356682b9f5",
+    "SortKey": "ce7c7d72-16f4-4fa8-8034-f9356682b9f5#TAG#Health",
+    "Tag": "Health",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "ce7c7d72-16f4-4fa8-8034-f9356682b9f5",
+    "SortKey": "ce7c7d72-16f4-4fa8-8034-f9356682b9f5#TAG#International aid and human rights",
+    "Tag": "International aid and human rights",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "f891b347-3983-4c5b-9e5b-4c6e4c5a4cea",
+    "SortKey": "f891b347-3983-4c5b-9e5b-4c6e4c5a4cea#TAG#Education and science",
+    "Tag": "Education and science",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "f891b347-3983-4c5b-9e5b-4c6e4c5a4cea",
+    "SortKey": "f891b347-3983-4c5b-9e5b-4c6e4c5a4cea#TAG#Investing",
+    "Tag": "Investing",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "f891b347-3983-4c5b-9e5b-4c6e4c5a4cea",
+    "SortKey": "f891b347-3983-4c5b-9e5b-4c6e4c5a4cea#TAG#Nature and environment",
+    "Tag": "Nature and environment",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "f891b347-3983-4c5b-9e5b-4c6e4c5a4cea",
+    "SortKey": "f891b347-3983-4c5b-9e5b-4c6e4c5a4cea#TAG#Religion and philosophy",
+    "Tag": "Religion and philosophy",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Score": 100,
+    "QuestionId": "f891b347-3983-4c5b-9e5b-4c6e4c5a4cea",
+    "SortKey": "f891b347-3983-4c5b-9e5b-4c6e4c5a4cea#TAG#Well-being",
+    "Tag": "Well-being",
+    "PrimaryKey": "QUESTION"
+  },
+  {
+    "Description": "...",
+    "Vision": "Bij uitzonderlijke rampen slaan de 11 samenwerkende hulporganisaties de handen ineen onder de naam Giro555. Zij vragen heel Nederland zich aan te sluiten om geld in te zamelen voor hulp aan slachtoffers. Want samen redden we meer levens.",
+    "WebsiteUrl": "https://giro555.nl/",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://giro555.nl/wp-content/uploads/2020/08/Logo-payoff-zwartebg.jpg",
+    "Mission": "Want samen redden we meer levens.",
+    "Id": "e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+    "PrimaryKey": "ORGANISATION#e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDUyMWQwMDMuZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "International aid and human rights,Health",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "Giro555"
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 100,
+        "Tag": "International"
+      },
+      {
+        "Score": 100,
+        "Tag": "International aid and human rights"
+      },
+      {
+        "Score": 100,
+        "Tag": "Health"
+      },
+      {
+        "Score": 100,
+        "Tag": "Large scale"
+      },
+      {
+        "Score": 100,
+        "Tag": "Investing"
+      },
+      {
+        "Score": 100,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "e3c388a2-fbcd-4ac0-8d08-7516efc38a64",
+    "PrimaryKey": "ORGANISATION#e3c388a2-fbcd-4ac0-8d08-7516efc38a64"
+  },
+  {
+    "Description": "...",
+    "Vision": "Iedereen een gezond hart. Dat is de droom van de Hartstichting. Want met een gezond hart haal je meer uit het leven. Al meer dan 55 jaar investeren we in onderzoek en innovatie op het gebied van preventie en zorg. Maar net zo belangrijk vinden wij het om Nederlanders te helpen hun hart te kennen en goed voor hun hart te zorgen.",
+    "WebsiteUrl": "https://www.hartstichting.nl/",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://www.hartstichting.nl/assets/img/icons/logo.svg",
+    "Mission": "Help ons jouw hart gezond te houden.",
+    "Id": "83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+    "PrimaryKey": "ORGANISATION#83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDEyMWQwMGYuZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "Health",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "Hartstichting"
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 100,
+        "Tag": "Certification mark"
+      },
+      {
+        "Score": 100,
+        "Tag": "Health"
+      },
+      {
+        "Score": 100,
+        "Tag": "National"
+      },
+      {
+        "Score": 100,
+        "Tag": "Directness"
+      },
+      {
+        "Score": 100,
+        "Tag": "Large scale"
+      },
+      {
+        "Score": 100,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "83adc5bd-7987-4c36-831f-93a88a3c3ab4",
+    "PrimaryKey": "ORGANISATION#83adc5bd-7987-4c36-831f-93a88a3c3ab4"
+  },
+  {
+    "Description": "...",
+    "Vision": "Stichting ZuiderZee Zwerfdieren trekt zich het lot van de dieren aan en dringt het aantal zwerfdieren in Lelystad, Flevoland en de Noordoostpolder terug.",
+    "WebsiteUrl": "https://www.zuiderzeezwerfdieren.nl/",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://www.zuiderzeezwerfdieren.nl/wp-content/uploads/2016/07/header-logo.png",
+    "Mission": "Medische zorg én onderdak van zwerfdieren",
+    "Id": "a747598e-18e0-45b2-bffb-00328b0d5312",
+    "PrimaryKey": "ORGANISATION#a747598e-18e0-45b2-bffb-00328b0d5312",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDQyMGQwMDQuZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "Animals,Nature and environment",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "St. Zuiderzee Zwerfdieren"
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 100,
+        "Tag": "Animals"
+      },
+      {
+        "Score": 70,
+        "Tag": "National"
+      },
+      {
+        "Score": 100,
+        "Tag": "Small scale"
+      },
+      {
+        "Score": 100,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "a747598e-18e0-45b2-bffb-00328b0d5312",
+    "PrimaryKey": "ORGANISATION#a747598e-18e0-45b2-bffb-00328b0d5312"
+  },
+  {
+    "Description": "...",
+    "Vision": "We draw on our experience to guide visual journalists, storytellers, and audiences around the world through this challenging and exciting landscape.",
+    "WebsiteUrl": "https://www.worldpressphoto.org/",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://www.worldpressphoto.org/Frontend/images/logo.svg",
+    "Mission": "The World Press Photo Foundation believes in the power of showing and the importance of seeing high-quality visual stories.",
+    "Id": "0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+    "PrimaryKey": "ORGANISATION#0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDIyMWQwMWMuZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "Art and culture,International aid and human rights",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "World Press Photo Foundation"
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 100,
+        "Tag": "Certification mark"
+      },
+      {
+        "Score": 80,
+        "Tag": "Art and culture"
+      },
+      {
+        "Score": 100,
+        "Tag": "International"
+      },
+      {
+        "Score": 100,
+        "Tag": "Large scale"
+      },
+      {
+        "Score": 84,
+        "Tag": "Directness"
+      },
+      {
+        "Score": 100,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "0bc31e9e-dee5-491b-972a-6141cdbfa0ca",
+    "PrimaryKey": "ORGANISATION#0bc31e9e-dee5-491b-972a-6141cdbfa0ca"
+  },
+  {
+    "Description": "...",
+    "Vision": "We zijn geen museum, maar een beweging. Met scheppingskracht kunnen we de wereld positief beïnvloeden.",
+    "WebsiteUrl": "https://museumofhumanity.nl/",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://museumofhumanity.nl/themes/museum_of_humanity_theme/logo.svg",
+    "Mission": "Wij geloven in de schoonheid en waarde van ieder mens. Als iedereen daarvan overtuigd raakt veranderen we samen de wereld.",
+    "Id": "23dc4074-2e26-42c2-85c0-e98827366103",
+    "PrimaryKey": "ORGANISATION#23dc4074-2e26-42c2-85c0-e98827366103",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMTIxOWQwMDguZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "Art and culture",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "Museum of Humanity"
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 75,
+        "Tag": "Art and culture"
+      },
+      {
+        "Score": 60,
+        "Tag": "National"
+      },
+      {
+        "Score": 100,
+        "Tag": "Small scale"
+      },
+      {
+        "Score": 0,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "23dc4074-2e26-42c2-85c0-e98827366103",
+    "PrimaryKey": "ORGANISATION#23dc4074-2e26-42c2-85c0-e98827366103"
+  },
+  {
+    "Description": "...",
+    "Vision": "We are a global organization partnering with local justice systems to end violence against people living in poverty. We need you with us.",
+    "WebsiteUrl": "https://www.ijm.org/",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://endingpovertytogether.org/wp-content/uploads/2018/09/IJM-Logo.001.jpeg",
+    "Mission": "Every person deserves to be free from violence.",
+    "Id": "0832f067-c470-4cfc-9603-1c034e5c0e4e",
+    "PrimaryKey": "ORGANISATION#0832f067-c470-4cfc-9603-1c034e5c0e4e",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDExOWQwMDMuZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "International aid and human rights",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "Int. Justice Mission NL (IJM)"
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 100,
+        "Tag": "Certification mark"
+      },
+      {
+        "Score": 100,
+        "Tag": "International"
+      },
+      {
+        "Score": 100,
+        "Tag": "International aid and human rights"
+      },
+      {
+        "Score": 100,
+        "Tag": "Large scale"
+      },
+      {
+        "Score": 28,
+        "Tag": "Investing"
+      },
+      {
+        "Score": 100,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "0832f067-c470-4cfc-9603-1c034e5c0e4e",
+    "PrimaryKey": "ORGANISATION#0832f067-c470-4cfc-9603-1c034e5c0e4e"
+  },
+  {
+    "Description": "...",
+    "Vision": "Wij geven als stabiele en professionele non-profit organisatie een positief tegengeluid op de ontbossing en teruggang van biodiversiteit in de tropen.",
+    "WebsiteUrl": "https://www.adopteerregenwoud.nl/",
+    "SortKey": "METADATA#PROFILE",
+    "ImageUrl": "https://www.adopteerregenwoud.nl/wp-content/uploads/2019/10/logo.svg",
+    "Mission": "Adopteer jouw eigen stukje regenwoud!",
+    "Id": "f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+    "PrimaryKey": "ORGANISATION#f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+    "MetaTags": [
+      {
+        "Value": "https://www.givtapp.net/download?code\u003dNjFmN2VkMDE0ZTRjMDMyMWQwMDIuZWEwMDAwMDAwMDAx",
+        "Name": "donationUrl"
+      },
+      {
+        "Value": "Nature and environment,International aid and human rights",
+        "Name": "sectors"
+      }
+    ],
+    "Name": "Stichting Adopteer Regenwoud"
+  },
+  {
+    "SortKey": "METADATA#SCORE",
+    "Scores": [
+      {
+        "Score": 100,
+        "Tag": "Certification mark"
+      },
+      {
+        "Score": 100,
+        "Tag": "Nature and environment"
+      },
+      {
+        "Score": 100,
+        "Tag": "International"
+      },
+      {
+        "Score": 70,
+        "Tag": "Small scale"
+      },
+      {
+        "Score": 96,
+        "Tag": "Directness"
+      },
+      {
+        "Score": 100,
+        "Tag": "Tax relief"
+      }
+    ],
+    "OrganisationId": "f5ac0e39-7b48-4e7d-b355-a80d37d9a63a",
+    "PrimaryKey": "ORGANISATION#f5ac0e39-7b48-4e7d-b355-a80d37d9a63a"
+  }
+]
