@@ -32,7 +32,7 @@ namespace GivingAssistant.UnitTests.Infrastructure
             return Task.CompletedTask;
         }
 
-        public async Task<List<T>> RetrieveRecords<T>(string primaryKey, string sortingKey)
+        protected async Task<List<T>> RetrieveRecords<T>(string primaryKey, string sortingKey)
         {
             var filter = new QueryFilter("PK", QueryOperator.Equal, primaryKey);
             filter.AddCondition("SK", QueryOperator.BeginsWith, sortingKey);
@@ -44,54 +44,6 @@ namespace GivingAssistant.UnitTests.Infrastructure
                 }, new DynamoDBOperationConfig { OverrideTableName = Constants.TableName }).GetRemainingAsync();
         }
         
-        protected async Task<SeedModel> LoadItems(string file)
-        {
-            var fileContents = await File.ReadAllTextAsync(file);
-            var contents = JsonConvert.DeserializeObject<SeedModel>(fileContents);
-
-            foreach (var question in contents.Question)
-            {
-                await DynamoDb.SaveAsync(question, new DynamoDBOperationConfig
-                {
-                    OverrideTableName = Constants.TableName
-                });
-            }
-
-            foreach (var answer in contents.Answer)
-            {
-                await DynamoDb.SaveAsync(answer, new DynamoDBOperationConfig
-                {
-                    OverrideTableName = Constants.TableName
-                });
-            }
-
-            foreach (var userTagMatch in contents.UserTagMatch)
-            {
-                await DynamoDb.SaveAsync(userTagMatch, new DynamoDBOperationConfig
-                {
-                    OverrideTableName = Constants.TableName
-                });
-            }
-
-            foreach (var organisationTagMatch in contents.OrganisationTagMatch)
-            {
-                await DynamoDb.SaveAsync(organisationTagMatch, new DynamoDBOperationConfig
-                {
-                    OverrideTableName = Constants.TableName
-                });
-            }
-
-            foreach (var questionTag in contents.QuestionTag)
-            {
-                await DynamoDb.SaveAsync(questionTag, new DynamoDBOperationConfig
-                {
-                    OverrideTableName = Constants.TableName
-                });
-            }
-
-            return contents;
-        }
-
         [TearDown]
         public async Task ClearDatabase()
         {

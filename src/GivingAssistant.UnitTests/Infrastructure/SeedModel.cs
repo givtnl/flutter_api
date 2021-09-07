@@ -1,14 +1,25 @@
 ﻿using System.Collections.Generic;
+using Amazon.Lambda.DynamoDBEvents;
 using GivingAssistant.Persistence;
 
 namespace GivingAssistant.UnitTests.Infrastructure
 {
     public class SeedModel
     {
-        public List<QuestionTag> QuestionTag { get; set; }
-        public List<QuestionMetaData> Question { get; set; }
-        public List<Answer> Answer { get; set; }
-        public List<UserTagMatch> UserTagMatch { get; set; }
-        public List<OrganisationTagMatch> OrganisationTagMatch { get; set; }
+        public string Description { get; set; }
+        public List<SeedExpectionModel> Expectations { get; set; } = new();
+        public List<DynamoDBEvent.DynamodbStreamRecord> Records = new();
+
+        public  DynamoDBEvent ToDynamoDbEvent()
+        {
+            return new DynamoDBEvent {Records = Records};
+        }
+    }
+
+    public class SeedExpectionModel
+    {
+        public string Comment { get; set; }
+        public decimal ExpectedScore { get; set; }
+        public string OrganisationId { get; set; }
     }
 }

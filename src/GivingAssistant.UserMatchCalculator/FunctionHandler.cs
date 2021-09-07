@@ -11,7 +11,6 @@ using Amazon.Lambda.DynamoDBEvents;
 using AutoMapper;
 using GivingAssistant.Business.Matches.Infrastructure;
 using GivingAssistant.Business.Matches.Infrastructure.Matchers;
-using GivingAssistant.Business.Matches.Queries.GetMatchesWithTagsList;
 using GivingAssistant.Business.Questions.Mappers;
 using GivingAssistant.Business.Questions.Queries.GetDetail;
 using GivingAssistant.Business.Questions.Queries.GetTags;
@@ -40,8 +39,9 @@ namespace GivingAssistant.UserMatchCalculator
             };
             Handlers = new IAnsweredQuestionHandler[]
             {
-                new CategoryAnsweredHandler(DynamoDbContext, Mapper, MatchMakers),
-                new StatementAnsweredHandler(DynamoDbContext, Mapper, MatchMakers)
+                new CategoryAnsweredHandler(DynamoDbContext, Mapper),
+                new StatementAnsweredHandler(DynamoDbContext, Mapper),
+                new ReCalculateUserTagsAndOrganisationMatchHandler(DynamoDbContext, Mapper, MatchMakers)
             };
         }
 
@@ -77,14 +77,17 @@ namespace GivingAssistant.UserMatchCalculator
                         User = user,
                         AnsweredTag = tagIdentifier,
                         LambdaContext = lambdaContext,
-                        QuestionTags = await new GetQuestionTagsListQueryHandler(DynamoDbContext, Mapper).Handle(new GetQuestionTagsListQuery(questionIdentifier), CancellationToken.None),
-                        AnsweredQuestion = await new GetQuestionDetailQueryHandler(DynamoDbContext, Mapper).Handle(new GetQuestionDetailQuery {Id = questionIdentifier}, CancellationToken.None)
+                        QuestionTags = await new GetQuestionTagsListQueryHandler(DynamoDbContext, Mapper).Handle(new GetQuestionTagsListQuery(questionIdentifier),
+                            CancellationToken.None),
+                        AnsweredQuestion =
+                            await new GetQuestionDetailQueryHandler(DynamoDbContext, Mapper).Handle(new GetQuestionDetailQuery {Id = questionIdentifier}, CancellationToken.None)
                     };
 
                     // find the handlers that can run this message
-                    var handler = Handlers.FirstOrDefault(x => x.CanHandle(request));
-
-                    await handler.Handle(request);
+                    foreach (var handler in Handlers.Where(x => x.CanHandle(request)).OrderBy(x => x.ExecutionOrder))
+                    {
+                        await handler.Handle(request);
+                    }
                 }
                 catch (Exception e)
                 {

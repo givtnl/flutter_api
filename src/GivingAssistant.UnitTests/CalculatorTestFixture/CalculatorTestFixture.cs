@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
-using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
-using Amazon.DynamoDBv2.DocumentModel;
-using Amazon.DynamoDBv2.Model;
-using Amazon.Lambda.DynamoDBEvents;
 using Amazon.Lambda.TestUtilities;
 using GivingAssistant.Business.Infrastructure;
 using GivingAssistant.Business.Matches.Infrastructure;
@@ -83,8 +79,9 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
                 MatchMakers = matchMakers,
                 Handlers = new IAnsweredQuestionHandler[]
                 {
-                    new CategoryAnsweredHandler(DynamoDb, Mapper,matchMakers),
-                    new StatementAnsweredHandler(DynamoDb, Mapper,matchMakers)
+                    new CategoryAnsweredHandler(DynamoDb, Mapper),
+                    new StatementAnsweredHandler(DynamoDb, Mapper),
+                    new ReCalculateUserTagsAndOrganisationMatchHandler(DynamoDb, Mapper, matchMakers)
                 }
              
                 
@@ -92,13 +89,13 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
             
         }
 
-        private async Task<DynamoDBEvent> SeedDatabaseWithAnswers(string file)
+        private async Task<SeedModel> SeedDatabaseWithAnswers(string file)
         {
             // read the file
             var fileContents = await File.ReadAllTextAsync(Path.Combine(TestContext.CurrentContext.TestDirectory, "CalculatorTestFixture", file));
 
             // deserialize to dictionary
-            var deserializedContents = JsonConvert.DeserializeObject<DynamoDBEvent>(fileContents);
+            var deserializedContents = JsonConvert.DeserializeObject<SeedModel>(fileContents);
 
             foreach (var deserializedContentsRecord in deserializedContents.Records)
             {
@@ -116,17 +113,39 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
         }
         
         [Test]
-        [TestCase("AnswersWithGoodMatches.json", "Religion and philosophy","TestFixture")]
-        public async Task EnsureWhenExpectingGoodMatchesAreAboveAverage(string file, string tag, string user)
+        [TestCase("matches-with-only-one-tag.json", "TestFixture")]
+        [TestCase("matches-with-only-multiple-tag.json", "TestFixture")]
+        public async Task EnsureThereIsAMatchWithAGivenorganisation(string file, string user)
         {
-            var dynamoDbEvent = await SeedDatabaseWithAnswers(file);
+            var seedingModel = await SeedDatabaseWithAnswers(file);
     
-            await _handler.HandleAsync(dynamoDbEvent, new TestLambdaContext());
+            await _handler.HandleAsync(seedingModel.ToDynamoDbEvent(), new TestLambdaContext());
             
             //retrieve the matches
             var matches = await RetrieveRecords<UserOrganisationMatch>($"{Constants.UserPlaceholder}#{user}", $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}");
+
+            foreach (var expectation in seedingModel.Expectations)
+            {
+                Assert.IsTrue(matches.Any(x => x.Organisation.Id == expectation.OrganisationId),$"{seedingModel.Description} {expectation.Comment}");
+            }
+        }
+        
+        [Test]
+        [TestCase("matches-with-only-one-tag.json", "TestFixture")]
+        [TestCase("matches-with-only-multiple-tag.json", "TestFixture")]
+        public async Task EnsureThePercentageMatchesWithExpectations(string file, string user)
+        {
+            var seedingModel = await SeedDatabaseWithAnswers(file);
+    
+            await _handler.HandleAsync(seedingModel.ToDynamoDbEvent(), new TestLambdaContext());
             
-            
+            //retrieve the matches
+            var matches = await RetrieveRecords<UserOrganisationMatch>($"{Constants.UserPlaceholder}#{user}", $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}");
+
+            foreach (var expectation in seedingModel.Expectations)
+            {
+                Assert.AreEqual(matches.First(x => x.Organisation.Id == expectation.OrganisationId).Score,expectation.ExpectedScore, $"{seedingModel.Description} {expectation.Comment}");
+            }
         }
     }
 }

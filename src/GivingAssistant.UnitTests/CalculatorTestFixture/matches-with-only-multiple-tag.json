@@ -1,0 +1,70 @@
+{
+  "Description": "Enkel checks op 3 tags nu, animals, health & large scale",
+  "Expectations": [
+    {
+      "OrganisationId": "fae29db2-6f4b-4eda-a410-6519adc1a6ec",
+      "ExpectedScore": 77.085,
+      "Comment": "Dokters van de wereld"
+    },
+    {
+      "Comment": "giro 555",
+      "OrganisationId": "d4b3bff0-073c-4627-bff8-43e7ce4a6ca9",
+      "ExpectedScore": 77.085
+    },
+    {
+      "OrganisationId": "af848db6-c28a-40b7-80fd-cc732821b47d",
+      "ExpectedScore": 66.665,
+      "Comment": "ZuiderZee zwerfdieren"
+    }
+  ],
+  "Records": [
+    {
+      "EventName": "INSERT",
+      "DynamoDB": {
+        "NewImage": {
+          "PK": {
+            "S": "USER#TestFixture"
+          },
+          "SK": {
+            "S": "ANSWER#QUESTION#fc51cc4d-b64b-464e-85cf-991b4bdc4d2a#animals"
+          },
+          "Score": {
+            "N": "1"
+          }
+        }
+      }
+    },
+    {
+      "EventName": "INSERT",
+      "DynamoDB": {
+        "NewImage": {
+          "PK": {
+            "S": "USER#TestFixture"
+          },
+          "SK": {
+            "S": "ANSWER#QUESTION#fc51cc4d-b64b-464e-85cf-991b4bdc4d2a#health"
+          },
+          "Score": {
+            "N": "1"
+          }
+        }
+      }
+    },
+    {
+      "EventName": "INSERT",
+      "DynamoDB": {
+        "NewImage": {
+          "PK": {
+            "S": "USER#TestFixture"
+          },
+          "SK": {
+            "S": "ANSWER#QUESTION#c8c9dd61-de69-48cc-9563-ba9970a95b2f#large scale"
+          },
+          "Score": {
+            "N": "0.75"
+          }
+        }
+      }
+    }
+  ]
+}
