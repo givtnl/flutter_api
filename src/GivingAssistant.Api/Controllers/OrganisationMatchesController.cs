@@ -11,9 +11,12 @@ namespace GivingAssistant.Api.Controllers
     public class OrganisationMatchesController : BaseController
     {
         [HttpGet]
-        [OpenApiOperation("GetUserOrganisationTagMatchesList", "Returns a list of matches for the combination between an user and an organisation", 
+        [OpenApiOperation("GetUserOrganisationTagMatchesList", "Returns a list of matches for the combination between an user and an organisation",
             "Returns a list of calculated matches between the profile of the user and the profile of the organisation")]
-        public Task<GetUserOrganisationTagMatchesListResponse> Get(string organisationId,[FromQuery] GetUserOrganisationTagMatchesListRequest request, CancellationToken cancellationToken)
-            => Execute<GetUserOrganisationTagMatchesListRequest, GetUserOrganisationTagMatchesListResponse, GetUserOrganisationTagMatchesListQuery>(request, cancellationToken);
+        public Task<GetUserOrganisationTagMatchesListResponse> Get(string organisationId, [FromQuery] GetUserOrganisationTagMatchesListRequest request, CancellationToken cancellationToken)
+        {
+            request.OrganisationId = organisationId;
+            return Execute<GetUserOrganisationTagMatchesListRequest, GetUserOrganisationTagMatchesListResponse, GetUserOrganisationTagMatchesListQuery>(request, cancellationToken);
+        }
     }
 }
