@@ -29,8 +29,8 @@ namespace GivingAssistant.Business.Matches.Queries.GetMatchesWithOrganisationsLi
             filter.AddCondition("SK", QueryOperator.BeginsWith, $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}");
 
             if (request.MinimumScore.HasValue)
-                filter.AddCondition(Constants.ScorePlaceholder, QueryOperator.GreaterThanOrEqual, request.MinimumScore);
-
+                filter.AddCondition(Constants.ScorePlaceholder, ScanOperator.GreaterThanOrEqual, request.MinimumScore.Value);
+            
             var response = await _dynamoDb
                 .FromQueryAsync<UserOrganisationMatch>(new QueryOperationConfig
                 {
