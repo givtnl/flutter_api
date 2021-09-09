@@ -9,6 +9,8 @@ using Amazon.DynamoDBv2.DataModel;
 using GivingAssistant.Business.Questions.Commands.Create;
 using GivingAssistant.Business.Questions.Mappers;
 using MediatR;
+using Microsoft.AspNetCore.Mvc.ApplicationModels;
+using Microsoft.AspNetCore.Routing;
 
 namespace GivingAssistant.Api
 {
@@ -32,6 +34,7 @@ namespace GivingAssistant.Api
 
             services.AddAutoMapper(x => x.AddMaps(typeof(QuestionMapper), typeof(Mappers.QuestionMapper)));
             services.AddMediatR(typeof(CreateQuestionCommand));
+            services.Configure<RouteOptions>(options => options.LowercaseUrls = true);
             services.AddControllers();
             services.AddCors(x => x.AddDefaultPolicy(p => p.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));
             services.AddOpenApiDocument(options =>

@@ -8,7 +8,7 @@ using NSwag.Annotations;
 namespace GivingAssistant.Api.Controllers
 {
     [Route("organisations/{organisationId}/matches")]
-    public class OrganisationsMatchesController : BaseController
+    public class OrganisationMatchesController : BaseController
     {
         [HttpGet]
         [OpenApiOperation("GetUserOrganisationTagMatchesList", "Returns a list of matches for the combination between an user and an organisation", 
