@@ -15,8 +15,8 @@ namespace GivingAssistant.Api.Controllers
 
         [HttpGet]
         [OpenApiOperation("GetQuestionsList", "Returns a list of questions", "Returns a list of question to build a profile for the user by answering them")]
-        public Task<GetQuestionsListResponse> Get([FromQuery] GetQuestionsListRequest request, CancellationToken cancellationToken)
-        => Execute<GetQuestionsListRequest, GetQuestionsListResponse, GetQuestionsListQuery>(request, cancellationToken);
+        public Task<GetQuestionsListResponse> Get(CancellationToken cancellationToken)
+        => Execute<GetQuestionsListRequest, GetQuestionsListResponse, GetQuestionsListQuery>(new GetQuestionsListRequest(), cancellationToken);
 
 
         [HttpPost]
