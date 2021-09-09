@@ -7,5 +7,6 @@ namespace GivingAssistant.Business.Matches.Queries.GetMatchesWithOrganisationsLi
     public class GetMatchesWithOrganisationsListQuery : IRequest<IEnumerable<UserOrganisationMatchListModel>>
     {
         public string UserId { get; set; }
+        public int? MinimumScore { get; set; }
     }
 }

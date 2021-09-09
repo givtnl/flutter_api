@@ -23,14 +23,6 @@ namespace GivingAssistant.UserMatchCalculator.Handlers
 
         public async Task Handle(HandleAnsweredQuestionRequest request)
         {
-            await SaveUserMatchesWithTags(request);
-
-          //  await SaveUserMatchesWithOrganisation(request);
-            
-        }
-
-        private async Task SaveUserMatchesWithTags(HandleAnsweredQuestionRequest request)
-        {
             var createUserTagMatchCommandHandler = new CreateUserTagMatchCommandHandler(_context, _mapper);
             foreach (var questionTagListModel in request.QuestionTags)
             {
@@ -43,25 +35,7 @@ namespace GivingAssistant.UserMatchCalculator.Handlers
                 }, CancellationToken.None);
             }
         }
-
-        // private async Task SaveUserMatchesWithOrganisation(HandleAnsweredQuestionRequest request)
-        // {
-        //     var matchingOrganisations = await new GetOrganisationsByTagsListQueryHandler(_context, _mapper).Handle(new GetOrganisationsByTagsListQuery
-        //     {
-        //         Tags =request.QuestionTags.Select(x => x.Tag)
-        //     }, CancellationToken.None);
-        //     
-        //     var userTags = await new GetMatchesWithTagsListQueryHandler(_context, _mapper).Handle(new GetMatchesWithTagsListQuery {UserId = request.User}, new CancellationToken());
-        //
-        //     await new CreateUserOrganisationMatchCommandHandler(_context, _mapper, _matchMakers).Handle(
-        //         new CreateUserOrganisationMatchCommand
-        //         {
-        //             User = request.User,
-        //             MatchingOrganisations = matchingOrganisations,
-        //             UserTags = userTags
-        //         }, CancellationToken.None);
-        // }
-
+        
         public bool CanHandle(HandleAnsweredQuestionRequest request)
         {
             return request.AnsweredQuestion.Type == QuestionType.Statement;

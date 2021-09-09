@@ -22,16 +22,20 @@ namespace GivingAssistant.Business.Matches.Queries.GetMatchesWithOrganisationsLi
             _dynamoDb = dynamoDb;
             _mapper = mapper;
         }
+
         public async Task<IEnumerable<UserOrganisationMatchListModel>> Handle(GetMatchesWithOrganisationsListQuery request, CancellationToken cancellationToken)
         {
             var filter = new QueryFilter("PK", QueryOperator.Equal, $"{Constants.UserPlaceholder}#{request.UserId}");
-            filter.AddCondition("SK", ScanOperator.BeginsWith, $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}");
+            filter.AddCondition("SK", QueryOperator.BeginsWith, $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}");
+
+            if (request.MinimumScore.HasValue)
+                filter.AddCondition(Constants.ScorePlaceholder, QueryOperator.GreaterThanOrEqual, request.MinimumScore);
 
             var response = await _dynamoDb
                 .FromQueryAsync<UserOrganisationMatch>(new QueryOperationConfig
                 {
                     Filter = filter
-                }, new DynamoDBOperationConfig { OverrideTableName = Constants.TableName }).GetRemainingAsync(cancellationToken);
+                }, new DynamoDBOperationConfig {OverrideTableName = Constants.TableName}).GetRemainingAsync(cancellationToken);
 
             return response.Select(match => _mapper.Map(match, new UserOrganisationMatchListModel()));
         }

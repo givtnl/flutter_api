@@ -77,8 +77,8 @@ namespace GivingAssistant.UserMatchCalculator
                         User = user,
                         AnsweredTag = tagIdentifier,
                         LambdaContext = lambdaContext,
-                        QuestionTags = await new GetQuestionTagsListQueryHandler(DynamoDbContext, Mapper).Handle(new GetQuestionTagsListQuery(questionIdentifier),
-                            CancellationToken.None),
+                        QuestionTags = 
+                            await new GetQuestionTagsListQueryHandler(DynamoDbContext, Mapper).Handle(new GetQuestionTagsListQuery(questionIdentifier), CancellationToken.None),
                         AnsweredQuestion =
                             await new GetQuestionDetailQueryHandler(DynamoDbContext, Mapper).Handle(new GetQuestionDetailQuery {Id = questionIdentifier}, CancellationToken.None)
                     };

@@ -5,6 +5,7 @@ namespace GivingAssistant.Api.Requests.Matches
 {
     public class GetMatchesListResponse
     {
-        public IEnumerable<UserOrganisationMatchListModel> Result { get; set; }
+        public IEnumerable<UserOrganisationMatchListModel> OrganisationMatches { get; set; }
+        public IEnumerable<UserTagMatchListModel> UserTagMatches { get; set; }
     }
 }

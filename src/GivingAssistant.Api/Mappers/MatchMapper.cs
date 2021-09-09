@@ -12,7 +12,7 @@ namespace GivingAssistant.Api.Mappers
         {
             CreateMap<GetMatchesListRequest, GetMatchesWithOrganisationsListQuery>();
             CreateMap<IEnumerable<UserOrganisationMatchListModel>, GetMatchesListResponse>()
-                .ForMember(x => x.Result, c => c.MapFrom(d => d));
+                .ForMember(x => x.OrganisationMatches, c => c.MapFrom(d => d));
         }
     }
 }
