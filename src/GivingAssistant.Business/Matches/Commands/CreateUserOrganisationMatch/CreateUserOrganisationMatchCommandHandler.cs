@@ -74,13 +74,13 @@ namespace GivingAssistant.Business.Matches.Commands.CreateUserOrganisationMatch
 
                 if (organisation == null)
                     continue;
-
+                var roundedScore = decimal.Round(keyValuePair.Value.Average(x => x.Score), 2);
                 yield return new UserOrganisationMatch
                 {
                     Organisation = organisation,
-                    Score = keyValuePair.Value.Average(x => x.Score),
+                    Score = roundedScore,
                     PrimaryKey = $"{Constants.UserPlaceholder}#{request.User}",
-                    SortKey = $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}#{Constants.TotalScorePlaceHolder}#{keyValuePair.Value.Average(x => x.Score)}#{organisation.Id}"
+                    SortKey = $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}#{Constants.TotalScorePlaceHolder}#{roundedScore}#{organisation.Id}"
                 };
             }
         }
