@@ -7,7 +7,7 @@ using Amazon.DynamoDBv2.DataModel;
 using AutoMapper;
 using GivingAssistant.Business.Matches.Commands.CreateUserOrganisationMatch;
 using GivingAssistant.Business.Matches.Infrastructure;
-using GivingAssistant.Business.Matches.Queries.GetMatchesWithTagsList;
+using GivingAssistant.Business.Matches.Queries.GetUserTagMatchesList;
 using GivingAssistant.Business.Organisations.Queries.GetByTags;
 using GivingAssistant.UserMatchCalculator.Models;
 
@@ -30,7 +30,7 @@ namespace GivingAssistant.UserMatchCalculator.Handlers
         public async Task Handle(HandleAnsweredQuestionRequest request)
         {
             // retrieve the tags for the users
-            var userTags = await new GetMatchesWithTagsListQueryHandler(_context, _mapper).Handle(new GetMatchesWithTagsListQuery {UserId = request.User}, new CancellationToken());
+            var userTags = await new GetUserTagMatchesListQueryHandler(_context, _mapper).Handle(new GetUserTagMatchesListQuery {UserId = request.User}, new CancellationToken());
 
             // retrieve all the organisations that matches these tags
             var organisationMatches = await new GetOrganisationsByTagsListQueryHandler(_context, _mapper).Handle(new GetOrganisationsByTagsListQuery

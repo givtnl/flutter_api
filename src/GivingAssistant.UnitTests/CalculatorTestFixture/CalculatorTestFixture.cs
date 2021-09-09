@@ -26,47 +26,7 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
         public override async Task Setup()
         {
             await base.Setup();
-
-            // read the file
-            var fileContents = await File.ReadAllTextAsync(Path.Combine(TestContext.CurrentContext.TestDirectory, "CalculatorTestFixture", "DatabaseState.json"));
-
-            // deserialize to dictionary
-            var deserializedContents = JsonConvert.DeserializeObject<List<JObject>>(fileContents);
-
-            // we need to loop and decide to what we want to map
-            foreach (var serializedRecord in deserializedContents)
-            {
-                var primaryKeyValue = serializedRecord.Value<string>("PrimaryKey");
-                var sortKeyValue = serializedRecord.Value<string>("SortKey");
-
-                if (primaryKeyValue.StartsWith(Constants.OrganisationPlaceholder))
-                {
-                    switch (sortKeyValue)
-                    {
-                        case "METADATA#PROFILE":
-                            await DynamoDb.SaveAsync(serializedRecord.ToObject<OrganisationProfile>(), new DynamoDBOperationConfig{OverrideTableName = Constants.TableName});
-                            break;
-                        case "METADATA#SCORE":
-                            await DynamoDb.SaveAsync(serializedRecord.ToObject<OrganisationTagScore>(), new DynamoDBOperationConfig{OverrideTableName = Constants.TableName});
-                            break;
-                    }
-                    
-                    if (sortKeyValue.StartsWith("MATCH#TAG"))
-                    {
-                        await DynamoDb.SaveAsync(serializedRecord.ToObject<OrganisationTagMatch>(), new DynamoDBOperationConfig{OverrideTableName = Constants.TableName});    
-                    }
-                }
-
-                if (primaryKeyValue.StartsWith(Constants.QuestionPlaceholder))
-                {
-                    if (sortKeyValue.StartsWith(Constants.MetaDataPlaceholder))
-                        await DynamoDb.SaveAsync(serializedRecord.ToObject<QuestionMetaData>(), new DynamoDBOperationConfig{OverrideTableName = Constants.TableName});
-
-                    if (sortKeyValue.Contains("#TAG#"))
-                        await DynamoDb.SaveAsync(serializedRecord.ToObject<QuestionTag>(), new DynamoDBOperationConfig{OverrideTableName = Constants.TableName});
-                }
-            }
-
+            
             var matchMakers = new IUserOrganisationMatcher[]
             {
                 new BestMatchingTagsMatcher(),
@@ -83,10 +43,7 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
                     new StatementAnsweredHandler(DynamoDb, Mapper),
                     new ReCalculateUserTagsAndOrganisationMatchHandler(DynamoDb, Mapper, matchMakers)
                 }
-             
-                
             };
-            
         }
 
         private async Task<SeedModel> SeedDatabaseWithAnswers(string file)
@@ -126,7 +83,7 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
 
             foreach (var expectation in seedingModel.Expectations)
             {
-                Assert.IsTrue(matches.Any(x => x.Organisation.Id == expectation.OrganisationId),$"{seedingModel.Description} {expectation.Comment}");
+                Assert.IsTrue(matches.Any(x => x.Organisation?.Id == expectation.OrganisationId),$"{seedingModel.Description} {expectation.Comment}");
             }
         }
         
@@ -144,7 +101,7 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
 
             foreach (var expectation in seedingModel.Expectations)
             {
-                Assert.AreEqual(matches.First(x => x.Organisation.Id == expectation.OrganisationId).Score,expectation.ExpectedScore, $"{seedingModel.Description} {expectation.Comment}");
+                Assert.AreEqual(matches.First(x => x.Organisation?.Id == expectation.OrganisationId).Score,expectation.ExpectedScore, $"{seedingModel.Description} {expectation.Comment}");
             }
         }
     }

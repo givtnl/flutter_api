@@ -1,30 +1,36 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace GivingAssistant.Business.Matches.Infrastructure.Matchers
 {
     public class NumberOfMatchingTagsMatcher : IUserOrganisationMatcher
     {
-        public Task<MatchingResponse> CalculateMatch(MatchingRequest context, CancellationToken token)
+        public int Order => 1;
+        
+        public IEnumerable<MatchingResponse> CalculateMatches(MatchingRequest context, IEnumerable<MatchingResponse> currentResponses)
         {
             if (!context.OrganisationMatches.Any())
-                return Task.FromResult(MatchingResponse.EmptyMatch());
+                yield break;
 
             if (!context.UserMatches.Any())
-                return Task.FromResult(MatchingResponse.EmptyMatch());
-            
+                yield break;
             
             // 7
             var numberOfTotalUserMatches = context.UserMatches.Count();
             // 3
-            var numberOfMatchesBetweenUserAndOrganisation = context.UserMatches.Count(userMatch =>
-                context.OrganisationMatches.Any(organisationMatch =>
-                    organisationMatch.Tag.Equals(userMatch.Tag, StringComparison.InvariantCultureIgnoreCase)));
+            var numberOfMatchesBetweenUserAndOrganisation = context
+                .UserMatches.Count(userMatch => context
+                    .OrganisationMatches
+                    .Any(organisationMatch => organisationMatch.Tag.Equals(userMatch.Tag, StringComparison.InvariantCultureIgnoreCase)));
 
-            var score = ((decimal)numberOfMatchesBetweenUserAndOrganisation / (decimal)numberOfTotalUserMatches) * 100;
-            return Task.FromResult(new MatchingResponse(decimal.Round(score,2)));
+            var score = ((decimal) numberOfMatchesBetweenUserAndOrganisation / (decimal) numberOfTotalUserMatches) * 100;
+
+            foreach (var matching in currentResponses)
+            {
+                var recalculatedScore = decimal.Round((score + matching.Score) / 2, 2);
+                yield return new MatchingResponse(recalculatedScore, matching.Tag);
+            }
         }
     }
 }

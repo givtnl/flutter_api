@@ -23,57 +23,89 @@ namespace GivingAssistant.Business.Matches.Commands.CreateUserOrganisationMatch
             _mapper = mapper;
             _matchMakers = matchMakers;
         }
+
         public async Task<Unit> Handle(CreateUserOrganisationMatchCommand request, CancellationToken cancellationToken)
         {
-            var evaluatedScores = await CalculateScoresForOrganisations(request, cancellationToken);
+            // step one, calculate the scores for the tags between user and organisation
+            var evaluatedScores = CalculateScoresForOrganisations(request);
 
-            var writeRequest = _dynamoDb.CreateBatchWrite<UserOrganisationMatch>(new DynamoDBOperationConfig
+            var totalScoresWriteRequests = _dynamoDb.CreateBatchWrite<UserOrganisationMatch>(new DynamoDBOperationConfig
             {
                 OverrideTableName = Constants.TableName
             });
+            totalScoresWriteRequests.AddPutItems(GenerateTotalMatchScoreForOrganisationAndUser(request, evaluatedScores).ToList());
+            var individualTagScoreWriteRequests = _dynamoDb.CreateBatchWrite<UserOrganisationTagMatch>(new DynamoDBOperationConfig
+            {
+                OverrideTableName = Constants.TableName
+            });
+            individualTagScoreWriteRequests.AddPutItems(GenerateIndividualTagScoresForOrganisationAndUser(request, evaluatedScores).ToList());
 
+            await totalScoresWriteRequests.Combine(individualTagScoreWriteRequests).ExecuteAsync(cancellationToken);
+
+            return Unit.Value;
+        }
+
+        private IEnumerable<UserOrganisationTagMatch> GenerateIndividualTagScoresForOrganisationAndUser(CreateUserOrganisationMatchCommand request,
+            Dictionary<string, MatchingCollection> evaluatedScores)
+        {
+            foreach (var keyValuePair in evaluatedScores)
+            {
+                foreach (var matchingResponse in keyValuePair.Value)
+                {
+                    yield return new UserOrganisationTagMatch
+                    {
+                        PrimaryKey = $"{Constants.UserPlaceholder}#{request.User}",
+                        SortKey = $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}#{Constants.TagPlaceholder}#{keyValuePair.Key}#{matchingResponse.Tag}",
+                        Score = matchingResponse.Score
+                    };
+                }
+            }
+        }
+
+        private IEnumerable<UserOrganisationMatch> GenerateTotalMatchScoreForOrganisationAndUser(CreateUserOrganisationMatchCommand request,
+            Dictionary<string, MatchingCollection> evaluatedScores)
+        {
             foreach (var keyValuePair in evaluatedScores)
             {
                 var organisation = request.MatchingOrganisations
                     .Where(x => x.OrganisationId == keyValuePair.Key)
                     .Select(x => _mapper.Map(x.Organisation, new OrganisationProfile()))
                     .FirstOrDefault();
-                
+
                 if (organisation == null)
                     continue;
-                
-                writeRequest.AddPutItem(new UserOrganisationMatch
+
+                yield return new UserOrganisationMatch
                 {
                     Organisation = organisation,
-                    Score = keyValuePair.Value,
+                    Score = keyValuePair.Value.Average(x => x.Score),
                     PrimaryKey = $"{Constants.UserPlaceholder}#{request.User}",
-                    SortKey = $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}#{keyValuePair.Key}"
-                });
+                    SortKey = $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}#{Constants.TotalScorePlaceHolder}#{keyValuePair.Value.Average(x => x.Score)}#{organisation.Id}"
+                };
             }
-            await writeRequest.ExecuteAsync(cancellationToken);
-
-            return Unit.Value;
         }
 
-        private async Task<Dictionary<string, decimal>> CalculateScoresForOrganisations(CreateUserOrganisationMatchCommand request,
-            CancellationToken cancellationToken)
+        private Dictionary<string, MatchingCollection> CalculateScoresForOrganisations(CreateUserOrganisationMatchCommand request)
         {
-            var evaluatedScores = new Dictionary<string, decimal>();
-            foreach (var matchingOrganisation in request.MatchingOrganisations.GroupBy(x => x.OrganisationId))
+            var evaluatedScores = new Dictionary<string, MatchingCollection>();
+            foreach (var matchingOrganisation in request.MatchingOrganisations.GroupBy(x => x.OrganisationId).ToList())
             {
                 var matchingRequest = new MatchingRequest
                 {
                     UserMatches = request.UserTags,
                     OrganisationMatches = matchingOrganisation.Select(x => x)
                 };
-                var calculatedScores = new List<decimal>();
-                foreach (var matchMaker in _matchMakers)
+                var calculatedScores = new MatchingCollection();
+
+                foreach (var matchMaker in _matchMakers.OrderBy(x => x.Order))
                 {
-                    var response = await matchMaker.CalculateMatch(matchingRequest, cancellationToken);
-                    calculatedScores.Add(response.Score);
+                    var tagScores = matchMaker.CalculateMatches(matchingRequest, calculatedScores);
+
+                    calculatedScores.AddRange(tagScores.ToList());
                 }
 
-                evaluatedScores.Add(matchingOrganisation.Key, calculatedScores.Average());
+                if (calculatedScores.Any())
+                    evaluatedScores.Add(matchingOrganisation.Key, calculatedScores);
             }
 
             return evaluatedScores;

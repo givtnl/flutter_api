@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -10,22 +10,23 @@ using GivingAssistant.Business.Matches.Models;
 using GivingAssistant.Persistence;
 using MediatR;
 
-namespace GivingAssistant.Business.Matches.Queries.GetMatchesWithTagsList
+namespace GivingAssistant.Business.Matches.Queries.GetUserOrganisationTagMatchesList
 {
-    public class GetMatchesWithTagsListQueryHandler : IRequestHandler<GetMatchesWithTagsListQuery, IEnumerable<UserTagMatchListModel>>
+    public class GetUserOrganisationTagMatchesListQueryHandler : IRequestHandler<GetUserOrganisationTagMatchesListQuery, IEnumerable<UserOrganisationTagMatchListModel>>
     {
         private readonly IDynamoDBContext _dynamoDb;
         private readonly IMapper _mapper;
 
-        public GetMatchesWithTagsListQueryHandler(IDynamoDBContext dynamoDb, IMapper mapper)
+        public GetUserOrganisationTagMatchesListQueryHandler(IDynamoDBContext dynamoDb, IMapper mapper)
         {
             _dynamoDb = dynamoDb;
             _mapper = mapper;
         }
-        public async Task<IEnumerable<UserTagMatchListModel>> Handle(GetMatchesWithTagsListQuery request, CancellationToken cancellationToken)
+        
+        public async Task<IEnumerable<UserOrganisationTagMatchListModel>> Handle(GetUserOrganisationTagMatchesListQuery request, CancellationToken cancellationToken)
         {
             var filter = new QueryFilter("PK", QueryOperator.Equal, $"{Constants.UserPlaceholder}#{request.UserId}");
-            filter.AddCondition("SK", QueryOperator.BeginsWith, $"{Constants.MatchPlaceholder}#{Constants.TagPlaceholder}");
+            filter.AddCondition("SK", QueryOperator.BeginsWith, $"{Constants.MatchPlaceholder}#{Constants.TagPlaceholder}#{request.Tag}");
 
             var response = await _dynamoDb
                 .FromQueryAsync<UserTagMatch>(new QueryOperationConfig
@@ -33,7 +34,7 @@ namespace GivingAssistant.Business.Matches.Queries.GetMatchesWithTagsList
                     Filter = filter
                 }, new DynamoDBOperationConfig { OverrideTableName = Constants.TableName }).GetRemainingAsync(cancellationToken);
 
-            return response.Select(match => _mapper.Map(match, new UserTagMatchListModel()));
+            return response.Select(match => _mapper.Map(match, new UserOrganisationTagMatchListModel()));
         }
     }
 }

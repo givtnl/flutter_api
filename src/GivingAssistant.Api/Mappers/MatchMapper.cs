@@ -2,7 +2,9 @@
 using AutoMapper;
 using GivingAssistant.Api.Requests.Matches;
 using GivingAssistant.Business.Matches.Models;
-using GivingAssistant.Business.Matches.Queries.GetMatchesWithOrganisationsList;
+using GivingAssistant.Business.Matches.Queries.GetUserOrganisationMatchesList;
+using GivingAssistant.Business.Matches.Queries.GetUserOrganisationTagMatchesList;
+using Microsoft.VisualBasic;
 
 namespace GivingAssistant.Api.Mappers
 {
@@ -10,9 +12,15 @@ namespace GivingAssistant.Api.Mappers
     {
         public MatchMapper()
         {
-            CreateMap<GetMatchesListRequest, GetMatchesWithOrganisationsListQuery>();
-            CreateMap<IEnumerable<UserOrganisationMatchListModel>, GetMatchesListResponse>()
-                .ForMember(x => x.OrganisationMatches, c => c.MapFrom(d => d));
+            CreateMap<GetUserOrganisationMatchesListRequest, GetUserOrganisationMatchesListQuery>()
+                .ForMember(x => x.Limit, c => c.MapFrom(d => d.Limit.GetValueOrDefault(25)))
+                .ForMember(x => x.MinimumScore, c => c.MapFrom(d => d.MinimumScore.GetValueOrDefault(0)));
+            CreateMap<GetUserOrganisationTagMatchesListRequest, GetUserOrganisationTagMatchesListQuery>();
+
+            CreateMap<IEnumerable<UserOrganisationMatchListModel>, GetUserOrganisationMatchesListResponse>()
+                .ForMember(x => x.Result, c => c.MapFrom(d => d));
+            CreateMap<IEnumerable<UserOrganisationTagMatchListModel>, GetUserOrganisationTagMatchesListResponse>()
+                .ForMember(x => x.Result, c => c.MapFrom(d => d));
         }
     }
 }

@@ -2,6 +2,7 @@
 {
     internal class Constants
     {
+        internal static int DefaultPageSize = 25;
         internal static string TableName = "Items";
 
         internal static string ProfilePlaceholder = "PROFILE";
@@ -21,6 +22,8 @@
         internal static string MatchPlaceholder = "MATCH";
 
         internal static string OrganisationPlaceholder = "ORGANISATION";
+        
+        internal static string TotalScorePlaceHolder = "TOTALSCORE";
 
         internal static string PrimaryKeyPlaceHolder = "PK";
 

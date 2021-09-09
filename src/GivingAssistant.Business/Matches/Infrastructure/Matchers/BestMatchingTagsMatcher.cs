@@ -9,14 +9,16 @@ namespace GivingAssistant.Business.Matches.Infrastructure.Matchers
     public class BestMatchingTagsMatcher : IUserOrganisationMatcher
     {
         private const int NumberOfTagsToEvaluate = 3;
-        
-        public Task<MatchingResponse> CalculateMatch(MatchingRequest context, CancellationToken token)
+
+        public int Order => 0;
+
+        public IEnumerable<MatchingResponse> CalculateMatches(MatchingRequest context, IEnumerable<MatchingResponse> currentResponses)
         {
             if (!context.OrganisationMatches.Any())
-                return Task.FromResult(MatchingResponse.EmptyMatch());
+                yield break;
 
             if (!context.UserMatches.Any())
-                return Task.FromResult(MatchingResponse.EmptyMatch());
+                yield break;
 
             var combinedMatches = context.UserMatches.Where(userMatch =>
                     context.OrganisationMatches.Any(organisationMatch =>
@@ -24,8 +26,6 @@ namespace GivingAssistant.Business.Matches.Infrastructure.Matchers
                 .OrderByDescending(x => x.Percentage)
                 .Take(NumberOfTagsToEvaluate);
 
-
-            var evaluatedScores = new List<decimal>();
 
             foreach (var match in combinedMatches)
             {
@@ -37,13 +37,15 @@ namespace GivingAssistant.Business.Matches.Infrastructure.Matchers
                     continue;
                 }
 
-                if (organisationMatch.Score > match.Percentage)
-                    evaluatedScores.Add(match.Percentage / organisationMatch.Score * 100);
-                else
-                    evaluatedScores.Add(organisationMatch.Score / match.Percentage * 100);
-            }
+                decimal score;
 
-            return Task.FromResult(evaluatedScores.Any() ? new MatchingResponse(decimal.Round(evaluatedScores.Average(), 2)) : MatchingResponse.EmptyMatch());
+                if (organisationMatch.Score > match.Percentage)
+                    score = match.Percentage / organisationMatch.Score * 100;
+                else
+                    score = organisationMatch.Score / match.Percentage * 100;
+
+                yield return new MatchingResponse(score, match.Tag);
+            }
         }
     }
 }

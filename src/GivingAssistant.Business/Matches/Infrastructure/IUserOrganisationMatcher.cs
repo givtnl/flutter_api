@@ -1,10 +1,10 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace GivingAssistant.Business.Matches.Infrastructure
 {
     public interface IUserOrganisationMatcher
     {
-        Task<MatchingResponse> CalculateMatch(MatchingRequest context, CancellationToken token);
+        int Order { get; }
+        IEnumerable<MatchingResponse> CalculateMatches(MatchingRequest context, IEnumerable<MatchingResponse> currentResponses);
     }
 }
