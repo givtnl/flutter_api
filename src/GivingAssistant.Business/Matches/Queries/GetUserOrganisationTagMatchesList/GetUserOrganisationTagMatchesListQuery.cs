@@ -7,6 +7,6 @@ namespace GivingAssistant.Business.Matches.Queries.GetUserOrganisationTagMatches
     public class GetUserOrganisationTagMatchesListQuery : IRequest<IEnumerable<UserOrganisationTagMatchListModel>>
     {
         public string UserId { get; set; }
-        public string Tag { get; set; }
+        public string OrganisationId { get; set; }
     }
 }

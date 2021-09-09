@@ -22,11 +22,13 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
     public class CalculatorTestFixture : BaseTestFixture
     {
         private FunctionHandler _handler;
-        
+
         public override async Task Setup()
         {
             await base.Setup();
-            
+
+            await Seed(Path.Combine(TestContext.CurrentContext.TestDirectory, "CalculatorTestFixture", "DatabaseState.json"));
+
             var matchMakers = new IUserOrganisationMatcher[]
             {
                 new BestMatchingTagsMatcher(),
@@ -66,42 +68,44 @@ namespace GivingAssistant.UnitTests.CalculatorTestFixture
                     OverrideTableName = Constants.TableName
                 });
             }
+
             return deserializedContents;
         }
-        
+
         [Test]
         [TestCase("matches-with-only-one-tag.json", "TestFixture")]
         [TestCase("matches-with-only-multiple-tag.json", "TestFixture")]
         public async Task EnsureThereIsAMatchWithAGivenorganisation(string file, string user)
         {
             var seedingModel = await SeedDatabaseWithAnswers(file);
-    
+
             await _handler.HandleAsync(seedingModel.ToDynamoDbEvent(), new TestLambdaContext());
-            
+
             //retrieve the matches
             var matches = await RetrieveRecords<UserOrganisationMatch>($"{Constants.UserPlaceholder}#{user}", $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}");
 
             foreach (var expectation in seedingModel.Expectations)
             {
-                Assert.IsTrue(matches.Any(x => x.Organisation?.Id == expectation.OrganisationId),$"{seedingModel.Description} {expectation.Comment}");
+                Assert.IsTrue(matches.Any(x => x.Organisation?.Id == expectation.OrganisationId), $"{seedingModel.Description} {expectation.Comment}");
             }
         }
-        
+
         [Test]
         [TestCase("matches-with-only-one-tag.json", "TestFixture")]
         [TestCase("matches-with-only-multiple-tag.json", "TestFixture")]
         public async Task EnsureThePercentageMatchesWithExpectations(string file, string user)
         {
             var seedingModel = await SeedDatabaseWithAnswers(file);
-    
+
             await _handler.HandleAsync(seedingModel.ToDynamoDbEvent(), new TestLambdaContext());
-            
+
             //retrieve the matches
             var matches = await RetrieveRecords<UserOrganisationMatch>($"{Constants.UserPlaceholder}#{user}", $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}");
 
             foreach (var expectation in seedingModel.Expectations)
             {
-                Assert.AreEqual(matches.First(x => x.Organisation?.Id == expectation.OrganisationId).Score,expectation.ExpectedScore, $"{seedingModel.Description} {expectation.Comment}");
+                Assert.AreEqual(matches.First(x => x.Organisation?.Id == expectation.OrganisationId).Score, expectation.ExpectedScore,
+                    $"{seedingModel.Description} {expectation.Comment}");
             }
         }
     }

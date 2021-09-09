@@ -5,6 +5,6 @@ namespace GivingAssistant.Business.Matches.Models
     public class UserOrganisationMatchListModel
     {
         public OrganisationDetailModel Organisation { get; set; }
-        public int Score { get; set; }
+        public decimal Score { get; set; }
     }
 }

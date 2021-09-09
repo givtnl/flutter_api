@@ -22,17 +22,21 @@ namespace GivingAssistant.UnitTests.Infrastructure
         protected IMapper Mapper;
 
         [SetUp]
-        public virtual async Task Setup()
+        public virtual  Task Setup()
         {
             DynamoDb = new DynamoDBContext(new AmazonDynamoDBClient(new AmazonDynamoDBConfig
             {
                 ServiceURL = "http://localhost:8000"
             }));
             Mapper = new MapperConfiguration(x => x.AddMaps(typeof(QuestionMapper).Assembly)).CreateMapper();
+            
+            return Task.CompletedTask;
+        }
 
+        protected async Task Seed(string file)
+        {
             // read the file
-            var fileContents = await File.ReadAllTextAsync(Path.Combine(TestContext.CurrentContext.TestDirectory, "CalculatorTestFixture", "DatabaseState.json"));
-
+            var fileContents = await File.ReadAllTextAsync(file);
             // deserialize to dictionary
             var deserializedContents = JsonConvert.DeserializeObject<List<JObject>>(fileContents);
 
@@ -67,6 +71,15 @@ namespace GivingAssistant.UnitTests.Infrastructure
 
                     if (sortKeyValue.Contains("#TAG#"))
                         await DynamoDb.SaveAsync(serializedRecord.ToObject<QuestionTag>(), new DynamoDBOperationConfig {OverrideTableName = Constants.TableName});
+                }
+
+                if (primaryKeyValue.StartsWith(Constants.UserPlaceholder))
+                {
+                    if (sortKeyValue.StartsWith($"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}#{Constants.TagPlaceholder}"))
+                        await DynamoDb.SaveAsync(serializedRecord.ToObject<UserOrganisationTagMatch>(), new DynamoDBOperationConfig {OverrideTableName = Constants.TableName});
+                    
+                    if (sortKeyValue.StartsWith($"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}#{Constants.TotalScorePlaceHolder}"))
+                        await DynamoDb.SaveAsync(serializedRecord.ToObject<UserOrganisationMatch>(), new DynamoDBOperationConfig {OverrideTableName = Constants.TableName});
                 }
             }
         }

@@ -1,10 +1,31 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3bc4593c_002Dd636_002D4f35_002D8712_002Dec3bc99fb52b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="EnsureOrganisationMatchesAreSortedDescendingScore" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::03B1016F-5FE8-4FEE-9BDF-1DA4585AABDE::net5.0::GivingAssistant.UnitTests.Matches.GetUserOrganisationTagMatchesListQueryTestFixture&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::03B1016F-5FE8-4FEE-9BDF-1DA4585AABDE::net5.0::GivingAssistant.UnitTests.Matches.GetUserOrganisationMatchesListQueryTestFixture.EnsureOrganisationTagMatchesAreFilteredCorrectlyOnUserId&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=463f1e18_002Dda19_002D4bb3_002D8696_002D19d3f0f90320/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="EnsureZeroIsReturnedWhenOrganisationHaveNoMatches" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Project Location="C:\GIT\flutter_api\src\GivingAssistant.UnitTests" Presentation="&amp;lt;src&amp;gt;\&amp;lt;GivingAssistant.UnitTests&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=59b5b7ae_002D0fc3_002D4546_002D9cd4_002D248f0f771c08/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="EnsureWhenExpectingGoodMatchesAreAboveAverage" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Project Location="C:\GIT\flutter_api\src\GivingAssistant.UnitTests" Presentation="&amp;lt;src&amp;gt;\&amp;lt;GivingAssistant.UnitTests&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d6133c2f_002Dbf60_002D4132_002D9cb4_002D3b32746ee2e3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="EnsureZeroIsReturnedWhenOrganisationHaveNoMatches #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d6133c2f_002Dbf60_002D4132_002D9cb4_002D3b32746ee2e3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="EnsureZeroIsReturnedWhenOrganisationHaveNoMatches #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Project Location="C:\GIT\flutter_api\src\GivingAssistant.UnitTests" Presentation="&amp;lt;src&amp;gt;\&amp;lt;GivingAssistant.UnitTests&amp;gt;" /&gt;&#xD;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e21a5e9e_002D7c39_002D4670_002D9b31_002D438ea94378e0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="EnsureOrganisationTagMatchesAreFilteredCorrectlyOnUserId" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::03B1016F-5FE8-4FEE-9BDF-1DA4585AABDE::net5.0::GivingAssistant.UnitTests.Matches.GetUserOrganisationMatchesListQueryTestFixture.EnsureOrganisationTagMatchesAreFilteredCorrectlyOnUserId&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::03B1016F-5FE8-4FEE-9BDF-1DA4585AABDE::net5.0::GivingAssistant.UnitTests.Matches.GetUserOrganisationMatchesListQueryTestFixture.EnsureOrganisationTagMatchesAreFilteredCorrectlyOnMinimumScore&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::03B1016F-5FE8-4FEE-9BDF-1DA4585AABDE::net5.0::GivingAssistant.UnitTests.Matches.GetUserOrganisationMatchesListQueryTestFixture.EnsureOrganisationTagMatchesAreFilteredCorrectlyOnMinimumScoreWithPaging&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::03B1016F-5FE8-4FEE-9BDF-1DA4585AABDE::net5.0::GivingAssistant.UnitTests.Matches.GetUserOrganisationMatchesListQueryTestFixture.EnsureOrganisationTagMatchesAreSortedCorrectly&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f4e2b6e6_002D2e34_002D4cb0_002D826b_002D2ddc44578f8e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="EnsureResponsesAreCorrectlyPersisted" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::03B1016F-5FE8-4FEE-9BDF-1DA4585AABDE::net5.0::GivingAssistant.UnitTests.Matches.CreateUserOrganisationMatchCommandHandlerTestFixture&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::03B1016F-5FE8-4FEE-9BDF-1DA4585AABDE::net5.0::GivingAssistant.UnitTests.CalculatorTestFixture.CalculatorTestFixture&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestRunner/HangingTestRunnerResponse/@EntryValue">KillProcess</s:String></wpf:ResourceDictionary>

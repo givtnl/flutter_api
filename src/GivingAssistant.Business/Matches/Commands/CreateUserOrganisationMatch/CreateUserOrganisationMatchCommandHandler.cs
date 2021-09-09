@@ -77,7 +77,7 @@ namespace GivingAssistant.Business.Matches.Commands.CreateUserOrganisationMatch
                 var roundedScore = decimal.Round(keyValuePair.Value.Average(x => x.Score), 2);
                 yield return new UserOrganisationMatch
                 {
-                    Organisation = organisation,
+                    //Organisation = organisation,
                     Score = roundedScore,
                     PrimaryKey = $"{Constants.UserPlaceholder}#{request.User}",
                     SortKey = $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}#{Constants.TotalScorePlaceHolder}#{roundedScore}#{organisation.Id}"

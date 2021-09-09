@@ -29,6 +29,12 @@
     <None Update="CalculatorTestFixture\matches-with-only-multiple-tag.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Matches\GetUserOrganisationTagMatchesListQueryTestFixture.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Matches\GetUserOrganisationMatchesListQueryTestFixture.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

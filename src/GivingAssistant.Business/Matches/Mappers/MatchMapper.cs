@@ -24,9 +24,11 @@ namespace GivingAssistant.Business.Matches.Mappers
                 .ForMember(x => x.Organisation, c => c.MapFrom(d => d.Organisation));
             // .ForPath(x => x.Organisation.Id, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(3)));
 
+            
+  
             CreateMap<UserOrganisationTagMatch, UserOrganisationTagMatchListModel>()
                 .ForMember(x => x.Tag, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(4)))
-                .ForMember(x => x.Tag, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(3)));
+                .ForMember(x => x.OrganisationId, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(3)));
 
             CreateMap<UserTagMatch, UserTagMatchListModel>()
                 .ForMember(x => x.Tag, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(2)))

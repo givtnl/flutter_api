@@ -1,0 +1,94 @@
+[
+  {
+    "Score": 77.5,
+    "SortKey": "MATCH#ORGANISATION#TAG#74a4e206-8700-4db0-9f06-9edb270676d4#health",
+    "PrimaryKey": "USER#Anthony"
+  },
+  {
+    "Score":87.5,
+    "SortKey":"MATCH#ORGANISATION#TAG#74a4e206-8700-4db0-9f06-9edb270676d4#Religion and philosophy",
+    "PrimaryKey":"USER#Anthony"
+  },
+  {
+    "Score":30,
+    "SortKey":"MATCH#ORGANISATION#TAG#74a4e206-8700-4db0-9f06-9edb270676d4#Animals",
+    "PrimaryKey":"USER#Anthony"
+  },
+  {
+    "Score":30,
+    "SortKey":"MATCH#ORGANISATION#TAG#74a4e206-8700-4db0-8888-9edb270676d4#Health",
+    "PrimaryKey":"USER#Anthony"
+  },
+  {
+    "Score": 89.5,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Armoede heeft een vernietigend effect op elk gebied van je leven. Daarom moet het antwoord ook op elk gebied komen: cognitief, lichamelijk, sociaal, emotioneel, economisch én geestelijk. In het kindsponsorprogramma worden de kinderen op al deze gebieden begeleid om hun van God gegeven talenten te ontdekken.",
+      "WebsiteUrl": "https://www.compassion.nl/",
+      "ImageUrl": "https://www.compassion.nl/app/uploads/2020/11/logo_payoff.svg",
+      "Id": "74a4e206-8700-4db0-9f06-9edb270676d4",
+      "Mission": "Compassion bevrijdt kinderen van armoede in Jezus' naam via lokale kerken in 25 landen wereldwijd",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code=NjFmN2VkMDE0ZTRjMDgxOWQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "religionAndPhilosophy,health",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Compassion Nederland"
+    },
+    "SortKey": "MATCH#ORGANISATION#TOTALSCORE#89.50#74a4e206-8700-4db0-9f06-9edb270676d4",
+    "PrimaryKey": "USER#Anthony"
+  },
+  {
+    "Score": 80.5,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Onze doelstelling is de scholen voorzien van geldelijke middelen door donateurs te werven en kerken, scholen en verenigingen te vragen acties te organiseren.",
+      "WebsiteUrl": "https://svcos.nl/",
+      "ImageUrl": "https://svcos.nl/wp-content/uploads/2020/06/logo_stichting-vrienden_klein.png",
+      "Id": "7e9c70b6-e798-4585-ab07-004b92aa2ec9",
+      "Mission": "Wij beogen samen met u ondersteuning en uitbreiding van christelijk onderwijs in Schotland.",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code=NjFmN2VkMDE0ZTRjMTIyMGQwMDUuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "educationAndScience,religionAndPhilosophy",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "SVCOS Schotland"
+    },
+    "SortKey": "MATCH#ORGANISATION#TOTALSCORE#80.50#7e9c70b6-e798-4585-ab07-004b92aa2ec9",
+    "PrimaryKey": "USER#Anthony"
+  },
+  {
+    "Score": 77.5,
+    "Organisation": {
+      "Description": "...",
+      "Vision": "Wij verbeteren structureel de gezondheidszorg van het land waar we te gast zijn door in te zetten op duurzame hulpverlening.",
+      "WebsiteUrl": "https://mercyships.org",
+      "ImageUrl": "https://www.mercyships.nl/wp-content/uploads/2020/10/Logo-web-stories.jpg",
+      "Id": "8c72bf78-2e0d-4ffc-91c5-0d5dca53311f",
+      "Mission": "Wij maken medische en chirurgische zorg toegankelijk voor de allerarmste mensen ter wereld.",
+      "MetaTags": [
+        {
+          "Value": "https://www.givtapp.net/download?code=NjFmN2VkMDE0ZTRjMDMyMGQwMDMuZWEwMDAwMDAwMDAx",
+          "Name": "donationUrl"
+        },
+        {
+          "Value": "internationalAidAndHumanRights,religionAndPhilosophy",
+          "Name": "sectors"
+        }
+      ],
+      "Name": "Mercy Ships"
+    },
+    "SortKey": "MATCH#ORGANISATION#TOTALSCORE#77.50#8c72bf78-2e0d-4ffc-91c5-0d5dca53311f",
+    "PrimaryKey": "USER#Anthony"
+  }
+]

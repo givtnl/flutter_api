@@ -27,15 +27,14 @@ namespace GivingAssistant.Business.Matches.Queries.GetUserOrganisationMatchesLis
         {
             var filter = new QueryFilter("PK", QueryOperator.Equal, $"{Constants.UserPlaceholder}#{request.UserId}");
 
-            filter.AddCondition("SK", QueryOperator.GreaterThanOrEqual,
-                $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}#{Constants.TotalScorePlaceHolder}#{request.MinimumScore}#");
-            filter.AddCondition("SK", QueryOperator.LessThanOrEqual, $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}#{Constants.TotalScorePlaceHolder}#100#");
+            filter.AddCondition("SK", QueryOperator.GreaterThanOrEqual, $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}#{Constants.TotalScorePlaceHolder}#{request.MinimumScore}");
 
             var response = await _dynamoDb
                 .FromQueryAsync<UserOrganisationMatch>(new QueryOperationConfig
                 {
                     Filter = filter,
                     BackwardSearch = true,
+                    Select = SelectValues.AllAttributes,
                     Limit = request.Limit
                 }, new DynamoDBOperationConfig {OverrideTableName = Constants.TableName}).GetRemainingAsync(cancellationToken);
 

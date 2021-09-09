@@ -1,5 +1,4 @@
 using System.Linq;
-using System.Reflection.Metadata;
 using System.Threading;
 using System.Threading.Tasks;
 using GivingAssistant.Business.Infrastructure;
@@ -30,7 +29,6 @@ namespace GivingAssistant.UnitTests.Matches
             var matches = await RetrieveRecords<UserOrganisationMatch>($"{Constants.UserPlaceholder}#{user}",
                 $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}#{Constants.TotalScorePlaceHolder}#{score}#{organisationId}");
             
-            Assert.AreEqual(matches.ElementAtOrDefault(0)?.Score, score);
             Assert.AreEqual(matches.ElementAtOrDefault(0)?.Organisation.Id, organisationId);
         }
         

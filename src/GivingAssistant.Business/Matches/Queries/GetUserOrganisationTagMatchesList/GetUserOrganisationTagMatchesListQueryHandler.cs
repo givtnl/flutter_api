@@ -26,10 +26,10 @@ namespace GivingAssistant.Business.Matches.Queries.GetUserOrganisationTagMatches
         public async Task<IEnumerable<UserOrganisationTagMatchListModel>> Handle(GetUserOrganisationTagMatchesListQuery request, CancellationToken cancellationToken)
         {
             var filter = new QueryFilter("PK", QueryOperator.Equal, $"{Constants.UserPlaceholder}#{request.UserId}");
-            filter.AddCondition("SK", QueryOperator.BeginsWith, $"{Constants.MatchPlaceholder}#{Constants.TagPlaceholder}#{request.Tag}");
+            filter.AddCondition("SK", QueryOperator.BeginsWith, $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}#{Constants.TagPlaceholder}#{request.OrganisationId}#");
 
             var response = await _dynamoDb
-                .FromQueryAsync<UserTagMatch>(new QueryOperationConfig
+                .FromQueryAsync<UserOrganisationTagMatch>(new QueryOperationConfig
                 {
                     Filter = filter
                 }, new DynamoDBOperationConfig { OverrideTableName = Constants.TableName }).GetRemainingAsync(cancellationToken);
