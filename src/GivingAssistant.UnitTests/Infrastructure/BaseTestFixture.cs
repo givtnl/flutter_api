@@ -19,15 +19,17 @@ namespace GivingAssistant.UnitTests.Infrastructure
     public class BaseTestFixture
     {
         protected IDynamoDBContext DynamoDb;
+        protected AmazonDynamoDBClient DynamoDbClient;
         protected IMapper Mapper;
 
         [SetUp]
         public virtual  Task Setup()
         {
-            DynamoDb = new DynamoDBContext(new AmazonDynamoDBClient(new AmazonDynamoDBConfig
+            DynamoDbClient = new AmazonDynamoDBClient(new AmazonDynamoDBConfig
             {
                 ServiceURL = "http://localhost:8000"
-            }));
+            });
+            DynamoDb = new DynamoDBContext(DynamoDbClient);
             Mapper = new MapperConfiguration(x => x.AddMaps(typeof(QuestionMapper).Assembly)).CreateMapper();
             
             return Task.CompletedTask;

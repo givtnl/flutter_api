@@ -2,8 +2,10 @@
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 using Amazon.DynamoDBv2.DocumentModel;
+using Amazon.DynamoDBv2.Model;
 using AutoMapper;
 using GivingAssistant.Business.Infrastructure;
 using GivingAssistant.Business.Matches.Models;
@@ -12,33 +14,63 @@ using MediatR;
 
 namespace GivingAssistant.Business.Matches.Queries.GetUserOrganisationMatchesList
 {
-    public class GetUserOrganisationMatchesListQueryHandler : IRequestHandler<GetUserOrganisationMatchesListQuery, IEnumerable<UserOrganisationMatchListModel>>
+    public class GetUserOrganisationMatchesListQueryHandler : IRequestHandler<GetUserOrganisationMatchesListQuery, UserOrganisationMatchListResponse>
     {
         private readonly IDynamoDBContext _dynamoDb;
         private readonly IMapper _mapper;
+        private readonly IAmazonDynamoDB _client;
 
-        public GetUserOrganisationMatchesListQueryHandler(IDynamoDBContext dynamoDb, IMapper mapper)
+        public GetUserOrganisationMatchesListQueryHandler(IDynamoDBContext dynamoDb, IMapper mapper, IAmazonDynamoDB client)
         {
             _dynamoDb = dynamoDb;
             _mapper = mapper;
+            _client = client;
         }
 
-        public async Task<IEnumerable<UserOrganisationMatchListModel>> Handle(GetUserOrganisationMatchesListQuery request, CancellationToken cancellationToken)
+        public async Task<UserOrganisationMatchListResponse> Handle(GetUserOrganisationMatchesListQuery request, CancellationToken cancellationToken)
         {
-            var filter = new QueryFilter("PK", QueryOperator.Equal, $"{Constants.UserPlaceholder}#{request.UserId}");
-
-            filter.AddCondition("SK", QueryOperator.GreaterThanOrEqual, $"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}#{Constants.TotalScorePlaceHolder}#{request.MinimumScore}");
-
-            var response = await _dynamoDb
-                .FromQueryAsync<UserOrganisationMatch>(new QueryOperationConfig
+            var query = await _client.QueryAsync(new QueryRequest(Constants.TableName)
+            {
+                Limit = request.Limit,
+                ScanIndexForward = false,
+                Select = Select.ALL_ATTRIBUTES,
+                ExclusiveStartKey = 
+                    string.IsNullOrWhiteSpace(request.NextPageToken) ?  null :
+                    new Dictionary<string, AttributeValue>
+                    {
+                        {"PK", new AttributeValue($"{Constants.UserPlaceholder}#{request.UserId}")},
+                        {"SK", new AttributeValue(request.NextPageToken)}
+                    },
+                KeyConditions = new Dictionary<string, Condition>
                 {
-                    Filter = filter,
-                    BackwardSearch = true,
-                    Select = SelectValues.AllAttributes,
-                    Limit = request.Limit
-                }, new DynamoDBOperationConfig {OverrideTableName = Constants.TableName}).GetRemainingAsync(cancellationToken);
+                    {
+                        "PK", new Condition
+                        {
+                            ComparisonOperator = ComparisonOperator.EQ, AttributeValueList = new List<AttributeValue>
+                            {
+                                new($"{Constants.UserPlaceholder}#{request.UserId}")
+                            }
+                        }
+                    },
+                    {
+                        "SK", new Condition
+                        {
+                            ComparisonOperator = ComparisonOperator.GE,
+                            AttributeValueList = new List<AttributeValue>
+                            {
+                                new($"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}#{Constants.TotalScorePlaceHolder}#{request.MinimumScore}")
+                            }
+                        }
+                    }
+                }
+            }, cancellationToken);
+            
+            var pagedSet = query.Items.Select(x => _dynamoDb.FromDocument<UserOrganisationMatch>(Document.FromAttributeMap(x)));
 
-            return response.Select(match => _mapper.Map(match, new UserOrganisationMatchListModel()));
+            return new UserOrganisationMatchListResponse(
+                pagedSet.Select(match => _mapper.Map(match, new UserOrganisationMatchListModel())),
+                query.LastEvaluatedKey != null && query.LastEvaluatedKey.Any() ? query.LastEvaluatedKey["SK"]?.S : null
+            );
         }
     }
 }

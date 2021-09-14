@@ -17,6 +17,10 @@ namespace GivingAssistant.Api.Mappers
                 .ForMember(x => x.MinimumScore, c => c.MapFrom(d => d.MinimumScore.GetValueOrDefault(0)));
             CreateMap<GetUserOrganisationTagMatchesListRequest, GetUserOrganisationTagMatchesListQuery>();
 
+            CreateMap<UserOrganisationMatchListResponse, GetUserOrganisationMatchesListResponse>()
+                .ForMember(x => x.Result, c => c.MapFrom(d => d.Results))
+                .ForMember(x => x.NextPageToken, c => c.MapFrom(d => d.NextPageToken));
+            
             CreateMap<IEnumerable<UserOrganisationMatchListModel>, GetUserOrganisationMatchesListResponse>()
                 .ForMember(x => x.Result, c => c.MapFrom(d => d));
             CreateMap<IEnumerable<UserOrganisationTagMatchListModel>, GetUserOrganisationTagMatchesListResponse>()
