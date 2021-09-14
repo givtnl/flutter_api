@@ -18,14 +18,17 @@ namespace GivingAssistant.Business.Questions.Mappers
             CreateMap<CreateQuestionCommand, QuestionMetaData>()
                 .ForMember(x => x.PrimaryKey, x => x.MapFrom(d => Constants.QuestionPlaceholder))
                 .ForMember(x => x.SortKey, x => x.MapFrom(d => $"{Constants.MetaDataPlaceholder}#{Guid.NewGuid()}"))
-                .ForMember(x => x.CategoryOptions,c => c.MapFrom(d => d.Type == QuestionType.Category ? d.CategoryOptions : null))
-                .ForMember(x => x.StatementOptions, c => c.MapFrom(d => d.Type == QuestionType.Statement ? d.StatementOptions : null));
+                .ForMember(x => x.CategoryOptions, c => c.MapFrom(d => d.Type == QuestionType.Category ? d.CategoryOptions : null))
+                .ForMember(x => x.StatementOptions, c => c.MapFrom(d => d.Type == QuestionType.Statement ? d.StatementOptions : null))
+                .ForMember(x => x.MetaTags, c => c.MapFrom(d => d.MetaTags.Select(QuestionMetaTag.FromKeyValuePair)));
+
 
             CreateMap<QuestionMetaData, QuestionDetailModel>()
                 .ForMember(x => x.Id, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.None).ElementAtOrDefault(1)));
 
             CreateMap<QuestionMetaData, QuestionListModel>()
-                .ForMember(x => x.Id, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.None).ElementAtOrDefault(1)));
+                .ForMember(x => x.Id, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.None).ElementAtOrDefault(1)))
+                .ForMember(x => x.MetaTags, c => c.MapFrom(d => d.MetaTags.Select(x => x.ToKeyValuePair())));
 
             //AnimalsQuestion#TAG#animals#SCORE#80
             CreateMap<QuestionTag, QuestionTagListModel>()

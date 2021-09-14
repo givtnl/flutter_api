@@ -16,6 +16,6 @@ namespace GivingAssistant.Business.Questions.Commands.Create
         public Dictionary<string, string> Translations { get; set; }
         public List<CreateQuestionCategoryCommandOptions> CategoryOptions { get; set; }
         public CreateQuestionStatementCommandOptions StatementOptions { get; set; }
-   
+        public Dictionary<string, string> MetaTags { get; set; }
     }
 }

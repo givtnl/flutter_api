@@ -11,5 +11,6 @@ namespace GivingAssistant.Persistence
         public Dictionary<string, string> Translations { get; set; }
         public QuestionStatementMetaData StatementOptions { get; set; }
         public List<QuestionCategoryMetaData> CategoryOptions { get; set; }
+        public List<QuestionMetaTag> MetaTags { get; set; }
     }
 }

@@ -14,5 +14,6 @@ namespace GivingAssistant.Api.Requests.Questions
         public Dictionary<string, string> Translations { get; set; }
         public List<CreateQuestionCategoryRequestOptions> CategoryOptions { get; set; }
         public CreateQuestionStatementRequestOptions StatementOptions { get; set; }
+        public Dictionary<string, string> MetaTags { get; set; }
     }
 }

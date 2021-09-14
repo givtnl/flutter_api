@@ -11,5 +11,6 @@ namespace GivingAssistant.Business.Questions.Models
         public Dictionary<string, string> Translations { get; set; }
         public List<QuestionCategoryOptionModel> CategoryOptions { get; set; }
         public QuestionStatementModel StatementOptions { get; set; }
+        public Dictionary<string, string> MetaTags { get; set; }
     }
 }
