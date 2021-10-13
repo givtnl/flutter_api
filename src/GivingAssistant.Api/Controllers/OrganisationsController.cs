@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Threading;
 using System.Threading.Tasks;
+using GivingAssistant.Api.Requests.Matches;
 using GivingAssistant.Api.Requests.Organisations;
 using GivingAssistant.Business.Organisations.Commands.Create;
 using Microsoft.AspNetCore.Http;
