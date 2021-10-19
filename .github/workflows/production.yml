@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-api:
+  build-api-production:
     runs-on: ubuntu-latest
     env:
       PROJECT: ./src/GivingAssistant.Api/GivingAssistant.Api.csproj
@@ -41,7 +41,7 @@ jobs:
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         aws lambda update-function-code --function-name ${{ secrets.LAMBDA_FUNCTION_NAME }} --image-uri $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-  build-calculator:
+  build-calculator-production:
     runs-on: ubuntu-latest
     env:
       PROJECT: ./src/GivingAssistant.UserMatchCalculator/GivingAssistant.UserMatchCalculator.csproj
