@@ -104,8 +104,7 @@ namespace GivingAssistant.Infrastructure.AWS
                 Timeout = Duration.Seconds(10),
                 Runtime = Runtime.FROM_IMAGE,
                 LogRetention = RetentionDays.ONE_DAY,
-                FunctionName = "giving-assistant-api",
-                ReservedConcurrentExecutions = 10
+                FunctionName = "giving-assistant-api"
             });
 
             DynamoDbApplicationTable = new Table(applicationStack, "ItemsTable", new TableProps
@@ -158,8 +157,7 @@ namespace GivingAssistant.Infrastructure.AWS
                 Timeout = Duration.Minutes(1),
                 Runtime = Runtime.FROM_IMAGE,
                 LogRetention = RetentionDays.ONE_DAY,
-                FunctionName = "giving-assistant-user-match-calculator",
-                ReservedConcurrentExecutions = 1
+                FunctionName = "giving-assistant-user-match-calculator"
             });
             lambdaFunction.AddEventSource(new DynamoEventSource(DynamoDbApplicationTable, new DynamoEventSourceProps
             {
