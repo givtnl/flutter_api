@@ -1,7 +1,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 using GivingAssistant.Api.Requests;
-using GivingAssistant.Business.Answers.Commands.Create;
+using GivingAssistant.Business.Feedback;
 using Microsoft.AspNetCore.Mvc;
 using NSwag.Annotations;
 
@@ -12,10 +12,10 @@ namespace GivingAssistant.Api.Controllers
     {
        
         [HttpPost]
-        [OpenApiOperation("CreateAnswer", "Answers a question", "Registers an answer for a given question for a particular user")]
+        [OpenApiOperation("CreateFeedback", "Give feedback", "Registers feedback and the email from a specific user linked to a userid.")]
         public async Task<IActionResult> Post(string userId,[FromBody] CreateUserFeedbackRequest request, CancellationToken cancellationToken)
         {
-            return StatusCode(201, await Execute<CreateUserFeedbackRequest, CreateUserFeedbackResponse, CreateAnswerCommand>(request, cancellationToken));
+            return StatusCode(201, await Execute<CreateUserFeedbackRequest, CreateUserFeedbackResponse, CreateUserFeedbackCommand>(request, cancellationToken));
         }
     }
 }
