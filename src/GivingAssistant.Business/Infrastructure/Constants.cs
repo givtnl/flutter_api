@@ -20,6 +20,8 @@
         internal static string AnswerPlaceholder = "ANSWER";
 
         internal static string MatchPlaceholder = "MATCH";
+        
+        internal static string FeedbackPlaceholder = "FEEDBACK";
 
         internal static string OrganisationPlaceholder = "ORGANISATION";
         
