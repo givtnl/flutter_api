@@ -1,4 +1,4 @@
-name: .NET
+name: Development/QA Env Deployment
 on:
   push:
     branches: [ develop ]
