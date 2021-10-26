@@ -1,6 +1,7 @@
 using AutoMapper;
 using GivingAssistant.Api.Requests;
 using GivingAssistant.Business.Feedback;
+using MediatR;
 
 namespace GivingAssistant.Api.Mappers
 {
@@ -9,6 +10,7 @@ namespace GivingAssistant.Api.Mappers
         public UserFeedbackMapper()
         {
             CreateMap<CreateUserFeedbackRequest, CreateUserFeedbackCommand>();
+            CreateMap<Unit, CreateUserFeedbackResponse>();
         }
     }
 }
