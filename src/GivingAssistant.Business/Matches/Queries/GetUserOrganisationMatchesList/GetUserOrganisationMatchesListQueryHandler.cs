@@ -68,7 +68,7 @@ namespace GivingAssistant.Business.Matches.Queries.GetUserOrganisationMatchesLis
             var pagedSet = query.Items.Select(x => _dynamoDb.FromDocument<UserOrganisationMatch>(Document.FromAttributeMap(x)));
 
             return new UserOrganisationMatchListResponse(
-                pagedSet.Select(match => _mapper.Map(match, new UserOrganisationMatchListModel())),
+                pagedSet.Select(match => _mapper.Map(match, new UserOrganisationMatchListModel())).ToList(),
                 query.LastEvaluatedKey != null && query.LastEvaluatedKey.Any() ? query.LastEvaluatedKey["SK"]?.S : null
             );
         }

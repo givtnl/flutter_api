@@ -41,7 +41,7 @@ namespace GivingAssistant.Business.Questions.Queries.GetTags
                     Filter = filter
                 }, new DynamoDBOperationConfig { OverrideTableName = Constants.TableName }).GetRemainingAsync(cancellationToken);
 
-            return response.Select(question => _mapper.Map(question, new QuestionTagListModel()));
+            return response.Select(question => _mapper.Map(question, new QuestionTagListModel())).ToList();
         }
     }
 }

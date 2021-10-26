@@ -34,7 +34,7 @@ namespace GivingAssistant.Business.Matches.Queries.GetUserOrganisationTagMatches
                     Filter = filter
                 }, new DynamoDBOperationConfig { OverrideTableName = Constants.TableName }).GetRemainingAsync(cancellationToken);
 
-            return response.Select(match => _mapper.Map(match, new UserOrganisationTagMatchListModel()));
+            return response.Select(match => _mapper.Map(match, new UserOrganisationTagMatchListModel())).ToList();
         }
     }
 }

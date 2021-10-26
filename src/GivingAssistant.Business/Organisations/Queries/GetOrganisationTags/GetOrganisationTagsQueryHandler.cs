@@ -36,7 +36,8 @@ namespace GivingAssistant.Business.Organisations.Queries.GetOrganisationTags
 
             return response
                 .Where(tagMatch => tagMatch.SortKey.EndsWith(request.OrganisationId))
-                .Select(x => _mapper.Map(x, new OrganisationTagMatchListModel()));
+                .Select(x => _mapper.Map(x, new OrganisationTagMatchListModel()))
+                .ToList();
         }
     }
 }

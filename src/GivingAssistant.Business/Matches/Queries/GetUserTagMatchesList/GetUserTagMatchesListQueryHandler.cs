@@ -33,7 +33,7 @@ namespace GivingAssistant.Business.Matches.Queries.GetUserTagMatchesList
                     Filter = filter
                 }, new DynamoDBOperationConfig { OverrideTableName = Constants.TableName }).GetRemainingAsync(cancellationToken);
 
-            return response.Select(match => _mapper.Map(match, new UserTagMatchListModel()));
+            return response.Select(match => _mapper.Map(match, new UserTagMatchListModel())).ToList();
         }
     }
 }
