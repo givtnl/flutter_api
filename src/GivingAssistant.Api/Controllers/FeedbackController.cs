@@ -12,7 +12,7 @@ namespace GivingAssistant.Api.Controllers
     {
        
         [HttpPost]
-        [OpenApiOperation("CreateFeedback", "Give feedback", "Registers feedback and the email from a specific user linked to a userid.")]
+        [OpenApiOperation("CreateFeedback", "Give feedback", "Registers feedback and the email from a specific user linked to an userid.")]
         public async Task<IActionResult> Post(string userId,[FromBody] CreateUserFeedbackRequest request, CancellationToken cancellationToken)
         {
             return StatusCode(201, await Execute<CreateUserFeedbackRequest, CreateUserFeedbackResponse, CreateUserFeedbackCommand>(request, cancellationToken));
