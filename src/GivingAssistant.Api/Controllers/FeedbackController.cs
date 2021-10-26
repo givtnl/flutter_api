@@ -15,6 +15,7 @@ namespace GivingAssistant.Api.Controllers
         [OpenApiOperation("CreateFeedback", "Give feedback", "Registers feedback and the email from a specific user linked to an userid.")]
         public async Task<IActionResult> Post(string userId,[FromBody] CreateUserFeedbackRequest request, CancellationToken cancellationToken)
         {
+            request.UserId = userId;
             return StatusCode(201, await Execute<CreateUserFeedbackRequest, CreateUserFeedbackResponse, CreateUserFeedbackCommand>(request, cancellationToken));
         }
     }
