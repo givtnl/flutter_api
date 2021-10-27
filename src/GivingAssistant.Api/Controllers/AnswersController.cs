@@ -14,7 +14,7 @@ namespace GivingAssistant.Api.Controllers
 
         [HttpPost]
         [OpenApiOperation("CreateAnswer", "Answers a question", "Registers an answer for a given question for a particular user")]
-        [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(CreateQuestionResponse))]
+        [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(CreateAnswerResponse))]
         public async Task<IActionResult> Post(string questionId,[FromBody] CreateAnswerRequest request, CancellationToken cancellationToken)
         {
             request.QuestionId = questionId;
