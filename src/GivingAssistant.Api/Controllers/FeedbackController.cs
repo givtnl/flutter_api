@@ -7,7 +7,7 @@ using NSwag.Annotations;
 
 namespace GivingAssistant.Api.Controllers
 {
-    [Route("users/{userid}/feedback")]
+    [Route("users/{userId}/feedback")]
     public class FeedbackController: BaseController
     {
        
