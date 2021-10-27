@@ -23,7 +23,7 @@ namespace GivingAssistant.Business.Feedback
             var existingFeedback = await _dynamoDb.LoadAsync<Persistence.UserFeedback>($"{Constants.FeedbackPlaceholder}",$"{Constants.UserPlaceholder}#{request.UserId}", new DynamoDBOperationConfig
             {
                 OverrideTableName = Constants.TableName
-            }) ?? new Persistence.UserFeedback();
+            }, cancellationToken) ?? new Persistence.UserFeedback();
             
             await _dynamoDb.SaveAsync(_mapper.Map(request, existingFeedback), new DynamoDBOperationConfig
             {
