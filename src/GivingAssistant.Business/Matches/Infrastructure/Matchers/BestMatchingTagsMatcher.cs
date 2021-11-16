@@ -14,14 +14,14 @@ namespace GivingAssistant.Business.Matches.Infrastructure.Matchers
 
         public IEnumerable<MatchingResponse> CalculateMatches(MatchingRequest context, IEnumerable<MatchingResponse> currentResponses)
         {
-            if (!context.OrganisationMatches.Any())
+            if (!context.OrganisationMatchesByTags.Any())
                 yield break;
 
             if (!context.UserMatches.Any())
                 yield break;
 
             var combinedMatches = context.UserMatches.Where(userMatch =>
-                    context.OrganisationMatches.Any(organisationMatch =>
+                    context.OrganisationMatchesByTags.Any(organisationMatch =>
                         organisationMatch.Tag.Equals(userMatch.Tag, StringComparison.InvariantCultureIgnoreCase)))
                 .OrderByDescending(x => x.Percentage)
                 .Take(NumberOfTagsToEvaluate);
@@ -30,7 +30,7 @@ namespace GivingAssistant.Business.Matches.Infrastructure.Matchers
             foreach (var match in combinedMatches)
             {
                 // get the corresponding organisation match
-                var organisationMatch = context.OrganisationMatches.FirstOrDefault(x => x.Tag.Equals(match.Tag, StringComparison.InvariantCultureIgnoreCase));
+                var organisationMatch = context.OrganisationMatchesByTags.FirstOrDefault(x => x.Tag.Equals(match.Tag, StringComparison.InvariantCultureIgnoreCase));
                 if (organisationMatch == null)
                 {
                     // this should really not occur, but safety first, zeker safety first

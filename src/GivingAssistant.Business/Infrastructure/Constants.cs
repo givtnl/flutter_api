@@ -10,6 +10,7 @@
         internal static string MetaDataPlaceholder = "METADATA";
 
         internal static string TagPlaceholder = "TAG";
+        internal static string CategoryPlaceholder = "Category";
 
         internal static string ScorePlaceholder = "SCORE";
 

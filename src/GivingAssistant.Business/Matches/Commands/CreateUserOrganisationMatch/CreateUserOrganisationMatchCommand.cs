@@ -9,6 +9,8 @@ namespace GivingAssistant.Business.Matches.Commands.CreateUserOrganisationMatch
     {
         public string User { get; set; }
         public IEnumerable<UserTagMatchListModel> UserTags { get; set; }
-        public IEnumerable<OrganisationTagMatchListModel> MatchingOrganisations { get; set; }
+        public IEnumerable<UserCategoryMatchListModel> UserCategories { get; set; }
+        public IEnumerable<OrganisationTagMatchListModel> MatchingOrganisationsByTag { get; set; }
+        public IEnumerable<OrganisationCategoryMatchListModel> MatchingOrganisationsByCategory { get; set; }
     }
 }

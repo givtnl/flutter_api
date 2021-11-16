@@ -8,7 +8,6 @@ namespace GivingAssistant.UserMatchCalculator.Models
     {
         public string AnsweredTag { get; set; }
         public IEnumerable<QuestionTagListModel> QuestionTags { get; set; }
-        // public IEnumerable<UserTagMatchListModel> UserTags { get; set; }
         public QuestionDetailModel AnsweredQuestion { get; set; }
         public string User { get; set; }
         public decimal Answer { get; set; }

@@ -8,6 +8,8 @@ namespace GivingAssistant.Business.Matches.Infrastructure
     public class MatchingRequest
     {
         public IEnumerable<UserTagMatchListModel> UserMatches { get; set; }
-        public IEnumerable<OrganisationTagMatchListModel> OrganisationMatches { get; set; }
+        public IEnumerable<UserCategoryMatchListModel> UserCategories { get; set; }
+        public IEnumerable<OrganisationTagMatchListModel> OrganisationMatchesByTags { get; set; }
+        public IEnumerable<OrganisationCategoryMatchListModel> OrganisationMatchesByCategories { get; set; }
     }
 }

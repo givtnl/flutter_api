@@ -22,7 +22,7 @@ namespace GivingAssistant.UnitTests.Matches
             await commandHandler.Handle(new CreateUserOrganisationMatchCommand
             {
                 User = user,
-                MatchingOrganisations = new[] {new OrganisationTagMatchListModel {Tag = tag, Score = 80, OrganisationId = organisationId, Organisation = new OrganisationDetailModel{Id = organisationId}}},
+                MatchingOrganisationsByTag = new[] {new OrganisationTagMatchListModel {Tag = tag, Score = 80, OrganisationId = organisationId, Organisation = new OrganisationDetailModel{Id = organisationId}}},
                 UserTags = new[] {new UserTagMatchListModel {Percentage = score, Tag = tag}}
             }, CancellationToken.None);
 
@@ -40,7 +40,7 @@ namespace GivingAssistant.UnitTests.Matches
             await commandHandler.Handle(new CreateUserOrganisationMatchCommand
             {
                 User = user,
-                MatchingOrganisations = new[] {new OrganisationTagMatchListModel {Tag = tag, Score = 80, OrganisationId = organisationId, Organisation = new OrganisationDetailModel{Id = organisationId}}},
+                MatchingOrganisationsByTag = new[] {new OrganisationTagMatchListModel {Tag = tag, Score = 80, OrganisationId = organisationId, Organisation = new OrganisationDetailModel{Id = organisationId}}},
                 UserTags = new[] {new UserTagMatchListModel {Percentage = score, Tag = tag}}
             }, CancellationToken.None);
 

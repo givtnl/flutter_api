@@ -35,7 +35,8 @@ namespace GivingAssistant.UserMatchCalculator
             MatchMakers = new IUserOrganisationMatcher[]
             {
                 new BestMatchingTagsMatcher(),
-                new NumberOfMatchingTagsMatcher()
+                new NumberOfMatchingTagsMatcher(),
+                new MatchingCategoriesMatcher()
             };
             Handlers = new IAnsweredQuestionHandler[]
             {

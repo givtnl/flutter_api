@@ -2,6 +2,7 @@
 using System.Linq;
 using AutoMapper;
 using GivingAssistant.Business.Infrastructure;
+using GivingAssistant.Business.Matches.Commands.CreateUserCategoryMatch;
 using GivingAssistant.Business.Matches.Commands.CreateUserTagMatch;
 using GivingAssistant.Business.Matches.Models;
 using GivingAssistant.Persistence;
@@ -33,6 +34,10 @@ namespace GivingAssistant.Business.Matches.Mappers
             CreateMap<UserTagMatch, UserTagMatchListModel>()
                 .ForMember(x => x.Tag, c => c.MapFrom(d => d.SortKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(2)))
                 .ForMember(x => x.User, c => c.MapFrom(d => d.PrimaryKey.Split('#', StringSplitOptions.RemoveEmptyEntries).ElementAtOrDefault(1)));
+
+            
+            CreateMap<CreateUserCategoryMatchCommand, UserCategoryMatch>();
+            CreateMap<UserCategoryMatch, UserCategoryMatchListModel>();
         }
     }
 }

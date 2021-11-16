@@ -10,7 +10,7 @@ namespace GivingAssistant.Business.Matches.Infrastructure.Matchers
         
         public IEnumerable<MatchingResponse> CalculateMatches(MatchingRequest context, IEnumerable<MatchingResponse> currentResponses)
         {
-            if (!context.OrganisationMatches.Any())
+            if (!context.OrganisationMatchesByTags.Any())
                 yield break;
 
             if (!context.UserMatches.Any())
@@ -21,7 +21,7 @@ namespace GivingAssistant.Business.Matches.Infrastructure.Matchers
             // 3
             var numberOfMatchesBetweenUserAndOrganisation = context
                 .UserMatches.Count(userMatch => context
-                    .OrganisationMatches
+                    .OrganisationMatchesByTags
                     .Any(organisationMatch => organisationMatch.Tag.Equals(userMatch.Tag, StringComparison.InvariantCultureIgnoreCase)));
 
             var score = ((decimal) numberOfMatchesBetweenUserAndOrganisation / (decimal) numberOfTotalUserMatches) * 100;

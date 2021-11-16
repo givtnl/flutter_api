@@ -27,7 +27,7 @@ namespace GivingAssistant.Business.Matches.Commands.CreateUserOrganisationMatch
         public async Task<Unit> Handle(CreateUserOrganisationMatchCommand request, CancellationToken cancellationToken)
         {
             // step one, calculate the scores for the tags between user and organisation
-            var evaluatedScores = CalculateScoresForOrganisations(request);
+            var evaluatedScores = CalculateScoresForOrganisationsByTags(request);
 
             var totalScoresWriteRequests = _dynamoDb.CreateBatchWrite<UserOrganisationMatch>(new DynamoDBOperationConfig
             {
@@ -67,7 +67,7 @@ namespace GivingAssistant.Business.Matches.Commands.CreateUserOrganisationMatch
         {
             foreach (var keyValuePair in evaluatedScores)
             {
-                var organisation = request.MatchingOrganisations
+                var organisation = request.MatchingOrganisationsByTag
                     .Where(x => x.OrganisationId == keyValuePair.Key)
                     .Select(x => _mapper.Map(x.Organisation, new OrganisationProfile()))
                     .FirstOrDefault();
@@ -85,15 +85,41 @@ namespace GivingAssistant.Business.Matches.Commands.CreateUserOrganisationMatch
             }
         }
 
-        private Dictionary<string, MatchingCollection> CalculateScoresForOrganisations(CreateUserOrganisationMatchCommand request)
+        private Dictionary<string, MatchingCollection> CalculateScoresForOrganisationsByTags(CreateUserOrganisationMatchCommand request)
         {
             var evaluatedScores = new Dictionary<string, MatchingCollection>();
-            foreach (var matchingOrganisation in request.MatchingOrganisations.GroupBy(x => x.OrganisationId).ToList())
+            foreach (var matchingOrganisation in request.MatchingOrganisationsByTag.GroupBy(x => x.OrganisationId).ToList())
             {
                 var matchingRequest = new MatchingRequest
                 {
                     UserMatches = request.UserTags,
-                    OrganisationMatches = matchingOrganisation.Select(x => x)
+                    OrganisationMatchesByTags = matchingOrganisation.Select(x => x),
+                };
+                var calculatedScores = new MatchingCollection();
+
+                foreach (var matchMaker in _matchMakers.OrderBy(x => x.Order))
+                {
+                    var tagScores = matchMaker.CalculateMatches(matchingRequest, calculatedScores);
+
+                    calculatedScores.AddRange(tagScores.ToList());
+                }
+
+                if (calculatedScores.Any())
+                    evaluatedScores.Add(matchingOrganisation.Key, calculatedScores);
+            }
+
+            return evaluatedScores;
+        }
+        
+        private Dictionary<string, MatchingCollection> CalculateScoresForOrganisationsByCategories(CreateUserOrganisationMatchCommand request)
+        {
+            var evaluatedScores = new Dictionary<string, MatchingCollection>();
+            foreach (var matchingOrganisation in request.MatchingOrganisationsByCategory.GroupBy(x => x.OrganisationId).ToList())
+            {
+                var matchingRequest = new MatchingRequest
+                {
+                    UserCategories = request.UserCategories,
+                    OrganisationMatchesByCategories = matchingOrganisation.Select(x => x),
                 };
                 var calculatedScores = new MatchingCollection();
 

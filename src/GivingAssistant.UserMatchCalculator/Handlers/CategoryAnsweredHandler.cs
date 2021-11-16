@@ -3,9 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Amazon.DynamoDBv2.DataModel;
 using AutoMapper;
-using GivingAssistant.Business.Matches.Commands.CreateUserOrganisationMatch;
-using GivingAssistant.Business.Matches.Commands.CreateUserTagMatch;
-using GivingAssistant.Business.Organisations.Queries.GetByTags;
+using GivingAssistant.Business.Matches.Commands.CreateUserCategoryMatch;
 using GivingAssistant.Domain;
 using GivingAssistant.UserMatchCalculator.Models;
 
@@ -26,18 +24,17 @@ namespace GivingAssistant.UserMatchCalculator.Handlers
         
         public async Task Handle(HandleAnsweredQuestionRequest request)
         {
-            var createUserTagMatchCommandHandler = new CreateUserTagMatchCommandHandler(_context, _mapper);
+            var createUserCategoryMatchCommandHandler = new CreateUserCategoryMatchCommandHandler(_context, _mapper);
             foreach (var questionTagListModel in request.QuestionTags)
             {
                 if (!questionTagListModel.Tag.Equals(request.AnsweredTag, StringComparison.InvariantCultureIgnoreCase))
                     continue;
                 
                 request.LambdaContext.Logger.LogLine($"Creating Match for user {request.User} with tag {questionTagListModel.Tag}(QUESTIONTAGSCORE:{questionTagListModel.Score})");
-                await createUserTagMatchCommandHandler.Handle(new CreateUserTagMatchCommand
+                await createUserCategoryMatchCommandHandler.Handle(new CreateUserCategoryMatchCommand
                 {
                     User = request.User,
-                    Answer = request.Answer,
-                    Question = questionTagListModel
+                    Category = request.AnsweredTag
                 }, CancellationToken.None);
             }
         }
