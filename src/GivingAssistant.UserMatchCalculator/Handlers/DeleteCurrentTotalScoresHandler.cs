@@ -1,14 +1,9 @@
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
-using Amazon.DynamoDBv2.DocumentModel;
 using GivingAssistant.UserMatchCalculator.Models;
-using GivingAssistant.Business.Infrastructure;
 using GivingAssistant.Business.Matches.Commands.DeleteUserOrganisationMatch;
-using GivingAssistant.Business.Matches.Queries.GetUserOrganisationMatchesList;
-using MediatR;
 
 namespace GivingAssistant.UserMatchCalculator.Handlers
 {

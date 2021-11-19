@@ -3,9 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Amazon.DynamoDBv2.DataModel;
 using AutoMapper;
-using GivingAssistant.Business.Matches.Commands.CreateUserOrganisationMatch;
 using GivingAssistant.Business.Matches.Commands.CreateUserTagMatch;
-using GivingAssistant.Business.Organisations.Queries.GetByTags;
 using GivingAssistant.Domain;
 using GivingAssistant.UserMatchCalculator.Models;
 
