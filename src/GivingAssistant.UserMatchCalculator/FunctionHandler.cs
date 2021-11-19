@@ -41,7 +41,8 @@ namespace GivingAssistant.UserMatchCalculator
             {
                 new CategoryAnsweredHandler(DynamoDbContext, Mapper),
                 new StatementAnsweredHandler(DynamoDbContext, Mapper),
-                new ReCalculateUserTagsAndOrganisationMatchHandler(DynamoDbContext, Mapper, MatchMakers)
+                new ReCalculateUserTagsAndOrganisationMatchHandler(DynamoDbContext, Mapper, MatchMakers),
+                new DeleteCurrentTotalScoresHandler(DynamoDbContext, new AmazonDynamoDBClient())
             };
         }
 
