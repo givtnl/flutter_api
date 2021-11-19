@@ -26,7 +26,7 @@ namespace GivingAssistant.UserMatchCalculator.Handlers
 
         public async Task Handle(HandleAnsweredQuestionRequest request)
         {
-            await new DeleteAllUserOrganisationMatchesCommandHandler(_context).Handle(new DeleteAllUserOrganisationMatchesCommand
+            await new DeleteAllUserOrganisationMatchesCommandHandler(_context, _client).Handle(new DeleteAllUserOrganisationMatchesCommand
             {
                 UserId = request.User
             }, CancellationToken.None);
