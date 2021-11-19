@@ -15,47 +15,24 @@ namespace GivingAssistant.Business.Matches.Commands.DeleteUserOrganisationMatch
     public class DeleteAllUserOrganisationMatchesCommandHandler: IRequestHandler<DeleteAllUserOrganisationMatchesCommand, Unit>
     {
         private readonly IDynamoDBContext _context;
-        private readonly IAmazonDynamoDB _client;
 
-        public DeleteAllUserOrganisationMatchesCommandHandler(IDynamoDBContext context, IAmazonDynamoDB client)
+        public DeleteAllUserOrganisationMatchesCommandHandler(IDynamoDBContext context)
         {
             _context = context;
-            _client = client;
         }
 
         public async Task<Unit> Handle(DeleteAllUserOrganisationMatchesCommand request, CancellationToken cancellationToken)
         {
-            var query = await _client.QueryAsync(new QueryRequest(Constants.TableName)
-            {
-                ScanIndexForward = false,
-                Select = Select.ALL_ATTRIBUTES,
-                KeyConditions = new Dictionary<string, Condition>
+            var filter = new QueryFilter("PK", QueryOperator.Equal, $"{Constants.UserPlaceholder}#{request.UserId}");
+            filter.AddCondition("SK", QueryOperator.BeginsWith, $"{Constants.MatchPlaceholder}#{Constants.TagPlaceholder}");
+
+            var response = await _context
+                .FromQueryAsync<UserTagMatch>(new QueryOperationConfig
                 {
-                    {
-                        "PK", new Condition
-                        {
-                            ComparisonOperator = ComparisonOperator.EQ, AttributeValueList = new List<AttributeValue>
-                            {
-                                new($"{Constants.UserPlaceholder}#{request.UserId}")
-                            }
-                        }
-                    },
-                    {
-                        "SK", new Condition
-                        {
-                            ComparisonOperator = ComparisonOperator.BEGINS_WITH,
-                            AttributeValueList = new List<AttributeValue>
-                            {
-                                new($"{Constants.MatchPlaceholder}#{Constants.OrganisationPlaceholder}#{Constants.TotalScorePlaceHolder}")
-                            }
-                        }
-                    }
-                }
-            }, cancellationToken);
+                    Filter = filter
+                }, new DynamoDBOperationConfig { OverrideTableName = Constants.TableName }).GetRemainingAsync(cancellationToken);
 
-            var itemsToDelete = query.Items.Select(x => _context.FromDocument<UserOrganisationMatch>(Document.FromAttributeMap(x)));
-
-            foreach (var match in itemsToDelete)
+            foreach (var match in response)
             {
                 await _context.DeleteAsync(match, CancellationToken.None);
             }
